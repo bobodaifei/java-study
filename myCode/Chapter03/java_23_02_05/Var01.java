@@ -1,5 +1,6 @@
+package java_23_02_05;
 
-public class Test {
+public class Var01 {
   public static void main(String[] args) {
     int a = 1;
     int b = 2;

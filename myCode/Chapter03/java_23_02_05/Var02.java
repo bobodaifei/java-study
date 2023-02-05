@@ -5,7 +5,7 @@ public class Var02 {
     int age = 30;
     double score = 88.9;
     char gender = '男';
-    String name = "king";
+    String name = "king1";
 
     System.out.println("结果=" + age);
     System.out.println("结果=" + score);

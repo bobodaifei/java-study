@@ -1,6 +1,6 @@
 package java_23_02_05;
 
-public class intDetail {
+public class IntDetail {
   public static void main(String[] args) {
     byte n0 = 10;// -(2^7)~2^7-1 [最高位]表示符号位
     short n1 = 10;// -(2^15)~2^15-1

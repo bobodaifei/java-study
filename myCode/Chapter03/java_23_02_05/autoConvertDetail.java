@@ -2,7 +2,7 @@ package java_23_02_05;
 
 import java.lang.ProcessBuilder.Redirect.Type;
 
-public class autoConvertDetail {
+public class AutoConvertDetail {
   public static void main(String[] args) {
     int n1 = 10;
     double d1 = n1 + 1.1;

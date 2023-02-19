@@ -9,4 +9,16 @@ public class Modifier01 {
   public void m1() {
     System.out.println(n1 + n2 + n3 + n4);
   }
+  
+  protected void m2() {
+    System.out.println(n1 + n2 + n3 + n4);
+  }
+  
+  void m3() {
+    System.out.println(n1 + n2 + n3 + n4);
+  }
+  
+  private void m4() {
+    System.out.println(n1 + n2 + n3 + n4);
+  }
 }

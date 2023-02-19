@@ -1,0 +1,329 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch LinkedList02",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.List_.LinkedList02",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch LinkedList01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.List_.LinkedList01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch List01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.List_.List01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch ArrayList01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.List_.ArrayList01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Collection01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.collection_.Collection01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch HomeWork01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter13.HomeWork01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch ArraysSortCustom",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter13.Arrays_.ArraysSortCustom",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch StringBuffer01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter13.wrappertype.StringBuffer_.StringBuffer01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Integer01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter13.wrappertype.Integer01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch CustomException",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter12.exception_.CustomException",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Throws01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter12.exception_.Throws01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Exception01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter12.exception_.Exception01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch HomeWokr06",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter10.HomeWokr06",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch HomeWokr04",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter10.HomeWokr04",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch EnumMethod",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter11.enum_02.EnumMethod",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Enumeration01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter11.Enumeration01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch InnerExercise01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter10.Inner_.InnerExercise01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch LocalInner01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter10.Inner_.LocalInner01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Interface01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter10.interface_.Interface01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch text",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter10.abstract_.text",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch SingleTon01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter10.Single_.SingleTon01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch CodeBlock01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter10.codeblock.CodeBlock01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Launch App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Modifier02",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter08.Modifier02",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch DynamicBinding",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.DynamicBinding",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch ExtendDetail01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.ExtendDetail01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Rncap01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.Rncap01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Debug01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.debug_.Debug01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Debug02",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.debug_.Debug02",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.exercise.Test",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch HomeWork01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.homework.HomeWork01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test001",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.homework.Test001",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch HomeWork03",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.homework.homework03.HomeWork03",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Extends01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.improve_.Extends01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Equal01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.object_.Equal01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Finalize01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.object_.Finalize01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch HashCode01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.object_.HashCode01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch PersionExercise",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.object_.PersionExercise",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch PolyObject",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.objectpoly.PolyObject",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch PloyParameter",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.poly_.PloyParameter",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch PloyArray",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter09.polyarr_.PloyArray",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch ChildGame",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter10.static_.ChildGame",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch SmallChangeSys",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.changemoney.SmallChangeSys",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch HouseRentApp",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.house.HouseRentApp",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch ModifierTest",
+      "request": "launch",
+      "mainClass": "com.bobo.study.test.ModifierTest",
+      "projectName": "package_java_118cf1af"
+    }
+  ]
+}

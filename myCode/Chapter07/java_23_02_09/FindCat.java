@@ -7,6 +7,7 @@ public class FindCat {
     cat1.setCatAge(2);
     cat1.setCatColor("黑色");
     cat1.run();
+    cat1.getCatName();
   }
 
 

@@ -6,6 +6,237 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StaffDao",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work01.StaffDao",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "JdbcUtil",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work01.JdbcUtil",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "HomeWork01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work01.HomeWork01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "MethodUtils",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work01.MethodUtils",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "www",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work.www",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "ImplCallable",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter15.thread.ImplCallable",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Work03",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work.Work03",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Thread01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work.Thread01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Methon01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work.Methon01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "File01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work.File01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "ClassLoader01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.classLoader_.ClassLoader01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "ClientDemo",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work.ClientDemo",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "SocketDemo",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work.SocketDemo",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Work01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work.Work01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "MySelf",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.work.MySelf",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "File01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.file.File01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "ThreadDaemon",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.thread.ThreadDaemon",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "ThreadJoin",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.thread.ThreadJoin",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Runnable01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.thread.Runnable01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Thread01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.thread.Thread01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Client2",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.socket.Client2",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Client1",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.socket.Client1",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "ServerThread",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.socket.ServerThread",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Client",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.socket.Client",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Server",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.socket.Server",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "TreeSet01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.set_.TreeSet01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch HashSetExercise",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.set_.HashSetExercise",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch HashSet02",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.set_.HashSet02",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Map01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.map_.Map01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch BB1",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.map_.BB1",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch BB",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.map_.BB",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch LinkedHashSet01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.set_.LinkedHashSet01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Launch Hashser01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter14.set_.Hashser01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
       "name": "Launch LinkedList02",
       "request": "launch",
       "mainClass": "com.bobo.study.chapter14.List_.LinkedList02",

@@ -1,7 +1,27 @@
 package com.bobo.study.chapter09;
 
-public class Super01 {
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Calendar;
+import java.util.Date;
 
+public class Super01 {
+  public static void main(String[] args) {
+    // B.n1();
+    // C.n1();
+    Date date = new Date();
+    System.out.println(date.getHours());
+    System.out.println(date);
+    System.out.println(date);
+
+
+    System.out.println(LocalDate.now().getMonth());
+    // System.out.println(LocalDateTime.now().start);
+
+      // Calendar.YEAR;
+      System.out.println(Calendar.getInstance());
+    
+  }
 }
 
 class A {
@@ -21,6 +41,10 @@ class B extends A {
     System.out.println(super.n1);
   }
 
+  public static void n1() {
+    System.out.println("fuqin");
+  }
+
 }
 
 class C extends B {
@@ -30,5 +54,13 @@ class C extends B {
     System.out.println(super.n1);
     super.name1();
   }
+
+  @Override
+  public void name1() {
+    // TODO Auto-generated method stub
+    System.out.println("zi1");
+  }
+
+  
 
 }

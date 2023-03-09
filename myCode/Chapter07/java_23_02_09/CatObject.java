@@ -6,6 +6,17 @@ public class CatObject {
   private int catAge;
   private String catColor;
 
+
+  
+  public CatObject() {
+  }
+
+  public CatObject(String catName, int catAge, String catColor) {
+    this.catName = catName;
+    this.catAge = catAge;
+    this.catColor = catColor;
+  }
+  
   public String getCatName() {
     return catName;
   }
@@ -27,6 +38,11 @@ public class CatObject {
     this.catColor = catColor;
   }
 
+  
+  @Override
+  public String toString() {
+    return super.toString();
+  }
   public void run(){
     System.out.println(catAge+"岁的"+catColor+"的"+catName+"叫了一声 喵喵~");
   }

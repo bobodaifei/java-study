@@ -9,8 +9,14 @@ public class OverLoad01 {
 }
 
 class MyCalculator {
-  public int calculate(int m1, int n2) {
+  public String calculate(String m1, int n2) {
     return m1 + n2;
+  }
+  public int calculate(int m1) {
+    return m1;
+  }
+  public void calculate() {
+    System.out.println(1);
   }
 
   public double calculate(double n1, int n2) {

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ArrayList01 {
   public static void main(String[] args) {
-    List list = new ArrayList();
+    ArrayList list = new ArrayList();
     Integer foo = new Integer(111);
 
     list.add("arrayList1");

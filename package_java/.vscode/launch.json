@@ -6,6 +6,216 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Tomcat",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.tomcat.Tomcat",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "MyMath",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work03.MyMath",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "MySelf",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work03.MySelf",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "QQserver",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.qq_.qqClient.userServer.QQserver",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "QQView",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.qq_.qqClient.views.QQView",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Cat",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter08.super_.Cat",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter08.super_.test",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "TCPFileDownClient",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter21.socket_TCP.TCPFileDownClient",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "TCPFileDownServer",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter21.socket_TCP.TCPFileDownServer",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "UdpSenderB",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter21.udp_.UdpSenderB",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "UdpReceiverA",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter21.udp_.UdpReceiverA",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "TcpFileCopyClient01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter21.socket_TCP.TcpFileCopyClient01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "TcpFileCopyServer01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter21.socket_TCP.TcpFileCopyServer01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Client02",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter21.socket_TCP.Client02",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Server02",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter21.socket_TCP.Server02",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Client01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter21.socket_TCP.Client01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Server01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter21.socket_TCP.Server01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "api_",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter21.intetAddress_.api_",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "DeadLock",
+      "request": "launch",
+      "mainClass": "com.bobo.study.chapter15.DeadLock",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Thread01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work.Thread01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Properties02",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.io.properties_.Properties02",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Properties03",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.io.properties_.Properties03",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "PrintStream01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.io.print_.PrintStream01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Work01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work02.Work01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "ObjectInputStream01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.io.ObjectInputStream01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "ObjectOutputStream01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.io.ObjectOutputStream01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "FileWriter01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.io.FileWriter01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "FileCopy01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.io.FileCopy01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "FileOutputStream01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.io.FileOutputStream01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "FileInputStream01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.io.FileInputStream01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
       "name": "StaffDao",
       "request": "launch",
       "mainClass": "com.bobo.study.demo.work01.StaffDao",

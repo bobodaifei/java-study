@@ -14,7 +14,7 @@ public class PolyObject {
     System.out.println(cat.getName());
 
     Cat cat1 = (Cat) animal;
-    // cat1.wc();
-    // cat1.aaa();
+    cat1.wc();
+    cat1.aaa();
   }
 }

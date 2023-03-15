@@ -1,7 +1,7 @@
 package com.bobo.study.chapter09.objectpoly;
 
 public class Cat extends Animal{
-  public String name="小猫";
+  public String name;
 
   public void setName(String name) {
     this.name = name;

@@ -3,6 +3,8 @@ package com.bobo.study.chapter15.thread;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
+import com.bobo.study.chapter15.runnable_.ImplRunnable;
+
 public class ThreadJoin {
   public static void main(String[] args) throws InterruptedException, BrokenBarrierException {
     System.out.println("---做好饭了");

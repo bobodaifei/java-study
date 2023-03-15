@@ -1,7 +1,13 @@
 package com.bobo.study.chapter15.thread;
 
+import com.bobo.study.chapter15.runnable_.ImplRunnable;
+
 public class Runnable01 {
   public static void main(String[] args) throws InterruptedException {
+    Runtime runtime = Runtime.getRuntime();
+    //cpu内核数
+    System.out.println(runtime.availableProcessors());
+    
     System.out.println("---start");
     ImplRunnable runnable = new ImplRunnable();
     ImplRunnable runnable1 = new ImplRunnable();

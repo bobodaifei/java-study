@@ -12,29 +12,34 @@ public class ChildGame {
 
   }
 }
-class Child{
+
+class Child {
   private String name;
-  private static int num=0;
+  private static int num = 0;
+
   public Child(String name) {
     this.name = name;
     this.num++;
   }
 
   public static void name() {
-    
+
   }
+
   public String getName() {
     return name;
   }
+
   public void setName(String name) {
     this.name = name;
   }
+
   public static int getNum() {
     return num;
   }
+
   public static void setNum(int num) {
     Child.num = num;
   }
-  
-  
+
 }

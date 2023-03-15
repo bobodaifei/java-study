@@ -14,13 +14,12 @@ public class Super01 {
     System.out.println(date);
     System.out.println(date);
 
-
     System.out.println(LocalDate.now().getMonth());
     // System.out.println(LocalDateTime.now().start);
 
-      // Calendar.YEAR;
-      System.out.println(Calendar.getInstance());
-    
+    // Calendar.YEAR;
+    System.out.println(Calendar.getInstance());
+
   }
 }
 
@@ -61,6 +60,20 @@ class C extends B {
     System.out.println("zi1");
   }
 
-  
+}
+
+class Persion {
+  public void sleep() {
+    System.out.println("11点睡觉");
+  }
+}
+
+class Student extends Persion {
+
+  @Override
+  public void sleep() {
+    // TODO Auto-generated method stub
+    System.out.println("我就要12点睡觉");
+  }
 
 }

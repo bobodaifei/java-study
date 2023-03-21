@@ -30,7 +30,7 @@ public class Tomcat {
     Tomcat tomcat = new Tomcat();
     // 以注解形式加载servlet，此处提前加载了所有的servlet
     // tomcat.deployApps();
-    //以xml形式扫描加载Servlet
+    //以xml形式扫描加载Servlet 
     tomcat.initApps();
     tomcat.start();
   }

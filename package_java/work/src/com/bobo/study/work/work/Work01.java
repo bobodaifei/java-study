@@ -31,9 +31,6 @@ public class Work01 {
       }
     }
     System.out.println(list);
-    //
-
-    // list.add(null);
   }
 }
 

@@ -30,6 +30,7 @@ public class ArrayList01 {
       System.out.println(object);
     }
     System.out.println(list);
+    Object[] array = list.toArray();
 
   }
 }

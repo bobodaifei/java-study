@@ -6,6 +6,97 @@
   "configurations": [
     {
       "type": "java",
+      "name": "File01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.io_.File01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Persion",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work6.Persion",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "MyMath",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work6.MyMath",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Division01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work6.Division01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Sum01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work6.Sum01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Removal01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work6.Removal01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "removal01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work6.removal01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "HomeWokr01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work6.HomeWokr01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "HouseWork01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work5.HouseWork01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Tomcat",
+      "request": "launch",
+      "mainClass": "com.example.tomcat.Tomcat",
+      "projectName": "demo"
+    },
+    {
+      "type": "java",
+      "name": "QQView",
+      "request": "launch",
+      "mainClass": "com.bobo.demo.qq_.qqClient.views.QQView",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "QQserver",
+      "request": "launch",
+      "mainClass": "com.bobo.demo.qq_.qqClient.userServer.QQserver",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Method01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work4.Method01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
       "name": "Tomcat",
       "request": "launch",
       "mainClass": "com.bobo.study.work.tomcat.Tomcat",

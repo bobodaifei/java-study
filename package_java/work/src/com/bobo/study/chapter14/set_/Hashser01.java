@@ -18,6 +18,8 @@ public class Hashser01 {
       hashSet.add(i);
     }
     System.out.println(hashSet);
+
+    Object[] array = hashSet.toArray();
     
   }
 }

@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Io_",
+      "request": "launch",
+      "mainClass": "com.bobo.study.work.work07.Io_",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
       "name": "File01",
       "request": "launch",
       "mainClass": "com.bobo.study.work.io_.File01",

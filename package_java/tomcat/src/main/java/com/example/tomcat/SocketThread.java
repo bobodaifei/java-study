@@ -38,7 +38,7 @@ public class SocketThread implements Runnable {
 
       // 对url进行分块：web应用名、serlvet名、参数
       String[] parts = request.getRequestURL().toString().substring(1).split("/");
-      //如果只有web应用名，不做操作
+      //只有web应用名，没有对应servlet，不做操作
       if (parts.length > 1) {
         // 获取要访问的应用名
         String appName = parts[0];
@@ -69,8 +69,5 @@ public class SocketThread implements Runnable {
     }
   }
 
-  private void init() {
-
-  }
 
 }

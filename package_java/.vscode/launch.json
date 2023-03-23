@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Lambda06",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.lambda_.Lambda06",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Lambda04",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.lambda_.Lambda04",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
+      "name": "Lambda01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.lambda_.Lambda01",
+      "projectName": "package_java_118cf1af"
+    },
+    {
+      "type": "java",
       "name": "Io_",
       "request": "launch",
       "mainClass": "com.bobo.study.work.work07.Io_",

@@ -20,78 +20,104 @@ public class StreamDemo {
 
   public static void main(String[] args) {
     List<Author> authors = getAuthors();
-    Set<String> set =  authors.stream()
-      .distinct()
-      .flatMap(author -> author.getBooks().stream())
-      .map(book -> book.getName())
-      .collect(Collectors.toSet());
-    System.out.println(set);
-    // List list =  authors.stream()
-    //   .distinct()
-    //   .map(author -> author.getName())
-    //   .collect(Collectors.toList());
+    
+
+
+
+    // Optional<Author> author = authors.stream()
+    //     .distinct()
+    //     .sorted((author01,author02)-> author01.getAge()- author02.getAge())
+    //     .findFirst();
+    // author.ifPresent(author_tmp->System.out.println(author_tmp.getName()));
+    // Optional<Author> author = authors.stream()
+    //     .distinct()
+    //     .findAny();
+    // author.ifPresent(author_tmp->System.out.println(author_tmp.getName()));
+    // boolean b = authors.stream()
+    //     .distinct()
+    //     .noneMatch((author->author.getAge()>18));
+    // System.out.println(b);
+    // boolean b = authors.stream()
+    //     .distinct()
+    //     .anyMatch((author->author.getAge()>18));
+    // System.out.println(b);
+    // System.out.println(map);
+    // Map<String,List<Book>> map = authors.stream()
+    //     .distinct()
+    //     .collect(Collectors.toMap(author->author.getName(), author-> author.getBooks()));
+    // System.out.println(map);
+    // Set<String> set = authors.stream()
+    // .distinct()
+    // .flatMap(author -> author.getBooks().stream())
+    // .map(book -> book.getName())
+    // .collect(Collectors.toSet());
+    // System.out.println(set);
+    // List list = authors.stream()
+    // .distinct()
+    // .map(author -> author.getName())
+    // .collect(Collectors.toList());
     // System.out.println(list);
     // Optional<Integer> score = authors.stream()
-    //     .distinct()// 去重
-    //     .flatMap(author-> author.getBooks().stream())
-    //     .distinct()
-    //     .map(book->book.getScore())
-    //     .min((Integer score1 , Integer score2)-> score1- score2);
+    // .distinct()// 去重
+    // .flatMap(author-> author.getBooks().stream())
+    // .distinct()
+    // .map(book->book.getScore())
+    // .min((Integer score1 , Integer score2)-> score1- score2);
     // Optional<Integer> max = authors.stream()
-    //     .distinct()// 去重
-    //     .flatMap(author-> author.getBooks().stream())
-    //     .distinct()
-    //     .map(book->book.getScore())
-    //     .max((Integer score1 , Integer score2)-> score1- score2);
+    // .distinct()// 去重
+    // .flatMap(author-> author.getBooks().stream())
+    // .distinct()
+    // .map(book->book.getScore())
+    // .max((Integer score1 , Integer score2)-> score1- score2);
 
     // System.out.println(max.get());
     // long count = authors.stream()
-    //     .distinct()// 去重
-    //     .flatMap(author-> author.getBooks().stream())
-    //     .distinct()
-    //     .count();
+    // .distinct()// 去重
+    // .flatMap(author-> author.getBooks().stream())
+    // .distinct()
+    // .count();
     // System.out.println(count);
     // authors.stream()
-    //     .distinct()// 去重
-    //     .flatMap(new Function<Author,Stream<? extends Book>>() {
+    // .distinct()// 去重
+    // .flatMap(new Function<Author,Stream<? extends Book>>() {
 
-    //       @Override
-    //       public Stream<? extends Book> apply(Author t) {
-    //         return t.getBooks().stream();
-    //       }
-          
-    //     })
-    //     .distinct()
-    //     .flatMap(new Function<Book,Stream<?>>() {
+    // @Override
+    // public Stream<? extends Book> apply(Author t) {
+    // return t.getBooks().stream();
+    // }
 
-    //       @Override
-    //       public Stream<?> apply(Book book) {
-    //         return Arrays.stream(book.getCategory().split(","));
-    //       }
-          
-    //     })
-    //     .distinct()
-    //     .forEach(category -> System.out.println(category));
-    // authors.stream()
-    //     .distinct()// 去重
-    //     .flatMap(new Function<Author,Stream<? extends Book>>() {
+    // })
+    // .distinct()
+    // .flatMap(new Function<Book,Stream<?>>() {
 
-    //       @Override
-    //       public Stream<? extends Book> apply(Author t) {
-    //         return t.getBooks().stream();
-    //       }
-          
-    //     })
-    //     .distinct()
-    //     .forEach(book -> System.out.println(book.getName()));
+    // @Override
+    // public Stream<?> apply(Book book) {
+    // return Arrays.stream(book.getCategory().split(","));
+    // }
+
+    // })
+    // .distinct()
+    // .forEach(category -> System.out.println(category));
     // authors.stream()
-    //     .distinct()// 去重
-    //     .skip(1)
-    //     .forEach(author -> System.out.println(author));
+    // .distinct()// 去重
+    // .flatMap(new Function<Author,Stream<? extends Book>>() {
+
+    // @Override
+    // public Stream<? extends Book> apply(Author t) {
+    // return t.getBooks().stream();
+    // }
+
+    // })
+    // .distinct()
+    // .forEach(book -> System.out.println(book.getName()));
     // authors.stream()
-    //     .distinct()// 去重
-    //     .limit(1)
-    //     .forEach(author -> System.out.println(author));
+    // .distinct()// 去重
+    // .skip(1)
+    // .forEach(author -> System.out.println(author));
+    // authors.stream()
+    // .distinct()// 去重
+    // .limit(1)
+    // .forEach(author -> System.out.println(author));
     // authors.stream()
     // .distinct()// 去重
     // .sorted(new Comparator<Author>() {
@@ -151,7 +177,7 @@ public class StreamDemo {
   }
 
   private static List<Author> getAuthors() {
-    Author author1 = new Author(1L, "tom1", 12, "asdasd", null);
+    Author author1 = new Author(1L, "tom1", 15, "asdasd", null);
     Author author6 = author1;
     Author author2 = new Author(2L, "tom2", 19, "asdasd", null);
     Author author3 = new Author(3L, "tom3", 13, "asdasd", null);

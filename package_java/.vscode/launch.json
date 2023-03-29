@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Jdbc02",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.jdbc_.Jdbc02",
+      "projectName": "testVertx"
+    },
+    {
+      "type": "java",
+      "name": "Jdbc01",
+      "request": "launch",
+      "mainClass": "com.bobo.study.demo.jdbc_.Jdbc01",
+      "projectName": "testVertx"
+    },
+    {
+      "type": "java",
+      "name": "Call_",
+      "request": "launch",
+      "mainClass": "com.bobo.study.test.Call_",
+      "projectName": "testVertx"
+    },
+    {
+      "type": "java",
       "name": "Thread01",
       "request": "launch",
       "mainClass": "com.bobo.study.work.work.Thread01",

@@ -1,6 +1,9 @@
 package com.bobo.study.test;
 
 import java.util.ArrayList;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.FutureTask;
 
 import com.bobo.study.chapter08.Modifier01;
 
@@ -65,5 +68,36 @@ class faxingimp<I, M> implements fanxing<I, M> {
 
   public void method1(M i) {
     System.out.println(i);
+  }
+}
+
+class Call_ implements Callable {
+
+  @Override
+  public Object call() throws Exception {
+    int count = 0;
+    for (int i = 0; i < 100; i++) {
+      count++;
+      
+    }
+    return count;
+  }
+
+  public static void main(String[] args) {
+    FutureTask futureTask = new FutureTask<>(new Call_());
+
+    Thread thread = new Thread(futureTask);
+    thread.start();
+
+    try {
+      Object object = futureTask.get();
+      System.out.println(object);
+    } catch (InterruptedException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    } catch (ExecutionException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
   }
 }

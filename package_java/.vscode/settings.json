@@ -4,5 +4,6 @@
     "d:\\app\\30545\\virtual\\product\\12.2.0\\dbhome_1\\jdbc\\lib\\ojdbc8.jar"
   ],
   "maven.view": "flat",
-  "java.debug.settings.onBuildFailureProceed": true
+  "java.debug.settings.onBuildFailureProceed": true,
+  "java.configuration.updateBuildConfiguration": "interactive"
 }

@@ -62,7 +62,7 @@ public class StaffDao {
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {
-      JdbcUtil.close(connection, statement, resultSet, null);
+      JdbcUtil.close(connection, statement, resultSet);
     }
   }
 
@@ -76,9 +76,7 @@ public class StaffDao {
     ArrayList<Staff01> list = new ArrayList<Staff01>();
     try {
       connection = JdbcUtil.getConnection();
-
       statement = connection.createStatement();
-
       // 查询query，返回一个数据集
       resultSet = statement.executeQuery("SELECT * FROM STAFF WHERE STAFF_DEPART_ID = " + Id);
 
@@ -93,7 +91,7 @@ public class StaffDao {
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {
-      JdbcUtil.close(connection, statement, resultSet, null);
+      JdbcUtil.close(connection, statement, resultSet);
     }
     return list;
   }
@@ -131,7 +129,7 @@ public class StaffDao {
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {
-      JdbcUtil.close(connection, statement, resultSet, null);
+      JdbcUtil.close(connection, statement, resultSet);
     }
     return arr;
   }
@@ -143,9 +141,7 @@ public class StaffDao {
     Statement statement = null;
     try {
       connection = JdbcUtil.getConnection();
-
       statement = connection.createStatement();
-
       int flag = statement.executeUpdate("delete from STAFF where STAFF_ID = " + Id);
       if (flag > 0) {
         return true;
@@ -156,7 +152,7 @@ public class StaffDao {
       e.printStackTrace();
       return false;
     } finally {
-      JdbcUtil.close(connection, statement, null, null);
+      JdbcUtil.close(connection, statement, null);
     }
   }
 
@@ -168,8 +164,6 @@ public class StaffDao {
     PreparedStatement ps = null;
     try {
       connection = JdbcUtil.getConnection();
-
-      statement = connection.createStatement();
 
       String sql = "INSERT INTO STAFF  VALUES (?,?,?,?)";
       ps = connection.prepareStatement(sql);
@@ -187,7 +181,7 @@ public class StaffDao {
       e.printStackTrace();
       return false;
     } finally {
-      JdbcUtil.close(connection, statement, null, ps);
+      JdbcUtil.close(connection, ps, null);
     }
   }
 
@@ -211,21 +205,13 @@ public class StaffDao {
       ps.setTimestamp(3, new Timestamp(staff.getStaffInTime().getTime()));
       ps.setInt(4, staff.getStaffId());
       int flag = ps.executeUpdate();
-      int rownum = -1;
-      if (flag > 0) {
-        resultSet = statement.executeQuery(
-            "select Rown from (select rownum as Rown,staff_id FROM STAFF) where staff_id =  " + staff.getStaffId());
-        while (resultSet.next()) {
-          rownum = resultSet.getInt("Rown");
-        }
-      }
-      return rownum;
+      return flag;
 
     } catch (SQLException e) {
       e.printStackTrace();
       return -1;
     } finally {
-      JdbcUtil.close(connection, statement, resultSet, ps);
+      JdbcUtil.close(connection, ps, resultSet);
     }
   }
 
@@ -253,7 +239,7 @@ public class StaffDao {
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {
-      JdbcUtil.close(connection, statement, resultSet, null);
+      JdbcUtil.close(connection, statement, resultSet);
     }
   }
 
@@ -286,7 +272,7 @@ public class StaffDao {
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {
-      JdbcUtil.close(connection, statement, resultSet, null);
+      JdbcUtil.close(connection, statement, resultSet);
     }
   }
 
@@ -321,7 +307,7 @@ public class StaffDao {
       e.printStackTrace();
       return 0;
     } finally {
-      JdbcUtil.close(connection, statement, resultSet, null);
+      JdbcUtil.close(connection, statement, resultSet);
     }
   }
 
@@ -354,7 +340,7 @@ public class StaffDao {
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {
-      JdbcUtil.close(connection, statement, resultSet, null);
+      JdbcUtil.close(connection, statement, resultSet);
     }
   }
 

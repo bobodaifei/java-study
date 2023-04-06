@@ -51,13 +51,13 @@ public class HouseWork01 {
     // arrayList3.add(123.0);
     // removal(arrayList3);
 
-    listToMap("1001");
+    // listToMap("1001");
 
-    User user = User.userList.get(0);
-    user.setName("奥里给");
-    for (User u1 : User.userList) {
-      System.out.println(u1);
-    }
+    // User user = User.userList.get(0);
+    // user.setName("奥里给");
+    // for (User u1 : User.userList) {
+    //   System.out.println(u1);
+    // }
 
   }
 

@@ -16,8 +16,8 @@ import java.util.Scanner;
 public class Demo01 {
 
   public static List<User> userList = new ArrayList<>();
-  public static String urlTxt = "E:\\新建文件夹 (3)\\user.txt";
-  public static String url = "E:\\新建文件夹 (3)";
+  public static String urlTxt = "E:\\新建文件夹 (2)\\user.txt";
+  public static String url = "E:\\新建文件夹 (2)";
 
   private User user;
 
@@ -33,7 +33,9 @@ public class Demo01 {
         User user = new User();
         String[] split = str.split("&");
         for (String userStr : split) {
-          String[] split2 = userStr.split(":");
+          String[] split2 = userStr.split(":(?![\\\\])");
+          System.out.println(split2[0]);
+          System.out.println(split2[1]);
           if ("userNo".equals(split2[0])) {
             user.setUserNo(split2[1]);
           } else if ("name".equals(split2[0])) {
@@ -90,34 +92,34 @@ public class Demo01 {
   }
 
   public static void main(String[] args) {
-    String key = null;
-    boolean flag = true;
-    Demo01 demo01 = new Demo01();
-    while (demo01.login()) {
-      Scanner scanner = new Scanner(System.in);
-      while (flag) {
-        System.out.println("1、修改当前用户信息 \n2、添加用户 \n3、删除用户 \n4、退出登录。");
-        System.out.println("请选择");
-        key = scanner.next();
-        switch (key) {
-          case "1":
-            demo01.updateUser();
-            break;
-          case "2":
-            demo01.addUser();
-            break;
-          case "3":
-            demo01.deleteUser();
-            break;
-          case "4":
-            flag = false;
-            break;
-          default:
-            System.out.println("请重试");
-            break;
-        }
-      }
-    }
+    // String key = null;
+    // boolean flag = true;
+    // Demo01 demo01 = new Demo01();
+    // while (demo01.login()) {
+    //   Scanner scanner = new Scanner(System.in);
+    //   while (flag) {
+    //     System.out.println("1、修改当前用户信息 \n2、添加用户 \n3、删除用户 \n4、退出登录。");
+    //     System.out.println("请选择");
+    //     key = scanner.next();
+    //     switch (key) {
+    //       case "1":
+    //         demo01.updateUser();
+    //         break;
+    //       case "2":
+    //         demo01.addUser();
+    //         break;
+    //       case "3":
+    //         demo01.deleteUser();
+    //         break;
+    //       case "4":
+    //         flag = false;
+    //         break;
+    //       default:
+    //         System.out.println("请重试");
+    //         break;
+    //     }
+    //   }
+    // }
   }
 
   public boolean login() {

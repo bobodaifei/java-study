@@ -1,6 +1,9 @@
 package com.bobo.study.demo.lambda_;
 
 public class Lambda01 {
+  /**
+   * @param args
+   */
   public static void main(String[] args) {
     
     //例一

@@ -16,7 +16,7 @@ public class Lambda02 {
     });
 
     calculateNum((int left, int right)->left + right);
-
+    
   }
 
   public static int calculateNum(IntBinaryOperator operator) {

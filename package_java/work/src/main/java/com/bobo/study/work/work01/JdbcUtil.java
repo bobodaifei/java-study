@@ -2,17 +2,18 @@ package com.bobo.study.work.work01;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class JdbcUtil {
   private static final String DRIVER = getValue("driver");
   private static final String URL = getValue("url");
   private static final String USERNAME = getValue("username");
   private static final String PASSWORD = getValue("password");
+  
 
   static {
     try {

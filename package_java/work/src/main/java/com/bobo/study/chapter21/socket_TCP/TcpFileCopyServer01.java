@@ -33,8 +33,9 @@ public class TcpFileCopyServer01 {
     //一次性读写
     InputStream inputStream = socket.getInputStream();
     BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream);
-    BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream("E:/诚信声明-1.png"));
+    
     byte[] bytes = StreamUtils.streamToByteArray(bufferedInputStream);
+    BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream("E:/诚信声明-1.png"));
     bufferedOutputStream.write(bytes);
     bufferedOutputStream.close();
 

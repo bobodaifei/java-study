@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.bobo.mapper.ClassMapper">
+
+    <!-- <resultMap type="com.bobo.entity.Class_" id="Class_">
+        <id column="class_no" property="classNo"/>
+        <result column="class_name" property="className"/>
+        <result column="leader_teacher" property="leaderTeacher"/>
+    </resultMap> -->
+
+    <!-- <select id="findAll" resultMap="Class_">
+        select * from class;
+    </select> -->
+    <select id="findAll" resultType="com.bobo.entity.Class_" >
+        select * from class;
+    </select>
+
+    <select id="findIn" resultType="com.bobo.entity.Class_" parameterType="java.util.List">
+        select * from class
+        <where> 
+            <if test="listT != null and listT.size() > 0"> 
+                <foreach collection="listT" open="leader_teacher in ( " close=")" item="uid" separator=",">
+                    #{uid}
+                </foreach>
+            </if>
+        </where>
+    </select>
+</mapper>

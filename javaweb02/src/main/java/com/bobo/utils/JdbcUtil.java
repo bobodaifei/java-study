@@ -66,8 +66,8 @@ public class JdbcUtil {
   }
 
   public static void main(String[] args) {
-    // System.out.println(getValue("driver"));
-    // System.out.println(getConnection());
+     System.out.println(getValue("driver"));
+     System.out.println(getConnection());
 
   }
 }

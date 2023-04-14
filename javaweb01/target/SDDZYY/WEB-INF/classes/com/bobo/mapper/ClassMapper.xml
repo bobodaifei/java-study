@@ -14,12 +14,26 @@
     <!-- <select id="findAll" resultMap="Class_">
         select * from class;
     </select> -->
+
+    <sql id="defaultSql">
+        select * from class
+    </sql>
+
     <select id="findAll" resultType="com.bobo.entity.Class_" >
-        select * from class;
+        <include refid="defaultSql"></include>
     </select>
 
+    <select id="selectByTeachId" resultType="java.util.List" parameterType="String">
+        <include refid="defaultSql"></include>
+        <where>
+            leader_teacher = #{teacher_no}
+        </where>
+    </select>
+
+    
+
     <select id="findIn" resultType="com.bobo.entity.Class_" parameterType="java.util.List">
-        select * from class
+        <include refid="defaultSql"></include>
         <where> 
             <if test="listT != null and listT.size() > 0"> 
                 <foreach collection="listT" open="leader_teacher in ( " close=")" item="uid" separator=",">

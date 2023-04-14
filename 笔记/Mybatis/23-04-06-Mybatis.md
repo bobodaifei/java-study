@@ -180,6 +180,8 @@
     System.out.println(classMapper);
     // 4.执行查询操作
     List<Class_> class_ = classMapper.findAll();
+    //也可以使用接口（暂不推荐）
+    //List<User> list = session.selectList("dao.IUserDao.ClassMapper",vo,rowBounds);
     // 5.遍历
     class_.stream().forEach(System.out::println);
     // 6.关闭会话
@@ -313,6 +315,28 @@ List<User> findByName(String username);
 **${}表示拼接 sql 串**
 
 通过 `${}`可以将 parameterType 传入的内容拼接在 sql中且不进行 jdbc 类型转换， `${}`可以接收简单类型值或 pojo 属性值，如果 parameterType 传输单个简单类型值，`${}`括号中只能是 value。
+
+```java
+Like '%#{参数}$'
+会报错，因为#{parameterName}引用参数时，Mybatis会把这个参数认为是一个字符串，并自动加上''
+
+而采用以下方法：
+Like '%${参数}$'
+但是：#{}是经过预编译的,是安全的。
+
+而${}是未经过预编译的,仅仅是取变量的值,是非安全的,存在SQL注入。
+
+解决方法：连接字符串，取出中间的'字符 使用concat函数解决问题！
+
+LIKE concat(concat('%',#{参数}),'%')
+或者
+like "%"#{参数}"%"
+MySQL中concat函数
+使用方法：
+concat(str1,str2,…)
+
+返回结果为连接参数产生的字符串。如有任何一个参数为NULL ，则返回值为 NULL。
+```
 
 #### resultType
 
@@ -519,7 +543,29 @@ jdbc.password=root
 
 ## Mybatis执行过程
 
-待定
+![1680962161885](image/23-04-06-Mybatis/1680962161885.png)
+
+1. 读取配置文件
+2. 创建sqlSessionFactory
+3. 获取sqlSession，此时内部创建一个executor（核心，用于执行sql语句）
+4. 执行executor.query（查询缓存是否有对应数据，如果有则在缓存中取，如果没有则取数据库查询）
+5. 准备查询数据库（查询数据库前创建一个StatementHandler，用于处理参数、结果集处理等）
+6. 预编译和真正的查询数据库
+7. 使用默认结果集处理器处理结果集
+8. 最终返回数据
+
+## 代理dao的执行过程
+
+![1680961968071](image/23-04-06-Mybatis/1680961968071.png)
+
+1. 配置文件解析
+2. 解析配置文件中的mappers标签，遍历所有文件（xml的路径相同也会识别进去，但需要筛选），一个mapper包对应一个sqlsession
+3. 遍历该目录下的文件是否为接口，如果是则存入到一个map集合中（需要防止重复，key为接口的class类型，value为接口对应的MapperProxyFactory）
+4. 当mapper的某个方法被调用时，通过id（key）对应的MapperProxyFactory来获取MapperProxy（对应一个mapper），再通过MapperProxy获取对应的代理对象
+5. 触发MapperProxy的invoke方法
+6. 判断是否调用过该方法，如果没有则加入缓存（降低new对象的开销），每一个mapper的方法都会被封装成了MapperMethod对象（维护内容：比如结果集等数据）
+7. 调用execute判断crud类型（比如select还需要判断返回数据的情况（无/单/多（是否要分页（调用sqlSession的selectList））））
+8. 返回结果
 
 ## Mybatis连接池与事务深入
 
@@ -552,11 +598,68 @@ Mybatis 将它自己的数据源分为三类：
 
 #### Mybatis中DataSource的存取
 
-待定
+MyBatis 是通过工厂模式来创建数据源 DataSource 对象的， MyBatis 定义了抽象的工厂口:org.apache.ibatis.datasource.DataSourceFactory,通过其 getDataSource()方法返回数据源DataSource。
+
+下面是 **DataSourceFactory** 源码，具体如下：
+
+```java
+package org.apache.ibatis.datasource; 
+ 
+import java.util.Properties; 
+import javax.sql.DataSource; 
+ 
+/**  
+ @author Clinton Begin  
+ */ 
+public interface DataSourceFactory { 
+ 
+  void setProperties(Properties props); 
+ 
+  DataSource getDataSource(); 
+ 
+}
+```
+
+MyBatis 创建了 DataSource 实例后，会将其放到 Configuration 对象内的 Environment 对象中， 供以后使用。
+
+具体分析过程如下：
+
+1.先进入 XMLConfigBuilder 类中，可以找到如下代码：
+
+![1681021845176](image/23-04-06-Mybatis/1681021845176.png)
+
+2.分析 configuration 对象的 environment 属性，结果如下：
+
+![1681021887420](image/23-04-06-Mybatis/1681021887420.png)
 
 #### Mybatis中连接的获取过程分析
 
-待定
+当我们需要创建 SqlSession 对象并需要执行 SQL 语句时，这时候 MyBatis 才会去调用 dataSource 对象来创建java.sql.Connection对象。也就是说，java.sql.Connection对象的创建一直延迟到执行SQL语句的时候。
+
+```java
+@Test 
+public void testSql() throws Exception {
+  InputStream in = Resources.getResourceAsStream("SqlMapConfig.xml");
+  SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(in);
+  SqlSession sqlSession  = factory.openSession();
+  List<User> list = sqlSession.selectList("findUserById",41);  
+  System.out.println(list.size());
+}
+```
+
+只有当第 4句sqlSession.selectList("findUserById")，才会触发MyBatis 在底层执行下面这个方法来创建 java.sql.Connection 对象。
+
+如何证明它的加载过程呢？
+
+我们可以通过断点调试，在 PooledDataSource 中找到如下 popConnection()方法，如下所示：
+
+![1681021977935](image/23-04-06-Mybatis/1681021977935.png)
+
+分析源代码，得出 PooledDataSource 工作原理如下：
+
+![1681021994410](image/23-04-06-Mybatis/1681021994410.png)
+
+最后我们可以发现，真正连接打开的时间点，只是在我们执行SQL语句时，才会进行。其实这样做我们也可以进一步发现，数据库连接是我们最为宝贵的资源，只有在要用到的时候，才去获取并打开连接，当我们用完了就再立即将数据库连接归还到连接池中。
 
 ### Mybatis的事务控制
 
@@ -929,6 +1032,485 @@ public class Role implements Serializable {
 
 ### 实现需求
 
-查询账户(Account)信息并且关联查询用户(User)信息。如果先查询账户(Account)信息即可满足要求，当我们需要查询用户(User)信息时再查询用户(User)信息。把对用户(User)信息的按需去查询就是延迟加载。
+查询账户(Account)信息并且关联查询用户(User)信息。如果先查询账户(Account)信息即可满足要求，当我们需要用户(User)信息时再查询用户(User)信息。把对用户(User)信息的按需去查询就是延迟加载。
 
 mybatis实现多表操作时，我们使用了resultMap来实现一对一，一对多，多对多关系的操作。主要是通过 association、collection 实现一对一及一对多映射。association、collection 具备延迟加载功能。
+
+### 全局延迟加载
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    ...
+
+    <settings>
+        <!--开启Mybatis支持延迟加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"></setting>
+    </settings>
+
+    ...
+</configuration>
+```
+
+### 使用 assocation 实现一对一的延迟加载
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.IAccountDao">
+
+    <!-- 定义封装account和user的resultMap -->
+    <resultMap id="accountUserMap" type="account">
+        <id property="id" column="id"></id>
+        <result property="uid" column="uid"></result>
+        <result property="money" column="money"></result>
+        <!-- 一对一的关系映射：配置封装user的内容
+        select属性指定的内容：查询用户的唯一标识：
+        column属性指定的内容：用户根据id查询时，所需要的参数的值
+        -->
+        <association property="user" column="uid" javaType="user" select="com.itheima.dao.IUserDao.findById"></association>
+    </resultMap>
+
+    <!-- 查询所有 -->
+    <select id="findAll" resultMap="accountUserMap">
+        select * from account
+    </select>
+
+    <!-- 根据用户id查询账户列表 -->
+    <select id="findAccountByUid" resultType="account">
+        select * from account where uid = #{uid}
+    </select>
+
+</mapper>
+```
+
+### 使用Collection实现一对多的延迟加载
+
+```xml
+<resultMap type="user" id="userMap">
+	<id column="id" property="id"></id>
+	<result column="username" property="username"/>
+	<result column="address" property="address"/>
+	<result column="sex" property="sex"/>
+	<result column="birthday" property="birthday"/>
+	<!-- collection是用于建立一对多中集合属性的对应关系
+		ofType用于指定集合元素的数据类型
+		select是用于指定查询账户的唯一标识(账户的dao全限定类名加上方法名称)
+		column适用于指定使用哪个字段的值作为条件查询
+	-->
+	<collection property="accounts" ofType="account"
+		select="com.itheima.dao.IAccountDao.findByUid"
+		column="id">
+	</collection>
+</resultMap>
+
+<!-- 配置查询所有操作 -->
+<select id="findAll" resultMap="userMap">
+	select * from user
+</select>
+```
+
+* *标签：* 主要用来加载关联的集合对象
+* select属性：用来指定查询account列表的sql语句，所以填写的是该sql映射的id
+* column属性：用于指定select属性的sql语句的参数来源，上面的参数来自于user的id列，所以就写成id这一个字段名了
+
+### 局部延迟加载
+
+局部的加载策略的优先级高于全局的加载策略。
+
+```xml
+<!--修改标签的fetchType属性 fetchType="lazy" 延迟加载策略 fetchType="eager" ⽴即加载策略-->
+<resultMap id="kunkunMap" type="user">
+    <id column="id" property="id"></id>
+    <result column="ctrl" property="ctrl"></result>
+  
+    <!--开启⼀对多 延迟加载-->
+    <collection property="userList" ofType="order" column="id"
+        select="com.lagou.dao.OrderMapper.findByUid" fetchType="lazy">
+    </collection>
+  
+    <!--开启⼀对一 延迟加载-->
+	<association property="order" column="id" javaType="order"
+        select="com.xinxin.dao.OrderMapper.findById" fetchType="lazy">
+    </association>
+</resultMap>
+
+```
+
+## Mybatis的缓存
+
+什么是缓存：存在于内存中的临时数据。
+
+为什么使用缓存：减少和数据库的交互次数，提高执行效率。
+
+什么样的数据能使用缓存，什么样的数据不能使用
+
+适用于缓存：
+
+* 经常查询并且不经常改变的。
+* 数据的正确与否对最终结果影响不大的。
+
+不适用于缓存：
+
+* 经常改变的数据
+* 数据的正确与否对最终结果影响很大的。
+  * 例如：商品的库存，银行的汇率，股市的牌价。
+
+Mybatis中的缓存分为一级缓存、二级缓存
+
+![1680958672438](image/23-04-06-Mybatis/1680958672438.png)
+
+### Mybatis的一级缓存
+
+它指的是Mybatis中SqlSession对象的缓存。
+
+当我们执行查询之后，查询的结果会同时存入到SqlSession为我们提供一块区域中。
+
+该区域的结构是一个Map。当我们再次查询同样的数据，Mybatis会先去SqlSession中查询是否有，有的话直接拿出来用。
+
+当SqlSession对象消失时，Mybatis的一级缓存也就消失了。
+
+分析：
+
+一级缓存是 SqlSession 范围的缓存，当调用 SqlSession 的修改，添加，删除，commit()，close()等方法时，就会清空一级缓存。
+
+![1680958790805](image/23-04-06-Mybatis/1680958790805.png)
+
+1. 第一次发起查询用户 id 为 1 的用户信息，先去找缓存中是否有 id 为 1 的用户信息，如果没有，从数据库查询用户信息。
+2. 得到用户信息，将用户信息存储到一级缓存中。
+3. 如果 sqlSession 去执行 commit 操作（执行插入、更新、删除），清空 SqlSession 中的一级缓存，这样做的目的为了让缓存中存储的是最新的信息，避免脏读。
+4. 第二次发起查询用户 id 为 1 的用户信息，先去找缓存中是否有 id 为 1 的用户信息，缓存中有，直接从缓存中获取用户信息。
+
+注意：两次查询须在同一个sqlsession中完成，否则将不会走mybatis的一级缓存。
+
+在mybatis与spring进行整合开发时，事务控制在service中进行，重复调用两次servcie将不会走一级缓存，因为在第二次调用时session方法结束，SqlSession就关闭了。
+
+### Mybatis的二级缓存
+
+二级缓存：它指的是Mybatis中SqlSessionFactory对象的缓存。由同一个SqlSessionFactory对象创建的SqlSession共享其缓存。
+
+为什么需要Mybatis二级缓存？
+MyBatis 一级缓存最大的共享范围就是一个SqlSession内部，那么如果多个 SqlSession 需要共享缓存，则需要开启二级缓存。
+
+二级缓存开启后，同一个 namespace 下的所有操作语句，都影响着同一个 Cache，即二级缓存被多个 SqlSession 共享，是一个全局的变量。
+
+MyBatis 是默认关闭二级缓存的，因为对于增删改操作频繁的话，那么二级缓存形同虚设，每次都会被清空缓存。
+
+![1680958869485](image/23-04-06-Mybatis/1680958869485.png)
+
+1. 首先开启 mybatis 的二级缓存。
+2. sqlSession1 去查询用户信息，查询到用户信息会将查询数据存储到二级缓存中。
+3. 如果 SqlSession3 去执行相同 mapper 映射下 sql，执行 commit 提交（增删改），将会清空该 mapper 映射下的二级缓存区域的数据。
+4. sqlSession2 去查询与 sqlSession1 相同的用户信息，首先会去缓存中找是否存在数据，如果存在直接从缓存中取出数据。
+
+#### 二级缓存的使用
+
+第一步：让Mybatis框架支持二级缓存（在SqlMapConfig.xml中配置）
+
+第二步：让当前的映射文件支持二级缓存（在IUserDao.xml中配置/通过注解配置）
+
+第三步：让当前的操作支持二级缓存（在select标签中配置）
+
+```xml
+<settings>
+	<!-- 开启二级缓存的支持 -->
+    <setting name="cacheEnabled" value="true"/>
+</settings>
+```
+
+```xml
+<cache>标签表示当前这个mapper映射将使用二级映射，区分的标准就看mapper的namespace值
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  public "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.com.IUserDao">
+	<!-- 开启二级缓存的支持 -->
+	<cache></cache>
+</mapper>
+```
+
+```xml
+<!-- 根据id查询 -->
+<select id="findById" resultType="user" parameterType="int" useCache="true">
+	select * from user where id = #{uid}
+</select>
+```
+
+将UserDao.xml映射文件中的 < select >标签中设置useCache="true"代表这个statement要使用二级缓存，如果不使用二级缓存可以设置为false。
+
+**注意：针对每次查询都需要更新的数据sql，要设置成useCache=false，禁用二级缓存。**
+
+#### 二级缓存注意事项
+
+当我们在使用二级缓存时，所缓存的类一定要实现 java.io.Serializable 接口，这种就可以使用序列化方式来保存对象。
+
+### Mybatis一级缓存与二级缓存的区别
+
+1. Mybatis的一级缓存是指SQLSession，一级缓存的作用域是SQlSession, Myabits默认开启一级缓存。
+   在同一个SqlSession中，执行相同的SQL查询时；第一次会去查询数据库，并写在缓存中，第二次会直接从缓存中取。 当执行SQL时候两次查询中间发生了增删改的操作，则SQLSession的缓存会被清空。
+   每次查询会先去缓存中找，如果找不到，再去数据库查询，然后把结果写到缓存中。 Mybatis的内部缓存使用一个HashMap，key为hashcode+statementId+sql语句。Value为查询出来的结果集映射成的java对象。 SqlSession执行insert、update、delete等操作commit后会清空该SQLSession缓存。
+2. Mybatis二级缓存是默认不开启的，作用于一个Application，是Mapper级别的，多个SqlSession使用同一个Mapper的sql能够使用二级缓存。
+3. 当开启缓存后，数据的查询执行的流程就是 **二级缓存 -> 一级缓存 -> 数据库**。
+4. 只有当前会话提交，或者关闭的时候，才会提交到二级缓存中
+
+## Mybatis注解开发
+
+这几年来注解开发越来越流行，Mybatis 也可以使用注解开发方式，这样我们就可以减少编写 Mapper 映射文件了。本次我们先围绕一些基本的 CRUD 来学习，再学习复杂映射关系及延迟加载。（趋势归趋势，本质还是要变回xml）
+
+### Mybatis的常用注解说明
+
+`@Insert`:实现新增
+
+`@Update`:实现更新
+
+`@Delete`:实现删除
+
+`@Select`:实现查询
+
+`@Result`:实现结果集封装
+
+`@Results`:可以与@Result 一起使用，封装多个结果集
+
+`@ResultMap`:实现引用@Results 定义的封装
+
+`@One`:实现一对一结果集封装
+
+`@Many`:实现一对多结果集封装
+
+`@SelectProvider`: 实现动态 SQL 映射
+
+`@CacheNamespace`:实现注解二级缓存的使用
+
+### 使用 Mybatis 注解实现基本 CRUD
+
+```java
+package com.itheima.dao;
+
+import com.itheima.domain.User;
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
+
+import java.util.List;
+
+/**
+
+ * 在mybatis中针对,CRUD一共有四个注解
+ *  @Select @Insert @Update @Delete
+ */
+public interface IUserDao {
+
+    /**
+     * 查询所有用户
+     * @return
+     */
+    @Select("select * from user")
+    List<User> findAll();
+
+    /**
+     * 保存用户
+     * @param user
+     */
+    @Insert("insert into user(username,address,sex,birthday)values(#{username},#{address},#{sex},#{birthday})")
+    void saveUser(User user);
+
+    /**
+     * 更新用户
+     * @param user
+     */
+    @Update("update user set username=#{username},sex=#{sex},birthday=#{birthday},address=#{address} where id=#{id}")
+    void updateUser(User user);
+
+    /**
+     * 删除用户
+     * @param userId
+     */
+    @Delete("delete from user where id=#{id} ")
+    void deleteUser(Integer userId);
+
+    /**
+     * 根据id查询用户
+     * @param userId
+     * @return
+     */
+    @Select("select * from user  where id=#{id} ")
+    User findById(Integer userId);
+
+    /**
+     * 根据用户名称模糊查询
+     * @param username
+     * @return
+     */
+    //@Select("select * from user where username like '%${value}%' ")
+	@Select("select * from user where username like #{username} ")
+    List<User> findUserByName(String username);
+
+    /**
+     * 查询总用户数量
+     * @return
+     */
+    @Select("select count(*) from user ")
+    int findTotalUser();
+}
+```
+
+### 使用注解实现复杂关系映射开发
+
+实现复杂关系映射之前我们可以在映射文件中通过配置来实现，在使用注解开发时我们需要借助@Results 注解，@Result 注解，@One 注解，@Many 注解。
+
+#### 复杂关系映射的注解说明
+
+##### @Results 注解
+
+**代替的是标签 < resultMap >**
+
+该注解中可以使用单个@Result 注解，也可以使用@Result 集合
+
+@Results（{@Result（），@Result（）}）或@Results（@Result（））
+
+##### @ResultMap
+
+是对@Results的复用
+
+@ResultMap("ResultsId")
+
+##### @Result 注解
+
+代替了 < id >标签和 < result >标签
+
+@Result 中 属性介绍：
+
+* id 是否是主键字段
+* column 数据库的列名
+* property 需要装配的属性名
+* one 需要使用的@One 注解（@Result（one=@One）（）））
+* many 需要使用的@Many 注解（@Result（many=@many）（）））
+
+##### @One 注解（一对一）
+
+**代替了标签，是多表查询的关键，在注解中用来指定子查询返回单一对象。**
+
+@One 注解属性介绍：
+
+* select 指定用来多表查询的 sqlmapper
+* fetchType 会覆盖全局的配置参数 lazyLoadingEnabled
+
+使用格式：
+
+```java
+@Result(column=" ",property="",one=@One(select=""))
+```
+
+##### @Many 注解（多对一）
+
+**代替了标签,是多表查询的关键，在注解中用来指定子查询返回对象集合。**
+
+> 注意：聚集元素用来处理“一对多”的关系。需要指定映射的 Java 实体类的属性，属性的 javaType（一般为 ArrayList）但是注解中可以不定义；
+
+使用格式：
+
+```java
+@Result(property="",column="",many=@Many(select=""))
+```
+
+#### 使用注解实现一对一复杂关系映射及延迟加载
+
+@Many:
+
+相当于 < collection >的配置
+
+select 属性：代表将要执行的 sql 语句
+
+fetchType 属性：代表加载方式，一般如果要延迟加载都设置为 LAZY 的值
+
+```java
+@CacheNamespace(blocking = true)
+public interface IUserDao {
+
+    /**
+     * 查询所有用户
+     * @return
+     */
+    @Select("select * from user")
+    @Results(id="userMap",value={
+            @Result(id=true,column = "id",property = "userId"),
+            @Result(column = "username",property = "userName"),
+            @Result(column = "address",property = "userAddress"),
+            @Result(column = "sex",property = "userSex"),
+            @Result(column = "birthday",property = "userBirthday"),
+            @Result(property = "accounts",column = "id",
+                    many = @Many(select = "com.itheima.dao.IAccountDao.findAccountByUid",
+                                fetchType = FetchType.LAZY))
+    })
+    List<User> findAll();
+
+    /**
+     * 根据id查询用户
+     * @param userId
+     * @return
+     */
+    @Select("select * from user  where id=#{id} ")
+    @ResultMap("userMap")
+    User findById(Integer userId);
+
+    /**
+     * 根据用户名称模糊查询
+     * @param username
+     * @return
+     */
+    @Select("select * from user where username like #{username} ")
+    @ResultMap("userMap")
+    List<User> findUserByName(String username);
+}
+```
+
+```java
+public interface IAccountDao {
+
+    /**
+     * 查询所有账户，并且获取每个账户所属的用户信息
+     * @return
+     */
+    @Select("select * from account")
+    @Results(id="accountMap",value = {
+            @Result(id=true,column = "id",property = "id"),
+            @Result(column = "uid",property = "uid"),
+            @Result(column = "money",property = "money"),
+            @Result(property = "user",column = "uid",one=@One(select="com.itheima.dao.IUserDao.findById",fetchType= FetchType.EAGER))
+    })
+    List<Account> findAll();
+
+    /**
+     * 根据用户id查询账户信息
+     * @param userId
+     * @return
+     */
+    @Select("select * from account where uid = #{userId}")
+    List<Account> findAccountByUid(Integer userId);
+}
+```
+
+### Mybatis 基于注解的二级缓存
+
+```xml
+<!-- 配置二级缓存 -->
+<settings>
+	<!-- 开启二级缓存的支持 -->
+	<setting name="cacheEnabled" value="true"/>
+</settings>
+```
+
+在持久层接口中使用注解配置二级缓存
+
+```java
+@CacheNamespace(blocking=true)	//mybatis基于注解方式实现配置二级缓存
+public interface IUserDao()
+```

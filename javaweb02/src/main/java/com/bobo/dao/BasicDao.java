@@ -7,6 +7,7 @@ import java.util.List;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.ColumnListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 import com.bobo.utils.JdbcUtil;
@@ -50,6 +51,19 @@ public class BasicDao<T> {
       connection = JdbcUtil.getConnection();
       return qr.query(connection, sql, new BeanListHandler<T>(clazz), parameters);
 
+    } catch (SQLException e) {
+      throw new RuntimeException(e); // 将编译异常->运行异常 ,抛出
+    } finally {
+      JdbcUtil.close(null, null, connection);
+    }
+
+  }
+  public <E> List<E> queryColumn(String sql, String columnName, Object... parameters) {
+
+    Connection connection = null;
+    try {
+      connection = JdbcUtil.getConnection();
+      return qr.query(connection, sql, new ColumnListHandler<E>(columnName), parameters);
     } catch (SQLException e) {
       throw new RuntimeException(e); // 将编译异常->运行异常 ,抛出
     } finally {

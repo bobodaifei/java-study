@@ -15,12 +15,16 @@ public interface ShopCarService {
 
   long selectCount();
 
-  long selectCount(String username);
+  long selectCount(String customer_no);
 
   List<ShopCarVO> selectPage(int begin, int pageSize);
 
-  List<ShopCarVO> selectPage(int begin, int pageSize, String username);
+  List<ShopCarVO> selectPage(int begin, int pageSize, String customer_no);
 
-  List<ShopCarVO> selectList(String username);
+  List<ShopCarVO> selectList(String customer_no);
+
+  List<ShopCar> selectList(String customer_no, String... goods);
+
+  int delete(ShopCar shopCar);
   
 }

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/javaweb03.iml" filepath="$PROJECT_DIR$/javaweb03.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopwork.iml" filepath="$PROJECT_DIR$/shopwork.iml" />
     </modules>
   </component>

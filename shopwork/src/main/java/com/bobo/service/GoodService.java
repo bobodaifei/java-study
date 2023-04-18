@@ -12,6 +12,6 @@ public interface GoodService {
 
   List<Good> selectPage(int begin, int pageSize, String shop_no);
 
-  long selectCount(String shop_no);
+
   
 }

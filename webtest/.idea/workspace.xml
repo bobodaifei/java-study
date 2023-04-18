@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="webtest:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e92f599e-49fe-4b82-8d90-0e54b941f139" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/dao/BasicDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/dao/ShopDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/entity/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/service/ShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/service/ShopServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/servlet/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/servlet/ShopServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/utils/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/commons-dbutils-1.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-j-8.0.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/shopList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webtest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webtest.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb02.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/c-1_0-rt.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/c-1_0.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/c.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/Filter/A_PostFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/Filter/Z_LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/dao/BasicDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/dao/DeptDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/dao/EmpDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/entity/Dept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/entity/Emp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/entity/Page_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/service/EmpService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/service/EmpServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/servlet/EmpServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/classes/com/bobo/utils/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/lib/commons-dbutils-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/lib/log4j-1.2.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/lib/lombok-1.18.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/lib/mybatis-3.5.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/lib/mysql-connector-java-8.0.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/addEmp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/empList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/artifacts/shopwork_Web_exploded/updateEmp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/Filter/Z_LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/Filter/Z_LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/service/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/service/ShopCarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/service/ShopCarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/service/ShopCarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/service/ShopCarServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/servlet/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/servlet/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/servlet/OrderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/servlet/OrderServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/servlet/ShopCarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/servlet/ShopCarServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/utils/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/java/com/bobo/utils/JdbcUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/webapp/goodList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/webapp/goodList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/src/main/webapp/shopCarList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/src/main/webapp/shopCarList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/consumer17723508253997107568pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/Filter/Z_LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/Filter/Z_LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/entity/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/service/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/service/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/service/ShopCarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/service/ShopCarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/service/ShopCarServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/service/ShopCarServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/servlet/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/servlet/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/servlet/OrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/servlet/OrderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/servlet/ShopCarServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/servlet/ShopCarServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/utils/JdbcUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/WEB-INF/classes/com/bobo/utils/JdbcUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/goodList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/goodList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/shopCarList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/shopCarList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopwork/target/shopwork/shopList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../shopwork/target/shopwork/shopList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../徐纪波shopwork.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../笔记/Stream/23-03-22-Stream.md" beforeDir="false" afterPath="$PROJECT_DIR$/../笔记/Stream/23-03-22-Stream.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Apache/apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProjectId" id="2OV3vde94OMQhswpNLgSV6rVDoj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Visual Studio Code/java/java_study/webtest/src/main/webapp/WEB-INF/lib/mysql-connector-j-8.0.32.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3708069",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Visual Studio Code\java\java_study\webtest\src\main\webapp\WEB-INF\lib" />
+      <recent name="E:\Visual Studio Code\java\java_study\webtest\src\main\java\com\bobo\servlet" />
+      <recent name="E:\Visual Studio Code\java\java_study\webtest\src\main\java\com\bobo\service" />
+      <recent name="E:\Visual Studio Code\java\java_study\webtest\src\main\java\com\bobo\dao" />
+      <recent name="E:\Visual Studio Code\java\java_study\webtest\src\main\webapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Visual Studio Code\java\java_study\webtest\src\main\webapp\WEB-INF\lib" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn idea:idea" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.56">
+    <configuration name="JdbcUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bobo.utils.JdbcUtil" />
+      <module name="webtest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bobo.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.56" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.56" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="webtest:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/shopwork" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="0da7a843-393a-4f58-a8fb-ef4f15b72c34" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49349" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="webtest:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.JdbcUtil" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.56" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JdbcUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e92f599e-49fe-4b82-8d90-0e54b941f139" name="Changes" comment="" />
+      <created>1681632153194</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681632153194</updated>
+      <workItem from="1681632154534" duration="3470000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

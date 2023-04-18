@@ -15,12 +15,6 @@ public class GoodServiceImpl implements GoodService {
   }
 
   @Override
-  public long selectCount(String shop_no) {
-    String sql = "SELECT count(*) as total FROM stock where shop_no=?";
-    return (Long) goodDao.queryScalar(sql, shop_no);
-  }
-
-  @Override
   public List<Good> selectPage(int begin, int pageSize) {
     String sql = "SELECT * FROM	good  limit ?,?";
     return goodDao.queryMulti(sql, Good.class, begin, pageSize);

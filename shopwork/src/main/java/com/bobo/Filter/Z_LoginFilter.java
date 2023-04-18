@@ -28,7 +28,7 @@ public class Z_LoginFilter implements Filter {
       filterChain.doFilter(servletRequest, servletResponse);
       return;
     }
-    Object obj = request.getSession().getAttribute("username");
+    Object obj = request.getSession().getAttribute("customerNo");
     if (obj == null) {
       response.sendRedirect("/shopwork/login.jsp");
       return;
@@ -39,7 +39,7 @@ public class Z_LoginFilter implements Filter {
       return;
     }
     for (Cookie cookie : cookies) {
-      if ("username".equals(cookie.getName())) {
+      if ("customer_no".equals(cookie.getName())) {
         filterChain.doFilter(servletRequest, servletResponse);
         return;
       }

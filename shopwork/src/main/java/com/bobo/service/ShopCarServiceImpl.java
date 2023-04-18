@@ -36,9 +36,9 @@ public class ShopCarServiceImpl implements ShopCarService{
   }
 
   @Override
-  public long selectCount(String username) {
+  public long selectCount(String customer_no) {
     String sql = "SELECT count(*) as total FROM shop_car where customer_no=?";
-    return (Long) shopCarDao.queryScalar(sql, username);
+    return (Long) shopCarDao.queryScalar(sql, customer_no);
   }
 
   @Override
@@ -48,15 +48,27 @@ public class ShopCarServiceImpl implements ShopCarService{
   }
 
   @Override
-  public List<ShopCarVO> selectPage(int begin, int pageSize, String username) {
+  public List<ShopCarVO> selectPage(int begin, int pageSize, String customer_no) {
     String sql = "SELECT sc.*, g.good_name,	s.shop_name FROM	shop_car sc	LEFT JOIN good g ON sc.good_no = g.good_no	LEFT JOIN shop s ON sc.shop_no = s.shop_no	WHERE customer_no = ? limit ?,?";
-    return shopCarDao.queryMulti(sql, ShopCarVO.class, username, begin, pageSize);
+    return shopCarDao.queryMulti(sql, ShopCarVO.class, customer_no, begin, pageSize);
   }
 
   @Override
-  public List<ShopCarVO> selectList(String username) {
+  public List<ShopCarVO> selectList(String customer_no) {
     String sql = "SELECT sc.*, g.good_name,	s.shop_name FROM	shop_car sc	LEFT JOIN good g ON sc.good_no = g.good_no	LEFT JOIN shop s ON sc.shop_no = s.shop_no	WHERE customer_no = ?";
-    return shopCarDao.queryMulti(sql, ShopCarVO.class, username);
+    return shopCarDao.queryMulti(sql, ShopCarVO.class, customer_no);
+  }
+
+  @Override
+  public List<ShopCar> selectList(String customer_no, String... goods) {
+    String sql = "  SELECT * FROM shop_car WHERE customer_no = ? and good_no in ( ? )";
+    return shopCarDao.queryMulti(sql, ShopCar.class, customer_no, goods);
+  }
+
+  @Override
+  public int delete(ShopCar shopCar) {
+    String sql = "delete from shop_car where customer_no = ? and good_no = ? ";
+    return shopCarDao.update(sql, shopCar.getCustomer_no(), shopCar.getGood_no());
   }
   
 }

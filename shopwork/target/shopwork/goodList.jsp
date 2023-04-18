@@ -6,7 +6,7 @@
 <html>
 <body>
   <% 
-    List<Shop> list = (List<Shop>) request.getAttribute("list"); 
+    List<Good> list = (List<Good>) request.getAttribute("list"); 
     int[] pageSizes = new int[]{5,10,15,20};
     int currentPage = (int)request.getAttribute("currentPage");
     long total = (long)request.getAttribute("total");
@@ -24,7 +24,7 @@
         <tr>
           <th>${item.good_name}</th>
           <th>${item.price}</th>
-          <th><a href="/shopwork/shopCar?method=put&customer_no=${username}&good_no=${item.good_no}&shop_no=${item.shop_no}&price=${item.price}">加入购物车</a>  </th>
+          <th><a href="/shopwork/shopCar?method=put&customer_no=${customerNo}&good_no=${item.good_no}&shop_no=${item.shop_no}&price=${item.price}">加入购物车</a>  </th>
         </tr>
       </c:forEach>
     </table>

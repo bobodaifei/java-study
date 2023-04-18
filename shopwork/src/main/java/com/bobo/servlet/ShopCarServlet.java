@@ -35,6 +35,14 @@ public class ShopCarServlet extends HttpServlet {
       this.update(req, resp);
       resp.sendRedirect("/shopwork/shopCar?method=selectPage");
       return;
+    } else if ("delete".equals(method)) {
+      this.delete(req, resp);
+      resp.sendRedirect("/shopwork/shopCar?method=selectPage");
+      return;
+    }else if ("refreshPage".equals(method)) {
+      this.listToSession(req, resp);
+      resp.sendRedirect("/shopwork/shopCar?method=selectPage");
+      return;
     }
   }
 
@@ -72,6 +80,14 @@ public class ShopCarServlet extends HttpServlet {
     this.listToSession(req, resp);
   }
 
+  private void delete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    String customer_no = req.getParameter("customer_no");
+    String good_no = req.getParameter("good_no");
+    ShopCar shopCar = new ShopCar(customer_no, good_no);
+    shopCarService.delete(shopCar);
+    this.listToSession(req, resp);
+  }
+
   protected ShopCar selectOne(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     String customer_no = req.getParameter("customer_no");
     String good_no = req.getParameter("good_no");
@@ -90,8 +106,8 @@ public class ShopCarServlet extends HttpServlet {
   // }
 
   protected void listToSession(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    String username = (String) req.getSession().getAttribute("username");
-    List<ShopCarVO> shopCars = shopCarService.selectList(username);
+    String customer_no = (String) req.getSession().getAttribute("customerNo");
+    List<ShopCarVO> shopCars = shopCarService.selectList(customer_no);
     HttpSession session = req.getSession();
     session.setAttribute("shopCar", shopCars);
   }

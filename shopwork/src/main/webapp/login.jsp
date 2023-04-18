@@ -4,7 +4,7 @@
 <body>
 <center>
   <form action="/shopwork/customer?method=login" method="post">
-    账号：<input type="text" name="username"/><br/>
+    账号：<input type="text" name="customer_no"/><br/>
     密码：<input type="password" name="password"/><br/>
     <button>登录</button>
   </form>

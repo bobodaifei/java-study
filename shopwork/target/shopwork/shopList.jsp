@@ -14,6 +14,7 @@
   %>
   <center>
  <a href="/shopwork/shopCar?method=selectPage">购物车</a>
+ <a href="/shopwork/order?method=selectPage">订单列表</a>
     <table border="1">
       <tr>
         <th>商店名称</th>

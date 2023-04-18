@@ -12,11 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 import com.bobo.entity.Good;
 import com.bobo.service.GoodService;
 import com.bobo.service.GoodServiceImpl;
+import com.bobo.service.StockService;
+import com.bobo.service.StockServiceImpl;
 
 @WebServlet("/good")
 public class GoodServlet extends HttpServlet {
 
   private GoodService goodService = new GoodServiceImpl();
+  private StockService stockService = new StockServiceImpl();
 
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -37,12 +40,7 @@ public class GoodServlet extends HttpServlet {
       currentPage = Integer.valueOf(currentPageStr);
       pageSize = Integer.valueOf(pageSizeStr);
     }
-    long total = 0;
-    if (shop_no != null) {
-      total = goodService.selectCount(shop_no);
-    } else {
-      total = goodService.selectCount();
-    }
+    long total = stockService.selectCount(shop_no);
     
     int begin = (currentPage - 1) * pageSize;
 

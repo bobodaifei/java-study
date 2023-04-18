@@ -7,14 +7,14 @@
 
 <body>
   <% 
-    List<Shop> list = (List<Shop>) request.getAttribute("list"); 
+    List<ShopCarVO> list = (List<ShopCarVO>) request.getAttribute("list"); 
     int[] pageSizes = new int[]{5,10,15,20};
     int currentPage = (int)request.getAttribute("currentPage");
     long total = (long)request.getAttribute("total");
     int pageSize = (int)request.getAttribute("pageSize");
   %>
   <center>
-    <a href="">提交</a>
+    <button onclick="getGoodsList()">提交</button>
     <table border="1">
       <tr>
         <th></th>
@@ -27,7 +27,7 @@
       </tr>
       <c:forEach items="${list}" var="item">
         <tr>
-          <th><input name="good_nos" type="checkbox" value="${item.good_no}" /></th>
+          <th><input name="good" type="checkbox" value="${item.good_no}" /></th>
           <th>${item.shop_name}</th>
           <th>${item.good_name}</th>
           <th>${item.num}</th>
@@ -35,7 +35,7 @@
           <th>${item.num * item.price}</th>
           <th>
               <button onclick="changeNum('${item.good_no}','${item.num}')">修改数量</button>
-              <button onclick="submit()">提交</button>
+              <button onclick="submitGoods(['${item.good_no}'])">提交</button>
           </th>
           
         </tr>
@@ -71,19 +71,34 @@ function load(currentPage,pageSize) {
 }
 function changeNum(good_no,num) {
   var newNum=prompt("请输入需要修改的数量",num);
+  // if (newNum==0&&confirm("数量为0,确认删除该购物车的商品吗?")) {
+  //   window.location.href='/shopwork/shopCar?method=delete&customer_no='+'${customer_no}'+'&good_no='+good_no
+  //   return;
+  // }
   if (newNum!=null && newNum!=""){
-    window.location.href='/shopwork/shopCar?method=update&customer_no='+'${username}'+'&good_no='+good_no+'&num='+newNum
+    window.location.href='/shopwork/shopCar?method=update&customer_no='+'${customerNo}'+'&good_no='+good_no+'&num='+newNum
   }
 }
-function submitGoods() {
-  var good_nos = document.getElementsByName("good_nos");
-  var goods = [];
-    for(i = 0; i < good_nos.length; i++){
-        if( good_nos[i].checked ){
-            str.push( good_nos[i].value );
-        }
-    }
-    console.log(goods);
+function submitGoods(goods) {
+  if (goods.length==0) {
+    return;
+  }
+  var url = "/shopwork/order?method=add"
+  for(i = 0; i < goods.length; i++){
+    url = url + "&good=" + goods[i]
+  }
+  window.location.href=url+""
 }
+function getGoodsList() {
+  var goods = document.getElementsByName("good");
+  var goodList = [];
+  for(i = 0; i < goods.length; i++){
+    if( goods[i].checked ){
+      goodList.push(goods[i].value);
+    }
+  }
+  submitGoods(goodList)
+}
+
 </script>
 </html> 

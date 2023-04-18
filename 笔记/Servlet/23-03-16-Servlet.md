@@ -57,6 +57,20 @@ public class Servlet01 extends HttpServlet{
 }
 ```
 
+xml配置
+
+```xml
+
+  <servlet>
+    <servlet-name>Action</servlet-name>
+    <servlet-class>com.example.servlet.ActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Action</servlet-name>
+    <url-pattern>/action</url-pattern>
+  </servlet-mapping>
+```
+
 ## Servlet工作流程
 
 1. 通过Host找到主机服务器

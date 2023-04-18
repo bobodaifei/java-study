@@ -30,7 +30,7 @@ public class CustomerServlet extends HttpServlet {
 
   protected void login(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     Customer customer = new Customer();
-    customer.setCustomer_no(req.getParameter("username"));
+    customer.setCustomer_no(req.getParameter("customer_no"));
     customer.setPassword(req.getParameter("password"));
     Customer res = customerService.login(customer);
     if (res == null) {
@@ -38,9 +38,9 @@ public class CustomerServlet extends HttpServlet {
       return;
     }
     HttpSession session = req.getSession();
-    session.setAttribute("username", res.getCustomer_no());
+    session.setAttribute("customerNo", res.getCustomer_no());
 
-    Cookie cookie = new Cookie("username", res.getCustomer_no());
+    Cookie cookie = new Cookie("customer_no", res.getCustomer_no());
     resp.addCookie(cookie);
     req.getRequestDispatcher("/shop?method=selectPage").forward(req, resp);
   }

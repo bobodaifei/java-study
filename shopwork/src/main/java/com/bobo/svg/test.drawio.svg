@@ -1,0 +1,37 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="198px" height="189px" viewBox="-0.5 -0.5 198 189" content="&lt;mxfile&gt;&lt;diagram id=&quot;-ZENgTsR3BHue-qw8Bjw&quot; name=&quot;第 1 页&quot;&gt;pVVNc9sgEP01umYk4SrtMXKS9tDOZMaHtkcCG0SLhAchy8qvL5jVB1Y8zqQna9/uAvveAydkWx+/GrqvfmgOKslTfkzIfZLnWUoK9+ORISDFCAgjORbNwE6+wtiJaCc5tFGh1VpZuY9BppsGmI0waozu47IXreJd91TACtgxqtboT8ltFdDP+e2MfwMpqnHnrPgSMjUdi3GStqJc9wuIPCRka7S24as+bkF58kZeQt/jhex0MAONfU9DHhoOVHU4G57LDuOwRncNB1+fJaTsK2lht6fMZ3snr8MqWytMt3/BsgoD1pkDPEprZSMQ+iOFOC3sJi1xbzAWjhfPn02sODuBrsGawZVgw2QJdFJ2i3E/65KNZFcLTQrEKFpBTEvPbLkPJOxt8sh18qDhd95wLmKKtq1kMV9uTDP8ckF6synICPz22Zt0Krj306ZTNCyjJzDSnRwMgh9QAPjK7mf8u/tFjQC7MM1aEgOKWnmIl3qLX2x90tJtMkmZbWIpyacziVrdGQbYtfT02UL5tYXCLKuFTnJP87zLAZuVA77TZ//YndvAMRwypDTQylf6fEqlsRuokqLxVnHse0FLfzeke3fuMFFLzn1jGV/KD2iOTyOeY36QrtxG8p/SX7haLpzfvKDD/M9BHv4B&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="77" y="0" width="120" height="60" rx="9" ry="9" fill="none" stroke="none" pointer-events="all"/>
+        <path d="M 82.01 3.1 L 193.6 3.44 L 190.9 -1.55 L 193.43 6.26 L 196.15 54.38 L 194.31 58.93 L 186.04 63.88 L 79.89 57.17 L 77.63 57.39 L 80.99 50.06 L 80.96 12.91 L 75.96 4.65 L 87.91 0.95" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"/>
+        <path d="M 86 0 M 86 0 C 109.96 -1.45 131.09 3.52 188 0 M 86 0 C 120.91 -1.76 154.58 0.38 188 0 M 188 0 C 196.04 0.85 200.83 5.13 197 9 M 188 0 C 192.6 -3.9 197.6 5.94 197 9 M 197 9 C 196.03 19.57 198.28 27.42 197 51 M 197 9 C 196.83 20.17 199.43 28.65 197 51 M 197 51 C 198.88 54.52 194.22 57.56 188 60 M 197 51 C 193.85 60.61 198.27 63.75 188 60 M 188 60 C 154.86 57.36 114.42 56.82 86 60 M 188 60 C 160.27 60.75 132.25 57.1 86 60 M 86 60 C 80.62 56.24 75.8 57.12 77 51 M 86 60 C 76.26 62.65 78.59 53.99 77 51 M 77 51 C 76.86 40.93 75.06 23.46 77 9 M 77 51 C 77.77 34.9 78.97 20.86 77 9 M 77 9 C 73.05 4.91 80.04 1.37 86 0 M 77 9 C 80.18 2.89 82.84 -3.88 86 0" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 7 180 L 127.95 64.99" fill="none" stroke="none" pointer-events="stroke"/>
+        <path d="M 131.75 61.37 L 129.09 68.73 L 127.95 64.99 L 124.27 63.66 Z" fill="none" stroke="none" pointer-events="all"/>
+        <path d="M 7 180 M 7 180 C 29.65 159.96 52.86 137.6 127.95 64.99 M 7 180 C 41.73 144.99 80.83 109.87 127.95 64.99" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 124.19 63.75 C 124.19 63.75 124.19 63.75 124.19 63.75 M 124.19 63.75 C 124.19 63.75 124.19 63.75 124.19 63.75 M 128.52 64.87 C 129.11 63.95 129.32 62.22 131.8 61.09 M 128.52 64.87 C 129.65 63.52 130.65 62.13 131.8 61.09" fill="none" stroke="rgb(0, 0, 0)" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 131.75 61.37 M 131.75 61.37 C 131.18 62.14 129.08 66.22 129.09 68.73 M 131.75 61.37 C 131.38 64.32 130.38 65.97 129.09 68.73 M 129.09 68.73 C 129.04 67.56 128.46 66.41 127.95 64.99 M 129.09 68.73 C 129.22 68 128.82 66.75 127.95 64.99 M 127.95 64.99 C 126.38 64.46 126.55 64.49 124.27 63.66 M 127.95 64.99 C 126.78 64.77 125.42 63.91 124.27 63.66 M 124.27 63.66 C 125.55 63.64 126.77 61.78 131.75 61.37 M 124.27 63.66 C 126.69 63.83 127.24 62.15 131.75 61.37" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 121px; margin-left: 71px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;">
+                                Label
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="71" y="124" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="11px" text-anchor="middle">
+                    Label
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>

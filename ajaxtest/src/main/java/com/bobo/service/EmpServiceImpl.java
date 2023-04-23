@@ -2,25 +2,22 @@ package com.bobo.service;
 
 import java.util.List;
 
-import com.bobo.dao.DeptDao;
 import com.bobo.dao.EmpDao;
-import com.bobo.entity.Dept;
 import com.bobo.entity.Emp;
 
 public class EmpServiceImpl implements EmpService {
 
   private EmpDao userDao = new EmpDao();
-  private DeptDao deptDao = new DeptDao();
 
   @Override
-  public Emp login(Emp emp) {
+  public Emp selectOne(Emp emp) {
     String sql = "select * from emp where ename = ? and empno = ?";
     return userDao.querySingle(sql, Emp.class, emp.getEname(), emp.getEmpno());
   }
 
   @Override
-  public List<Emp> selectAll(int begin, int pageSize) {
-    String sql = "SELECT e.*,	boss.ENAME AS bossName FROM	(	SELECT *	FROM	emp ) e	LEFT JOIN emp boss ON e.MGR = boss.EMPNO limit ?,?";
+  public List<Emp> selectPage(int begin, int pageSize) {
+    String sql = "SELECT e.empno,e.ename,e.job,e.mgr,e.hiredate,IFNULL(e.sal,0) AS sal,IFNULL(e.COMM,0) AS COMM,e.deptno,IFNULL(boss.ENAME,'') AS bossName,d.dname FROM	(	SELECT *	FROM	emp ) e	LEFT JOIN emp boss ON e.MGR = boss.EMPNO LEFT JOIN dept d ON e.deptno = d.deptno limit ?,?";
     return userDao.queryMulti(sql, Emp.class, begin, pageSize);
   }
 
@@ -38,7 +35,7 @@ public class EmpServiceImpl implements EmpService {
   }
 
   @Override
-  public int delete(String empno) {
+  public int delete(int empno) {
     String sql = "delete from emp where empno = ?";
     return userDao.update(sql, empno);
   }
@@ -63,13 +60,7 @@ public class EmpServiceImpl implements EmpService {
   }
 
   @Override
-  public List<Dept> getDeptList() {
-    String sql = "select distinct deptno,dname from dept";
-    return deptDao.queryMulti(sql, Dept.class);
-  }
-
-  @Override
-  public Emp selectById(String empno) {
+  public Emp selectById(int empno) {
     String sql = "select * from emp where empno = ?";
     return userDao.querySingle(sql, Emp.class, empno);
   }

@@ -1,73 +1,69 @@
 package com.bobo.servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.math.BigDecimal;
 import java.sql.Date;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-import com.bobo.entity.Dept;
+import com.alibaba.fastjson.JSON;
+import com.bobo.common.Result;
 import com.bobo.entity.Emp;
 import com.bobo.service.EmpService;
 import com.bobo.service.EmpServiceImpl;
+import com.bobo.utils.JwtUtil;
+import com.bobo.common.Page;
 
 @WebServlet("/emp")
-public class EmpServlet extends HttpServlet {
+public class EmpServlet extends BaseServlet {
 
   private EmpService empService = new EmpServiceImpl();
 
-  @Override
-  protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-  }
-
-  @Override
-  protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-  }
-
-  protected void delete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    String empno = req.getParameter("empno");
+  protected void delete(HttpServletRequest req, HttpServletResponse resp)
+      throws ServletException, IOException {
+    PrintWriter out = resp.getWriter();
+    int empno = Integer.valueOf(req.getParameter("empno")) ;
     int res = empService.delete(empno);
-    if (res == 1) {
-      resp.sendRedirect("/javaweb02/emp?method=selectAll");
+    if (res == 0) {
+      out.write(JSON.toJSONString(Result.error("-1", "修改失败")));
+      return;
     }
+    out.write(JSON.toJSONString(Result.success()));
   }
 
   public void update(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+    PrintWriter out = resp.getWriter();
+    int empno = Integer.valueOf(req.getParameter("empno"));
     String ename = req.getParameter("ename");
-    String empno = req.getParameter("empno");
     String job = req.getParameter("job");
-    int mgrno = Integer.valueOf(req.getParameter("mgr"));
+    int mgr = Integer.valueOf(req.getParameter("mgr"));
     Date hiredate = Date.valueOf(req.getParameter("hiredate"));
     BigDecimal sal = new BigDecimal(req.getParameter("sal"));
     BigDecimal COMM = new BigDecimal(req.getParameter("COMM"));
     int deptno = Integer.valueOf(req.getParameter("deptno"));
+    Emp emp = new Emp(empno, ename, job, mgr, hiredate, sal, COMM, deptno);
+    int res = empService.update(emp);
+    if (res == 0) {
+      out.write(JSON.toJSONString(Result.error("-1", "修改失败")));
+      return;
+    }
+    out.write(JSON.toJSONString(Result.success()));
+  }
 
-    Emp emp = new Emp();
-    emp.setEmpno(Integer.valueOf(empno));
-    emp.setCOMM(COMM);
-    emp.setDeptno(deptno);
-    emp.setEname(ename);
-    emp.setSal(sal);
-    emp.setHiredate(hiredate);
-    emp.setJob(job);
-    emp.setMgr(mgrno);
-    empService.update(emp);
-
-    req.getRequestDispatcher("/emp?method=selectAll").forward(req, resp);
+  protected void selectOne(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    PrintWriter out = resp.getWriter();
+    String empno = req.getParameter("empno");
+    Emp res = empService.selectById(Integer.valueOf(empno));
+    out.write(JSON.toJSONString(Result.success(res)));
   }
 
   protected void add(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+    PrintWriter out = resp.getWriter();
     String ename = req.getParameter("ename");
     String job = req.getParameter("job");
     Integer mgr = Integer.parseInt(req.getParameter("mgr"));
@@ -76,55 +72,45 @@ public class EmpServlet extends HttpServlet {
     BigDecimal COMM = new BigDecimal(req.getParameter("COMM"));
     Integer deptno = Integer.parseInt(req.getParameter("deptno"));
     Emp emp = new Emp(ename, job, mgr, hiredate, sal, COMM, deptno);
-    emp.setMgr(mgr);
     int res = empService.add(emp);
-    if (res == 1) {
-      resp.sendRedirect("/javaweb02/emp?method=selectAll");
+
+    if (res == 0) {
+      out.write(JSON.toJSONString(Result.error("-1", "插入失败")));
+      return;
     }
+    out.write(JSON.toJSONString(Result.success()));
   }
 
-  protected void toUpdate(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    prepare(req, resp);
-    String empno = req.getParameter("empno");
-    Emp emp = empService.selectById(empno);
-    req.setAttribute("emp", emp);
-    req.getRequestDispatcher("/updateEmp.jsp").forward(req, resp);
+  protected void getJobList(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    PrintWriter out = resp.getWriter();
+    List<String> res = empService.getJobList();
+    out.write(JSON.toJSONString(Result.success(res)));
   }
 
-  protected void toAdd(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    prepare(req, resp);
-    req.getRequestDispatcher("/addEmp.jsp").forward(req, resp);
-  }
-
-  protected static void prepare(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    EmpService empService = new EmpServiceImpl();
-    // 偷懒
-    List<String> jobList = empService.getJobList();
-    List<Emp> mgrList = empService.getMgrList();
-    List<Dept> deptList = empService.getDeptList();
-
-    HttpSession session = req.getSession();
-    session.setAttribute("jobList", jobList);
-    session.setAttribute("mgrList", mgrList);
-    session.setAttribute("deptList", deptList);
+  protected void getMgrList(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    PrintWriter out = resp.getWriter();
+    List<Emp> res = empService.getMgrList();
+    out.write(JSON.toJSONString(Result.success(res)));
   }
 
   protected void login(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    PrintWriter out = resp.getWriter();
     Emp emp = new Emp();
     emp.setEname(req.getParameter("ename"));
     emp.setEmpno(Integer.valueOf(req.getParameter("empno")));
-    Emp res = empService.login(emp);
+    Emp res = empService.selectOne(emp);
     if (res == null) {
-      resp.sendRedirect("/javaweb02/login.jsp");
+      out.write(JSON.toJSONString(Result.error("-1", "登录失败")));
       return;
     }
 
-    Cookie cookie = new Cookie("ename", res.getEname());
-    resp.addCookie(cookie);
-    req.getRequestDispatcher("/emp?method=selectAll").forward(req, resp);
+    String token = JwtUtil.getToken(res);
+    res.setToken(token);
+    out.write(JSON.toJSONString(Result.success(res)));
   }
 
-  protected void selectAll(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+  protected void selectPage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    PrintWriter out = resp.getWriter();
     String currentPageStr = req.getParameter("currentPage");
     String pageSizeStr = req.getParameter("pageSize");
     int currentPage = 0;
@@ -145,47 +131,38 @@ public class EmpServlet extends HttpServlet {
       begin = 0;
     }
 
-    List<Emp> list = empService.selectAll(begin, pageSize);
-
-    req.setAttribute("empList", list);
-    req.setAttribute("total", total);
-    req.setAttribute("currentPage", currentPage);
-    req.setAttribute("pageSize", pageSize);
-    req.getRequestDispatcher("/empList.jsp").forward(req, resp);
+    List<Emp> list = empService.selectPage(begin, pageSize);
+    out.write(JSON.toJSONString(Result.success(new Page<Emp>(list, total, pageSize, currentPage))));
   }
 
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     String method = req.getParameter("method");
-    if ("test".equals(method)) {
-      resp.getWriter().write("Success Data");
+    if ("login".equals(method)) {
+      this.login(req, resp);
+      return;
+    } else if ("selectPage".equals(method)) {
+      this.selectPage(req, resp);
+      return;
+    } else if ("getMgrList".equals(method)) {
+      this.getMgrList(req, resp);
+      return;
+    } else if ("getJobList".equals(method)) {
+      this.getJobList(req, resp);
+      return;
+    } else if ("add".equals(method)) {
+      this.add(req, resp);
+      return;
+    } else if ("selectOne".equals(method)) {
+      this.selectOne(req, resp);
+      return;
+    } else if ("update".equals(method)) {
+      this.update(req, resp);
+      return;
+    } else if ("delete".equals(method)) {
+      this.delete(req, resp);
       return;
     }
-    // if ("login".equals(method)) {
-    //   this.login(req, resp);
-    //   return;
-    // } else if ("selectAll".equals(method)) {
-    //   this.selectAll(req, resp);
-    //   return;
-    // } else if ("add".equals(method)) {
-    //   this.add(req, resp);
-    //   return;
-    // } else if ("toAdd".equals(method)) {
-    //   this.toAdd(req, resp);
-    //   return;
-    // }else if ("delete".equals(method)) {
-    //   this.delete(req, resp);
-    //   return;
-    // } else if ("update".equals(method)) {
-    //   this.update(req, resp);
-    //   return;
-    // } else if ("toUpdate".equals(method)) {
-    //   this.toUpdate(req, resp);
-    //   return;
-    // } else if ("test".equals(method)) {
-    //   this.toUpdate(req, resp);
-    //   return;
-    // }
   }
 
 }

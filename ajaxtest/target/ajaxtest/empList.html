@@ -1,0 +1,152 @@
+<!-- eslint-disable -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+  <script src="https://cdn.bootcss.com/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
+  <script src="https://static.runoob.com/assets/jquery/jquery.growl/javascripts/jquery.growl.js"
+    type="text/javascript"></script>
+  <link href="https://static.runoob.com/assets/jquery/jquery.growl/stylesheets/jquery.growl.css" rel="stylesheet"
+    type="text/css" />
+</head>
+
+<body>
+  <center>
+    <button onclick="toInsert()">新增</button>
+    <table id="table" border="1px">
+      <thead>
+        <tr>
+          <th>员工编号</th>
+          <th>员工姓名</th>
+          <th>员工岗位</th>
+          <th>员工领导</th>
+          <th>入职时间</th>
+          <th>员工工资</th>
+          <th>员工奖金</th>
+          <th>部门名称</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </center>
+  <div id="paging" style="width: 500px;display:flex; margin: auto;">
+    <div style="margin-left:10px;">
+      <span>Total:</span><span class="total"></span>
+    </div>
+    <div style="margin-left:10px;">
+      <select class="pageSize" onchange="changePageSize(this.value)">
+        <option value="5">5/页</option>
+        <option value="10">10/页</option>
+        <option value="15">15/页</option>
+        <option value="20">20/页</option>
+      </select>
+    </div>
+    <div style="margin-left:10px;">
+      <button style="border-color: transparent;" onclick="changecurrentPage(currentPage-1)">上一页</button>
+    </div>
+    <span>当前页：</span><span class="currentPage"></span>
+    <div style="margin-left:10px;">
+      <button style="border-color: transparent;" onclick="changecurrentPage(currentPage+1)">下一页</button>
+    </div>
+    <div style="margin-left:10px;">
+      <input type="text" class="currentPageInput" style="width: 40px;" onblur="changecurrentPage(this.value)">
+    </div>
+  </div>
+</body>
+<script>
+  var total = 0
+  var currentPage = 1
+  var pageSize = 10
+  $('#paging .currentPage').text(currentPage)
+  $('#paging .currentPageInput').val(currentPage)
+  $('#paging .pageSize').val(pageSize)
+  $('#paging .total').val(total)
+  var that = this
+  load();
+
+  function load() {
+    $.ajax({
+      type: "GET",
+      url: "/ajaxtest/emp",
+      data: {
+        method: 'selectPage',
+        pageSize: pageSize,
+        currentPage: currentPage,
+      },
+      dataType: "json",
+      headers: {
+        'Access-Token': window.localStorage.getItem("Access-Token")
+      },
+      success: function (res) {
+        $('#table tbody').empty()
+        var arr = res.data.records
+        arr.forEach(e => {
+          var $tr = $("<tr><td>" + e.empno + "</td><td>" + e.ename + "</td><td>" + e.job + "</td><td>" + e.bossName + "</td><td>" + e.hiredate + "</td><td>" + e.sal + "</td><td>" + e.cOMM + "</td><td>" + e.dname + "</td><td><button onclick=toUpdate(" + e.empno + ")>修改</button><button onclick=deleteEmp(" + e.empno + ")>删除</button></td></tr>");
+          $('#table tbody').append($tr)
+        });
+        $('#paging .total').text(res.data.total)
+        that.total = res.data.total
+        $('#paging .currentPage').text(res.data.currentPage)
+        that.currentPage = res.data.currentPage
+        $('#paging .currentPageInput').val(res.data.currentPage)
+        that.pageSize = res.data.pageSize
+      }
+    });
+  }
+
+  function changePageSize(pageSize) {
+    that.pageSize = pageSize;
+    that.load()
+  }
+  function changecurrentPage(currentPage) {
+    that.currentPage = currentPage
+    that.load()
+    console.log(currentPage);
+  }
+
+  function toInsert() {
+    window.location.href = "/ajaxtest/empInsert.html"
+  }
+  function toUpdate(empno) {
+    window.location.href = "/ajaxtest/empUpdate.html?empno=" + empno
+  }
+  function deleteEmp(empno) {
+    $.ajax({
+      type: "GET",
+      url: "/ajaxtest/emp",
+      data: {
+        method: 'delete',
+        empno: empno
+      },
+      dataType: "json",
+      headers: {
+        'Access-Token': window.localStorage.getItem("Access-Token")
+      },
+      success: function (res) {
+        if (res.code == '0') {
+          $.growl.notice({
+            title: "修改操作",
+            message: "修改成功!"
+          });
+          that.load()
+        } else {
+          $.growl.error({
+            title: "修改操作",
+            message: res.msg
+          });
+        }
+
+
+      }
+    });
+  }
+</script>
+
+</html>

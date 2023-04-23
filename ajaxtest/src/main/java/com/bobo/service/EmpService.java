@@ -2,20 +2,19 @@ package com.bobo.service;
 
 import java.util.List;
 
-import com.bobo.entity.Dept;
 import com.bobo.entity.Emp;
 
 public interface EmpService {
 
-  public Emp login(Emp emp);
+  public Emp selectOne(Emp emp);
 
-  public List<Emp> selectAll(int begin, int pageSize);
+  public List<Emp> selectPage(int begin, int pageSize);
 
   public Long selectCount();
 
   public int add(Emp emp);
 
-  public int delete(String empno);
+  public int delete(int empno);
 
   public int update(Emp emp);
 
@@ -23,8 +22,6 @@ public interface EmpService {
 
   public List<Emp> getMgrList();
 
-  public List<Dept> getDeptList();
-
-  public Emp selectById(String empno);
+  public Emp selectById(int empno);
   
 }

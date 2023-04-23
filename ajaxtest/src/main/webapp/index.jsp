@@ -23,12 +23,5 @@
   xhr.send();
 </script> --%>
 <script>
-$(document).ready(function(){
-	$("button").click(function(){
-		$.get("/ajaxtest/emp?method=test",function(data,status){
-			alert("数据: " + data + "\n状态: " + status);
-		});
-	});
-});
 </script>
 </html>

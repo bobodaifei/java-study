@@ -4,7 +4,6 @@ import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import javax.servlet.ServletException;
@@ -64,13 +63,18 @@ public class ShopCarServlet extends HttpServlet {
   protected void add(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     PrintWriter out = resp.getWriter();
     HttpSession session = req.getSession();
+
     String customer_no = (String) session.getAttribute("customerNo");
     String good_no = req.getParameter("good_no");
     String shop_no = req.getParameter("shop_no");
+
     Good good = goodService.selectById(good_no);
+
     Integer price = good.getPrice();
     ShopCar shopCar = new ShopCar(customer_no, good_no, 1, price, shop_no);
+    
     int flag = shopCarService.add(shopCar);
+
     if (flag==0) {
       out.write(JSON.toJSONString(Result.error("-1","添加失败")));
       return;
@@ -82,12 +86,17 @@ public class ShopCarServlet extends HttpServlet {
   private void update(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     PrintWriter out = resp.getWriter();
     HttpSession session = req.getSession();
+
     String customer_no = (String) session.getAttribute("customerNo");
     String good_no = req.getParameter("good_no");
     Object obj = req.getAttribute("num");
+
     int num = (obj != null ? ((int) obj) : Integer.valueOf(req.getParameter("num")));
+    
     ShopCar shopCar = new ShopCar(customer_no, good_no, num);
+    
     int flag = shopCarService.update(shopCar);
+
     if (flag == 0) {
       out.write(JSON.toJSONString(Result.error("-1", "添加失败")));
       return; 
@@ -99,10 +108,14 @@ public class ShopCarServlet extends HttpServlet {
   private void delete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     PrintWriter out = resp.getWriter();
     HttpSession session = req.getSession();
+    
     String customer_no = (String) session.getAttribute("customerNo");
     String good_no = req.getParameter("good_no");
+
     ShopCar shopCar = new ShopCar(customer_no, good_no);
+    
     int flag = shopCarService.delete(shopCar);
+    
     if (flag == 0) {
       out.write(JSON.toJSONString(Result.error("-1", "删除失败")));
       return;
@@ -113,38 +126,46 @@ public class ShopCarServlet extends HttpServlet {
 
   protected ShopCar selectOne(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     HttpSession session = req.getSession();
+    
     String customer_no = (String)session.getAttribute("customerNo");
     String good_no = req.getParameter("good_no");
+    
     ShopCar shopCar = new ShopCar(customer_no, good_no);
+    
     return shopCarService.selectOne(shopCar);
   }
 
   protected void listToSession(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    HttpSession session = req.getSession();
     String customer_no = (String) req.getSession().getAttribute("customerNo");
     List<ShopCarVO> shopCar = shopCarService.selectList(customer_no);
-    HttpSession session = req.getSession();
     session.setAttribute("shopCar", shopCar);
+    
   }
 
   protected void selectPage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     PrintWriter out = resp.getWriter();
+    HttpSession session = req.getSession();
+
+    List<ShopCarVO> shopCars = (List<ShopCarVO>) session.getAttribute("shopCar");
     String currentPageStr = req.getParameter("currentPage");
     String pageSizeStr = req.getParameter("pageSize");
+
+    if (shopCars == null) {
+      this.listToSession(req, resp);
+      shopCars = (List<ShopCarVO>) session.getAttribute("shopCar");
+    }
+
+    long total = shopCars.size();
     int currentPage = 0;
     int pageSize = 10;
+
     if (!(currentPageStr == null || pageSizeStr == null)) {
       currentPage = Integer.valueOf(currentPageStr);
       pageSize = Integer.valueOf(pageSizeStr);
     }
 
-    HttpSession session = req.getSession();
-    Object obj = session.getAttribute("shopCar");
-    if (obj == null) {
-      this.listToSession(req, resp);
-    }
-    List<ShopCarVO> shopCars = (List<ShopCarVO>) session.getAttribute("shopCar");
-
-    long total = shopCars.size();
+    
     int begin = (currentPage - 1) * pageSize;
 
     if (begin >= total) {
@@ -156,6 +177,7 @@ public class ShopCarServlet extends HttpServlet {
       begin = 0;
     }
     List<ShopCarVO> list = shopCars.stream().skip(begin).limit(begin + pageSize).collect(Collectors.toList());
+    
     out.write(JSON.toJSONString(Result.success(new Page<ShopCarVO>(list,total,pageSize,currentPage))));
   }
 }

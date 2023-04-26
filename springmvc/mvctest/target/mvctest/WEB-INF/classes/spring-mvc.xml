@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+<!-- 开启注解驱动，能使用springmvc提供的注解 -->
+<mvc:annotation-driven />
+
+<!-- 在web.xml配置了"/" 这个会对静态资源进行拦截，但在SpringMVC的HandlerMapping里面是没有静态资源处理的，所以会报404错误，这时候应该将静态资源交给其他默认的WEB 应用服务器默认的 Servlet 处理 -->
+<mvc:default-servlet-handler></mvc:default-servlet-handler>
+ <!-- 配置扫描的包 -->      
+<context:component-scan base-package="com.bobo.dev.controller"></context:component-scan>
+
+<!-- 视图解析器，将Controller类返回的视图名加上配置的前后缀进行展示 -->
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
+    <property name="prefix" value="/WEB-INF/views/"></property>
+    <property name="suffix" value=".jsp"></property>
+</bean>
+
+</beans>

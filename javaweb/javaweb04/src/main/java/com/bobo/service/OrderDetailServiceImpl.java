@@ -10,9 +10,7 @@ public class OrderDetailServiceImpl implements OrderDetailService {
 
   @Override
   public int add(OrderDetail orderDetail) {
-    String sql = "insert into order_detail values ( ?, ?, ?, ?)";
-    return orderDetailDao.update(sql, orderDetail.getOrder_no(), orderDetail.getGood_no(), orderDetail.getNum(),
-        orderDetail.getPrice());
+    return orderDetailDao.add(orderDetail);
   }
 
 }

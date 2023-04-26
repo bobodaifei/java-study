@@ -5,13 +5,17 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Map;
 import java.util.ResourceBundle;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class JdbcUtil {
   private static final String DRIVER = getValue("driver");
   private static final String URL = getValue("url");
   private static final String USERNAME = getValue("username");
   private static final String PASSWORD = getValue("password");
+
+  private static Map<Long, Connection> map = new ConcurrentHashMap<>();
 
   static {
     try {
@@ -25,10 +29,11 @@ public class JdbcUtil {
 
   // 连接数据库
   public static Connection getConnection() {
+
     try {
       return DriverManager.getConnection(URL, USERNAME, PASSWORD);
     } catch (SQLException e) {
-      System.err.println("a获得数据连接失败。" + e.getMessage());
+      System.err.println("获得数据连接失败。" + e.getMessage());
     }
     return null;
   }
@@ -44,6 +49,7 @@ public class JdbcUtil {
         stmt.close();
       }
       if (conn != null) {
+        map.remove(Thread.currentThread().getId());
         conn.close();
       }
     } catch (SQLException e) {
@@ -66,8 +72,8 @@ public class JdbcUtil {
   }
 
   public static void main(String[] args) {
-     System.out.println(getValue("driver"));
-     System.out.println(getConnection());
+    System.out.println(getValue("driver"));
+    System.out.println(getConnection());
 
   }
 }

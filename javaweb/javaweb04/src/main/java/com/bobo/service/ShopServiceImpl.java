@@ -11,14 +11,12 @@ public class ShopServiceImpl implements ShopService{
 
   @Override
   public long selectCount() {
-    String sql = "SELECT count(*) as total FROM shop";
-    return (Long) shopDao.queryScalar(sql);
+    return shopDao.selectCount();
   }
 
   @Override
   public List<Shop> selectPage(long begin, long pageSize) {
-    String sql = "SELECT * FROM	shop limit ?,?";
-    return shopDao.queryMulti(sql, Shop.class, begin, pageSize);
+    return shopDao.selectPage(begin, pageSize);
   }
   
 }

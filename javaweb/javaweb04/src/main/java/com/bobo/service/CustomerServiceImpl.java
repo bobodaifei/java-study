@@ -8,13 +8,7 @@ public class CustomerServiceImpl implements CustomerService{
 
   @Override
   public Customer login(Customer customer) {
-    String sql = "select * from customer where customer_no = ? and password = ?";
-    return customerDao.querySingle(sql, Customer.class, customer.getCustomer_no(), customer.getPassword());
+    return customerDao.login(customer);
   }
 
-  // @Override
-  // public Customer selectById(String customer_no) {
-  //   String sql = "select * from customer where customer_no = ? ";
-  //   return customerDao.querySingle(sql, Customer.class, customer_no);
-  // }
 } 

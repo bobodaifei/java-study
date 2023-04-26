@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+  <script src="https://cdn.bootcss.com/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
+  <script src="https://static.runoob.com/assets/jquery/jquery.growl/javascripts/jquery.growl.js"
+    type="text/javascript"></script>
+  <link href="https://static.runoob.com/assets/jquery/jquery.growl/stylesheets/jquery.growl.css" rel="stylesheet"
+    type="text/css" />
+</head>
+
+<body>
+  <center>
+    <input type="text" id="customer_no" placeholder="ÇëÊäÈëÕËºÅ" /><br>
+    <input type="password" id="password" placeholder="ÇëÊäÈëÃÜÂë" /><br>
+    <button onclick="login()">µÇÂ¼</button>
+  </center>
+</body>
+
+<script>
+  function login() {
+    $.post("/javaweb04/customer", {
+      method: 'login',
+      customer_no: $('#customer_no').val(),
+      password: $('#password').val()
+    },
+      function (res) {
+        console.log(res);
+        if (res.code === '0') {
+          alert(res.msg)
+          // window.localStorage.setItem("Access-Token", res.data.token);
+          window.location.href = "/javaweb04/shopList.html"
+        } else {
+          $.growl.error({
+            title: "µÇÂ¼Ê§°Ü",
+            message: res.msg
+          });
+        }
+      },
+    );
+
+  }
+
+</script>
+
+</html>

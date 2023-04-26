@@ -2,6 +2,8 @@ package com.bobo.demo.qq_.qqCommon;
 
 import java.io.Serializable;
 
+import com.google.gson.Gson;
+
 public class User implements Serializable{
   private String userId;
   private String pwd;
@@ -13,6 +15,7 @@ public class User implements Serializable{
   }
 
   public User() {
+    new Gson();
   }
 
   public String getUserId() {

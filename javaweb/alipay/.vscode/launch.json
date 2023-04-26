@@ -1,0 +1,56 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "TradePay",
+      "request": "launch",
+      "mainClass": "com.bobo.service.TradePay",
+      "projectName": "alipay"
+    },
+    {
+      "type": "java",
+      "name": "PrecreatePay",
+      "request": "launch",
+      "mainClass": "com.bobo.service.PrecreatePay",
+      "projectName": "alipay"
+    },
+    {
+      "type": "java",
+      "name": "Launch External Terminal",
+      "request": "launch",
+      "console": "externalTerminal",
+      "mainClass": ""
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "FaceComplexPay",
+      "request": "launch",
+      "mainClass": "com.bobo.FaceComplexPay",
+      "projectName": "alipay"
+    },
+    {
+      "type": "java",
+      "name": "FaceSimplePay",
+      "request": "launch",
+      "mainClass": "com.bobo.FaceSimplePay",
+      "projectName": "alipay"
+    },
+    {
+      "type": "java",
+      "name": "AlipayUtils",
+      "request": "launch",
+      "mainClass": "com.bobo.utils.AlipayUtils",
+      "projectName": "alipay"
+    }
+  ]
+}

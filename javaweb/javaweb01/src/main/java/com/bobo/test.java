@@ -26,6 +26,8 @@ public class test {
     // list.add("tc0002");
     // List<Class_> class_ = classMapper.findIn(list);
     List<Teacher> res = teacherMapper.selectAllTCSZJ();
+
+    //
     List<Teacher> res2 = teacherMapper2.selectAllTCSZJ();
 
     // 5.遍历

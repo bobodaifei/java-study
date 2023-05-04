@@ -156,13 +156,14 @@ public class TradePay extends AliPayBasic {
     AlipayDataDataserviceBillDownloadurlQueryRequest request = new AlipayDataDataserviceBillDownloadurlQueryRequest();
     request.setBizContent("{" +
         "  \"bill_type\":\"trade\"," +
-        "  \"bill_date\":\"2020-04-05\"" +
+        "  \"bill_date\":\"2023-03\"" +
         // " \"smid\":\"2088123412341234\"" +
         "}");
     AlipayDataDataserviceBillDownloadurlQueryResponse response = alipayClient.execute(request);
     if (response.isSuccess()) {
       System.out.println("调用成功");
-      // System.out.println(response.getBody());
+      System.out.println(response.getBillDownloadUrl());
+
       down(response.getBillDownloadUrl());
     } else {
       System.out.println("调用失败");
@@ -171,7 +172,7 @@ public class TradePay extends AliPayBasic {
 
   public static void down(String urlStr) {
     // 指定希望保存的文件路径
-    String filePath = "E:/code/fund_bill_20210205.csv";
+    String filePath = "E:/code/fund_bill_20210205.zip";
     URL url = null;
     HttpURLConnection httpUrlConnection = null;
     InputStream fis = null;

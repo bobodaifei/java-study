@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [04/May/2023:11:02:41 +0800] "GET /ajaxtest/login.html HTTP/1.1" 200 1666 http-bio-8080-exec-1 92
+0:0:0:0:0:0:0:1 - - [04/May/2023:11:02:49 +0800] "POST /ajaxtest/emp HTTP/1.1" 200 34 http-bio-8080-exec-3 1662
+0:0:0:0:0:0:0:1 - - [04/May/2023:11:03:02 +0800] "POST /ajaxtest/emp HTTP/1.1" 200 34 http-bio-8080-exec-4 59
+0:0:0:0:0:0:0:1 - - [04/May/2023:11:03:47 +0800] "POST /ajaxtest/emp HTTP/1.1" 200 312 http-bio-8080-exec-5 270
+0:0:0:0:0:0:0:1 - - [04/May/2023:11:03:49 +0800] "GET /ajaxtest/empList.html HTTP/1.1" 200 4782 http-bio-8080-exec-6 4
+0:0:0:0:0:0:0:1 - - [04/May/2023:11:03:50 +0800] "GET /ajaxtest/emp?method=selectPage&pageSize=10&currentPage=1 HTTP/1.1" 200 1743 http-bio-8080-exec-8 415

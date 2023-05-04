@@ -1,8 +1,11 @@
 {
   "java.configuration.updateBuildConfiguration": "automatic",
+  //关闭自动编译
   "java.autobuild.enabled": false,
   //关闭debug前强制编译
   "java.debug.settings.forceBuildBeforeLaunch": false,
+  //在项目根目录下生成.classpath等配置文件
+  "java.import.generatesMetadataFilesAtProjectRoot": true,
   //使用Deploy插件来进行热部署时所需要的配置信息
   "deploy": {
     "packages": [

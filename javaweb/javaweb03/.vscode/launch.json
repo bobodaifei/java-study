@@ -4,7 +4,13 @@
   // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-
+    {
+      "type": "java",
+      "name": "ProxyFactory",
+      "request": "launch",
+      "mainClass": "com.bobo.utils.ProxyFactory",
+      "projectName": "ajaxtest"
+    },
     {
       "type": "java",
       "name": "Debug (Attach)",
@@ -12,7 +18,6 @@
       "hostName": "localhost",
       "port": 8080
     },
-  
     {
       "type": "msedge",
       "request": "launch",

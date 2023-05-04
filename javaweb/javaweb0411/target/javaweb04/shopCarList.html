@@ -1,0 +1,149 @@
+<!-- eslint-disable -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+  <script src="https://cdn.bootcss.com/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
+  <script src="https://static.runoob.com/assets/jquery/jquery.growl/javascripts/jquery.growl.js"
+    type="text/javascript"></script>
+  <link href="https://static.runoob.com/assets/jquery/jquery.growl/stylesheets/jquery.growl.css" rel="stylesheet"
+    type="text/css" />
+</head>
+
+<body>
+  <center>
+    <button onclick="backUrl()">返回</button>
+    <button onclick="getGoodsList()">提交</button>
+    <table id="table" border="1px">
+      <thead>
+        <tr>
+          <th></th>
+          <th>商店名称</th>
+          <th>商品名称</th>
+          <th>数量</th>
+          <th>单价</th>
+          <th>总额</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </center>
+  <div id="paging" style="width: 500px;display:flex; margin: auto;">
+    <div style="margin-left:10px;">
+      <span>Total:</span><span class="total"></span>
+    </div>
+    <div style="margin-left:10px;">
+      <select class="pageSize" onchange="changePageSize(this.value)">
+        <option value="5">5/页</option>
+        <option value="10">10/页</option>
+        <option value="15">15/页</option>
+        <option value="20">20/页</option>
+      </select>
+    </div>
+    <div style="margin-left:10px;">
+      <button style="border-color: transparent;" onclick="changecurrentPage(currentPage-1)">上一页</button>
+    </div>
+    <span>当前页：</span><span class="currentPage"></span>
+    <div style="margin-left:10px;">
+      <button style="border-color: transparent;" onclick="changecurrentPage(currentPage+1)">下一页</button>
+    </div>
+    <div style="margin-left:10px;">
+      <input type="text" class="currentPageInput" style="width: 40px;" onblur="changecurrentPage(this.value)">
+    </div>
+  </div>
+</body>
+<script>
+  var shop_no = decodeURI(location.search).split("=")[1];
+  var total = 0
+  var currentPage = 1
+  var pageSize = 10
+  $('#paging .currentPage').text(currentPage)
+  $('#paging .currentPageInput').val(currentPage)
+  $('#paging .pageSize').val(pageSize)
+  $('#paging .total').val(total)
+  var that = this
+  load();
+
+  function load() {
+    $.ajax({
+      type: "GET",
+      url: "/javaweb04/shopCar",
+      data: {
+        method: 'selectPage',
+        pageSize: pageSize,
+        currentPage: currentPage
+      },
+      dataType: "json",
+      // headers: {
+      //   'Access-Token': window.localStorage.getItem("Access-Token")
+      // },
+      success: function (res) {
+        $('#table tbody').empty()
+        var arr = res.data.records
+        arr.forEach(e => {
+          var $tr = $("<tr><td><input class=\"good\" type=\"checkbox\" value=\'" + e.good_no + "\' /></td><td>" + e.shop_name + "</td><td>" + e.good_name + "</td><td>" + e.num + "</td><td>" + e.price + "</td><td>" + e.price * e.num + "</td><td><button onclick=submit([\'" + e.good_no + "\'])>提交</button></td></tr>");
+          $('#table tbody').append($tr)
+        });
+        $('#paging .total').text(res.data.total)
+        that.total = res.data.total
+        $('#paging .currentPage').text(res.data.currentPage)
+        that.currentPage = res.data.currentPage
+        $('#paging .currentPageInput').val(res.data.currentPage)
+        that.pageSize = res.data.pageSize
+      }
+    });
+  }
+
+  function changePageSize(pageSize) {
+    that.pageSize = pageSize;
+    that.load()
+  }
+  function changecurrentPage(currentPage) {
+    that.currentPage = currentPage
+    that.load()
+  }
+  function backUrl() {
+    window.location.href = "/javaweb04/shopList.html"
+  }
+  function submit(goods) {
+    if (goods.length == 0) {
+      return;
+    }
+    var goodStr = goods.join(',')
+    console.log(goodStr);
+    $.post("/javaweb04/order", {
+      method: 'add',
+      good: goodStr
+    },
+      function (res) {
+        console.log(res);
+        if (res.code === '0') {
+          alert("成功了"+res.data)
+          load()
+          // window.localStorage.setItem("Access-Token", res.data.token);
+        } else {
+          $.growl.error({
+            title: "添加购物车",
+            message: res.msg
+          });
+        }
+      },
+    );
+  }
+  function getGoodsList() {
+    var goodList = [];
+    $(".good:checked").each(function (e) {
+      goodList.push($(this).val())
+    })
+    submit(goodList)
+  }
+</script>
+
+</html>

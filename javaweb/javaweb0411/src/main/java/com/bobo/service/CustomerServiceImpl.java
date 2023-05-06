@@ -11,4 +11,9 @@ public class CustomerServiceImpl implements CustomerService{
     return customerDao.login(customer);
   }
 
+  @Override
+  public Customer selectById(String customer_no) {
+    return customerDao.selectById(customer_no);
+  }
+
 } 

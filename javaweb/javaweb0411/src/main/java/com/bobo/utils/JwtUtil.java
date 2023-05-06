@@ -3,14 +3,14 @@ package com.bobo.utils;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator.Builder;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.bobo.entity.Emp;
+import com.bobo.entity.Customer;
 
 import java.util.Calendar;
 
 public class JwtUtil {
 
 	// 把需要放入的数据放入到token
-	public static String getToken(Emp emp) {
+	public static String getToken(Customer customer) {
 
 		// 设置超时时间
 		Calendar instance = Calendar.getInstance();
@@ -21,9 +21,9 @@ public class JwtUtil {
 		Builder builder = JWT.create();
 
 		String token = builder// head
-				.withAudience(emp.getEmpno().toString()) // 负载
+				.withAudience(customer.getCustomer_no().toString()) // 负载
 				.withExpiresAt(instance.getTime()) // 超时时间
-				.sign(Algorithm.HMAC256(emp.getEname()));// 签名（解析时要用）
+				.sign(Algorithm.HMAC256(customer.getPassword()));// 签名（解析时要用）
 		return token;
 	}
 

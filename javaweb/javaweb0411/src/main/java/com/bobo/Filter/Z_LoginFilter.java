@@ -10,15 +10,24 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.alibaba.fastjson.JSON;
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.JWTVerifier;
+import com.auth0.jwt.algorithms.Algorithm;
 import com.bobo.common.Result;
+import com.bobo.entity.Customer;
+import com.bobo.service.CustomerService;
+import com.bobo.service.CustomerServiceImpl;
+
+import cn.hutool.core.util.StrUtil;
 
 @WebFilter(filterName = "Z_LoginFilter", urlPatterns = "/*")
 public class Z_LoginFilter implements Filter {
+
+  private CustomerService customerService = new CustomerServiceImpl();
 
   @Override
   public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
@@ -41,18 +50,30 @@ public class Z_LoginFilter implements Filter {
       filterChain.doFilter(servletRequest, servletResponse);
       return;
     }
-    Cookie[] cookies = request.getCookies();
-    if (cookies == null || cookies.length == 0) {
-      out.write(JSON.toJSONString(Result.error("-1", "暂未登录")));
+    
+    String token = request.getHeader("Access-Token");
+    if (StrUtil.isBlank(token)) {
+      // throw new CustomException("401", "未获取到token, 请重新登录");
+      out.write(JSON.toJSONString(Result.error("-1", "未获取到token, 请重新登录")));
       return;
     }
-    for (Cookie cookie : cookies) {
-      if ("customer_no".equals(cookie.getName())) {
-        filterChain.doFilter(servletRequest, servletResponse);
-        return;
-      }
+
+    String customer_no = JWT.decode(token).getAudience().get(0);
+    Customer customer = customerService.selectById(customer_no);
+    if (customer == null) {
+      out.write(JSON.toJSONString(Result.error("-1", "token不合法")));
+      return;
     }
-    out.write(JSON.toJSONString(Result.error("-1", "暂未登录")));
+
+    // 验证 token
+    JWTVerifier jwtVerifier = JWT.require(Algorithm.HMAC256(customer.getPassword())).build();
+    try {
+      jwtVerifier.verify(token);
+    } catch (Exception e) {
+      out.write(JSON.toJSONString(Result.error("-1", "token不合法")));
+      return;
+    }
+    filterChain.doFilter(servletRequest, servletResponse);
   }
 
   @Override

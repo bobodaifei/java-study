@@ -18,15 +18,12 @@ import com.bobo.service.GoodService;
 import com.bobo.service.GoodServiceImpl;
 import com.bobo.service.StockService;
 import com.bobo.service.StockServiceImpl;
-import com.bobo.utils.aop.MyAdvice;
-import com.bobo.utils.aop.ProxyFactory;
-import com.bobo.utils.aop.TestHandler;
 
 @WebServlet("/good")
 public class GoodServlet extends HttpServlet {
 
-  // private GoodService goodService = new GoodServiceImpl();
-  // private StockService stockService = new StockServiceImpl();
+  private GoodService goodService = new GoodServiceImpl();
+  private StockService stockService = new StockServiceImpl();
 
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -39,11 +36,6 @@ public class GoodServlet extends HttpServlet {
 
   protected void selectPage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     PrintWriter out = resp.getWriter();
-    String customer_no = (String) req.getSession().getAttribute("customerNo");
-    StockService stockService = (StockService) ProxyFactory.getInstance(StockServiceImpl.class,
-        new TestHandler(new MyAdvice(customer_no)));
-    GoodService goodService = (GoodService) ProxyFactory.getInstance(GoodServiceImpl.class,
-        new TestHandler(new MyAdvice(customer_no)));
 
     String currentPageStr = req.getParameter("currentPage");
     String pageSizeStr = req.getParameter("pageSize");

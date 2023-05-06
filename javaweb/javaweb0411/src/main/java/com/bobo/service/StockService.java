@@ -5,7 +5,7 @@ import com.bobo.entity.Stock;
 
 public interface StockService {
 
-  Stock selectOne(String good_no);
+  Stock selectById(String good_no);
 
   //结算减少库存
   int update(ShopCar shopCar);

@@ -78,9 +78,9 @@
         shop_no: shop_no
       },
       dataType: "json",
-      // headers: {
-      //   'Access-Token': window.localStorage.getItem("Access-Token")
-      // },
+      headers: {
+        'Access-Token': window.localStorage.getItem("Access-Token")
+      },
       success: function (res) {
         $('#table tbody').empty()
         var arr = res.data.records
@@ -105,30 +105,34 @@
   function changecurrentPage(currentPage) {
     that.currentPage = currentPage
     that.load()
-    console.log(currentPage);
   }
   function backUrl() {
     window.location.href = "/javaweb04/shopList.html"
   }
   function putShopCar(good_no) {
-    $.post("/javaweb04/shopCar", {
-      method: 'put',
-      good_no: good_no,
-      shop_no: shop_no
-    },
-      function (res) {
-        console.log(res);
+    $.ajax({
+      type: "POST",
+      url: "/javaweb04/shopCar",
+      data: {
+        method: 'put',
+        good_no: good_no,
+        shop_no: shop_no
+      },
+      dataType: "json",
+      headers: {
+        'Access-Token': window.localStorage.getItem("Access-Token")
+      },
+      success: function (res) {
         if (res.code === '0') {
           alert(res.msg)
-          // window.localStorage.setItem("Access-Token", res.data.token);
         } else {
           $.growl.error({
             title: "Ìí¼Ó¹ºÎï³µ",
             message: res.msg
           });
         }
-      },
-    );
+      }
+    });
   }
 </script>
 

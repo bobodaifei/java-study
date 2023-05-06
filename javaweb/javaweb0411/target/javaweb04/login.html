@@ -15,8 +15,8 @@
 
 <body>
   <center>
-    <input type="text" id="customer_no" placeholder="ÇëÊäÈëÕËºÅ" /><br>
-    <input type="password" id="password" placeholder="ÇëÊäÈëÃÜÂë" /><br>
+    <input type="text" id="customer_no" placeholder="ÕËºÅ" /><br>
+    <input type="password" id="password" placeholder="ÃÜÂë" /><br>
     <button onclick="login()">µÇÂ¼</button>
   </center>
 </body>
@@ -32,7 +32,7 @@
         console.log(res);
         if (res.code === '0') {
           alert(res.msg)
-          // window.localStorage.setItem("Access-Token", res.data.token);
+          window.localStorage.setItem("Access-Token", res.data.token);
           window.location.href = "/javaweb04/shopList.html"
         } else {
           $.growl.error({

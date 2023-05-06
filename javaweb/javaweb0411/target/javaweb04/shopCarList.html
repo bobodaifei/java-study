@@ -81,9 +81,9 @@
         currentPage: currentPage
       },
       dataType: "json",
-      // headers: {
-      //   'Access-Token': window.localStorage.getItem("Access-Token")
-      // },
+      headers: {
+        'Access-Token': window.localStorage.getItem("Access-Token")
+      },
       success: function (res) {
         $('#table tbody').empty()
         var arr = res.data.records
@@ -117,25 +117,30 @@
       return;
     }
     var goodStr = goods.join(',')
-    console.log(goodStr);
-    $.post("/javaweb04/order", {
-      method: 'add',
-      good: goodStr
-    },
-      function (res) {
-        console.log(res);
+    
+    $.ajax({
+      type: "POST",
+      url: "/javaweb04/order",
+      data: {
+        method: 'add',
+        good: goodStr
+      },
+      dataType: "json",
+      headers: {
+        'Access-Token': window.localStorage.getItem("Access-Token")
+      },
+      success: function (res) {
         if (res.code === '0') {
-          alert("成功了"+res.data)
+          alert("成功了" + res.data)
           load()
-          // window.localStorage.setItem("Access-Token", res.data.token);
         } else {
           $.growl.error({
             title: "添加购物车",
             message: res.msg
           });
         }
-      },
-    );
+      }
+    });
   }
   function getGoodsList() {
     var goodList = [];

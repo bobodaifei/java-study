@@ -16,6 +16,7 @@ import com.bobo.common.Result;
 import com.bobo.entity.Customer;
 import com.bobo.service.CustomerService;
 import com.bobo.service.CustomerServiceImpl;
+import com.bobo.utils.JwtUtil;
 import com.bobo.utils.aop.MyAdvice;
 // import com.bobo.utils.JwtUtil;
 import com.bobo.utils.aop.ProxyFactory;
@@ -54,13 +55,13 @@ public class CustomerServlet extends HttpServlet {
       return;
     }
     
-    // String token = JwtUtil.getToken(res);
-    // res.setToken(token);
-    HttpSession session = req.getSession();
-    session.setAttribute("customerNo", res.getCustomer_no());
+    String token = JwtUtil.getToken(res);
+    res.setToken(token);
+    // HttpSession session = req.getSession();
+    // session.setAttribute("customerNo", res.getCustomer_no());
     
-    Cookie cookie = new Cookie("customer_no", res.getCustomer_no());
-    resp.addCookie(cookie);
+    // Cookie cookie = new Cookie("customer_no", res.getCustomer_no());
+    // resp.addCookie(cookie);
     
     out.write(JSON.toJSONString(Result.success(res)));
   }

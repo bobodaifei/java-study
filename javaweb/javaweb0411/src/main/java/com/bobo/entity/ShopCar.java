@@ -23,6 +23,12 @@ public class ShopCar {
 
   }
 
+  public ShopCar(String customer_no, String good_no, String shop_no) {
+    this.customer_no = customer_no;
+    this.good_no = good_no;
+    this.shop_no = shop_no;
+  }
+
   public ShopCar(String customer_no, String good_no) {
     this.customer_no = customer_no;
     this.good_no = good_no;

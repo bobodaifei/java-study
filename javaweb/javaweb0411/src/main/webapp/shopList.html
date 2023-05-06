@@ -75,9 +75,9 @@
         currentPage: currentPage
       },
       dataType: "json",
-      // headers: {
-      //   'Access-Token': window.localStorage.getItem("Access-Token")
-      // },
+      headers: {
+        'Access-Token': window.localStorage.getItem("Access-Token")
+      },
       success: function (res) {
         $('#table tbody').empty()
         var arr = res.data.records

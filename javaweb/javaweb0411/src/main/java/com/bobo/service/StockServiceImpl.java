@@ -8,7 +8,7 @@ public class StockServiceImpl implements StockService {
   private StockDao stockDao = new StockDao();
 
   @Override
-  public Stock selectOne(String good_no) {
+  public Stock selectById(String good_no) {
     return stockDao.selectOne(good_no);
   }
 

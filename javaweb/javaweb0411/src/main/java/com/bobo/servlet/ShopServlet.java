@@ -23,7 +23,7 @@ import com.bobo.utils.aop.TestHandler;
 @WebServlet("/shop")
 public class ShopServlet extends HttpServlet {
 
-  // private ShopService shopService = new ShopServiceImpl();
+  private ShopService shopService = new ShopServiceImpl();
 
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,12 +36,8 @@ public class ShopServlet extends HttpServlet {
 
   protected void selectPage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     PrintWriter out = resp.getWriter();
-    String customer_no = (String) req.getSession().getAttribute("customerNo");
     String currentPageStr = req.getParameter("currentPage");
     String pageSizeStr = req.getParameter("pageSize");
-
-    ShopService shopService = (ShopService) ProxyFactory.getInstance(ShopServiceImpl.class,
-        new TestHandler(new MyAdvice(customer_no)));
 
     int currentPage = 0;
     int pageSize = 10;

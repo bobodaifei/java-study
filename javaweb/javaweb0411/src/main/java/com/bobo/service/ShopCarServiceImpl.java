@@ -7,27 +7,34 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import com.bobo.common.Page;
+import com.bobo.dao.GoodDao;
 import com.bobo.dao.ShopCarDao;
+import com.bobo.dao.ShopDao;
+import com.bobo.dao.StockDao;
+import com.bobo.entity.Good;
+import com.bobo.entity.Shop;
 import com.bobo.entity.ShopCar;
 import com.bobo.entity.ShopCarVO;
+import com.bobo.entity.Stock;
 import com.bobo.utils.jedis.JedisUtil;
 
 public class ShopCarServiceImpl implements ShopCarService {
 
+  JedisUtil jedisUtil = JedisUtil.getInstance();
+
   private ShopCarDao shopCarDao = new ShopCarDao();
+  private ShopDao shopDao = new ShopDao();
+  private GoodDao goodDao = new GoodDao();
 
   @Override
   public long add(ShopCar shopCar) {
-    JedisUtil jedisUtil = JedisUtil.getInstance();
     String redis_customer_no = "shopCar:" + shopCar.getCustomer_no();
-
-    return jedisUtil.hset(redis_customer_no, shopCar.getGood_no() + ":" + shopCar.getShop_no(), 1 + "");
+    return jedisUtil.hset(redis_customer_no, shopCar.getGood_no() + ":" + shopCar.getShop_no(), shopCar.getNum() + "");
     // return shopCarDao.add(shopCar);
   }
 
   @Override
   public long update(ShopCar shopCar) {
-    JedisUtil jedisUtil = JedisUtil.getInstance();
     String redis_customer_no = "shopCar:" + shopCar.getCustomer_no();
     return jedisUtil.hset(redis_customer_no, shopCar.getGood_no() + ":" + shopCar.getShop_no(), shopCar.getNum() + "");
     // return shopCarDao.update(shopCar);
@@ -35,7 +42,6 @@ public class ShopCarServiceImpl implements ShopCarService {
 
   @Override
   public ShopCar selectOne(ShopCar shopCar) {
-    JedisUtil jedisUtil = JedisUtil.getInstance();
     String redis_customer_no = "shopCar:" + shopCar.getCustomer_no();
     int num =Integer.valueOf(jedisUtil.hget(redis_customer_no, shopCar.getGood_no() + ":" + shopCar.getShop_no()));
     shopCar.setNum(num);
@@ -45,7 +51,6 @@ public class ShopCarServiceImpl implements ShopCarService {
 
   @Override
   public long selectCount(String customer_no) {
-    JedisUtil jedisUtil = JedisUtil.getInstance();
     String redis_customer_no = "shopCar:" + customer_no;
     return jedisUtil.hlen(redis_customer_no);
     // return shopCarDao.selectCount(customer_no);
@@ -54,24 +59,11 @@ public class ShopCarServiceImpl implements ShopCarService {
   @Override
   public Page selectPage(int currentPage, int pageSize, String customer_no) {
 
-    JedisUtil jedisUtil = JedisUtil.getInstance();
-
     String redis_customer_no = "shopCar:" + customer_no;
     long total = jedisUtil.hlen(redis_customer_no);
 
     if (total == 0) {
       return new Page<>(null, total, pageSize, 1);
-    }
-
-    int begin = (currentPage - 1) * pageSize;
-
-    if (begin >= total) {
-      currentPage--;
-      begin = begin - pageSize;
-    }
-    if (currentPage < 1) {
-      currentPage = 1;
-      begin = 0;
     }
 
     Map<String, String> map = jedisUtil.hgetAll(redis_customer_no);
@@ -80,13 +72,17 @@ public class ShopCarServiceImpl implements ShopCarService {
     while (iterator.hasNext()) {
       Entry<String, String> next = iterator.next();
       String key = next.getKey();
-      String[] split = key.split(":");
       String num = next.getValue();
-      list.add(new ShopCarVO(customer_no, split[0], null, Integer.valueOf(num), 0, split[1], null));
+      String[] split = key.split(":");
+      String good_no = split[0];
+      String shop_no = split[1];
+      // 通过商品NO数组获取库存的完整信息
+      Shop shop = shopDao.selectById(shop_no);
+      // 获取商品信息
+      Good good = goodDao.selectById(good_no);
+      list.add(new ShopCarVO(customer_no, good_no, good.getGood_name(), Integer.valueOf(num), good.getPrice(), shop_no, 
+          shop.getShop_name()));
     }
-
-    // List<ShopCarVO> pageList = shopCarDao.selectPage(begin, pageSize,
-    // customer_no);
 
     return new Page<>(list, total, pageSize, currentPage);
   }
@@ -97,8 +93,11 @@ public class ShopCarServiceImpl implements ShopCarService {
   }
 
   @Override
-  public int delete(ShopCar shopCar) {
-    return shopCarDao.update(shopCar);
+  public long delete(ShopCar shopCar) {
+    String redis_customer_no = "shopCar:" + shopCar.getCustomer_no();
+
+    return jedisUtil.hdel(redis_customer_no, shopCar.getGood_no() + ":" + shopCar.getShop_no());
+    // return shopCarDao.update(shopCar);
   }
 
 }

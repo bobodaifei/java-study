@@ -20,6 +20,6 @@ public interface ShopCarService {
 
   List<ShopCarVO> selectList(String customer_no);
 
-  int delete(ShopCar shopCar);
+  long delete(ShopCar shopCar);
   
 }

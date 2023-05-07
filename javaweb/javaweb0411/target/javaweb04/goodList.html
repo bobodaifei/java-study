@@ -110,13 +110,18 @@
     window.location.href = "/javaweb04/shopList.html"
   }
   function putShopCar(good_no) {
+    var num = prompt('需要加入购物车的数量', 1);
+    if (num<1) {
+      return
+    }
     $.ajax({
       type: "POST",
       url: "/javaweb04/shopCar",
       data: {
         method: 'put',
         good_no: good_no,
-        shop_no: shop_no
+        shop_no: shop_no,
+        num: num
       },
       dataType: "json",
       headers: {

@@ -9,7 +9,7 @@ public class StockServiceImpl implements StockService {
 
   @Override
   public Stock selectById(String good_no) {
-    return stockDao.selectOne(good_no);
+    return stockDao.selectById(good_no);
   }
 
   @Override

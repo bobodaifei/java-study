@@ -5,7 +5,7 @@ import com.bobo.entity.Stock;
 
 public class StockDao extends BasicDao<Stock>{
 
-  public Stock selectOne(String good_no) {
+  public Stock selectById(String good_no) {
     String sql = "select * from stock where good_no = ?";
     return querySingle(sql, Stock.class, good_no);
   }

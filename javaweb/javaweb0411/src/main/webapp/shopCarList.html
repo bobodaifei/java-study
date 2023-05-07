@@ -88,7 +88,7 @@
         $('#table tbody').empty()
         var arr = res.data.records
         arr.forEach(e => {
-          var $tr = $("<tr><td><input class=\"good\" type=\"checkbox\" value=\'" + e.good_no + "\' /></td><td>" + e.shop_name + "</td><td>" + e.good_name + "</td><td>" + e.num + "</td><td>" + e.price + "</td><td>" + e.price * e.num + "</td><td><button onclick=submit([\'" + e.good_no + "\'])>提交</button></td></tr>");
+          var $tr = $("<tr><td><input class=\"good\" type=\"checkbox\" value=\'" + e.good_no + "\' /></td><td>" + e.shop_name + "</td><td>" + e.good_name + "</td><td>" + e.num + "</td><td>" + e.price + "</td><td>" + e.price * e.num + "</td><td><button onclick=submit([\'" + e.good_no + "\'])>提交</button><button onclick=putShopCar(\'" + e.good_no + "\',\'" + e.shop_no + "\')>修改数量</button><button onclick=del(\'" + e.good_no + "\',\'" + e.shop_no + "\')>删除</button></td></tr>");
           $('#table tbody').append($tr)
         });
         $('#paging .total').text(res.data.total)
@@ -117,7 +117,6 @@
       return;
     }
     var goodStr = goods.join(',')
-    
     $.ajax({
       type: "POST",
       url: "/javaweb04/order",
@@ -148,6 +147,61 @@
       goodList.push($(this).val())
     })
     submit(goodList)
+  }
+  function putShopCar(good_no,shop_no) {
+    var num = prompt('加入/减少购物车的数量', 0);
+    $.ajax({
+      type: "POST",
+      url: "/javaweb04/shopCar",
+      data: {
+        method: 'update',
+        good_no: good_no,
+        shop_no: shop_no,
+        num: num
+      },
+      dataType: "json",
+      headers: {
+        'Access-Token': window.localStorage.getItem("Access-Token")
+      },
+      success: function (res) {
+        if (res.code === '0') {
+          alert(res.msg)
+          load()
+        } else {
+          $.growl.error({
+            title: "修改购物车",
+            message: res.msg
+          });
+        }
+        load()
+      }
+    });
+  }
+  function del(good_no, shop_no) {
+    $.ajax({
+      type: "POST",
+      url: "/javaweb04/shopCar",
+      data: {
+        method: 'delete',
+        good_no: good_no,
+        shop_no, shop_no  
+      },
+      dataType: "json",
+      headers: {
+        'Access-Token': window.localStorage.getItem("Access-Token")
+      },
+      success: function (res) {
+        if (res.code === '0') {
+          alert("成功了" + res.data)
+          load()
+        } else {
+          $.growl.error({
+            title: "删除购物车",
+            message: res.msg
+          });
+        }
+      }
+    });
   }
 </script>
 

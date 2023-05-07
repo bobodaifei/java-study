@@ -25,7 +25,7 @@ import com.bobo.utils.aop.TestHandler;
 
 
 @WebServlet("/order")
-public class OrderServlet extends HttpServlet {
+public class OrderServlet extends BaseServlet {
 
   // private OrderService orderService = new OrderServiceImpl();
   // private ShopCarService shopCarService = new ShopCarServiceImpl();
@@ -41,20 +41,15 @@ public class OrderServlet extends HttpServlet {
 
   protected void add(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     PrintWriter out = resp.getWriter();
-    HttpSession session = req.getSession();
-    String customer_no = (String) session.getAttribute("customerNo");
+    String customer_no = getCustomer(req, resp).getCustomer_no();
+
     OrderService orderService = (OrderService) ProxyFactory.getInstance(OrderServiceImpl.class,
-        new TestHandler(new MyAdvice(customer_no)));
-    ShopCarService shopCarService = (ShopCarService) ProxyFactory.getInstance(ShopCarServiceImpl.class,
         new TestHandler(new MyAdvice(customer_no)));
 
     // 获取需要购买的商品NO数组
     String[] goodsArr = req.getParameter("good").split(",");
     
     int flag = orderService.addArr(customer_no, goodsArr);
-
-    List<ShopCarVO> shopCar = shopCarService.selectList(customer_no);
-    session.setAttribute("shopCar", shopCar);
 
     out.write(JSON.toJSONString(Result.success(flag)));
   }

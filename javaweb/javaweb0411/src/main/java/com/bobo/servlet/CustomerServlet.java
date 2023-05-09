@@ -21,6 +21,7 @@ import com.bobo.utils.aop.MyAdvice;
 // import com.bobo.utils.JwtUtil;
 import com.bobo.utils.aop.ProxyFactory;
 import com.bobo.utils.aop.TestHandler;
+import com.bobo.utils.jedis.JedisUtil;
 
 @WebServlet("/customer")
 public class CustomerServlet extends HttpServlet {
@@ -57,6 +58,8 @@ public class CustomerServlet extends HttpServlet {
     
     String token = JwtUtil.getToken(res);
     res.setToken(token);
+    JedisUtil jedisUtil = JedisUtil.getInstance();
+    jedisUtil.set(token, JSON.toJSONString(res));
     // HttpSession session = req.getSession();
     // session.setAttribute("customerNo", res.getCustomer_no());
     

@@ -34,8 +34,13 @@ public class A_PostFilter implements Filter {
     /* 是否携带cookie */
     response.setHeader("Access-Control-Allow-Credentials", "true");
 
+    
+
 
     HttpServletRequest request = (HttpServletRequest) servletRequest;
+
+    System.out.println(request.getLocalPort());
+
     String requestURI = request.getRequestURI();
     String[] uris = { "^\\S*.html$", "^\\S*.js$" };
     for (String uri : uris) {

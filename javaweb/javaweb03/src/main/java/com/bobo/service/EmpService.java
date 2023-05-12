@@ -8,7 +8,7 @@ public interface EmpService {
 
   public Emp selectOne(Emp emp);
 
-  public List<Emp> selectPage(int begin, int pageSize);
+  public List<Emp> selectPage(long begin, long pageSize);
 
   public Long selectCount();
 

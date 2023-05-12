@@ -15,7 +15,7 @@ public class EmpServiceImpl implements EmpService {
   }
 
   @Override
-  public List<Emp> selectPage(int begin, int pageSize) {
+  public List<Emp> selectPage(long begin, long pageSize) {
     return userDao.selectPage(begin, pageSize);
   }
 
@@ -32,7 +32,6 @@ public class EmpServiceImpl implements EmpService {
   @Override
   public int delete(int empno) {
     int res = userDao.delete(empno);
-    int i = 1 / 0;
     return res;
     
   }

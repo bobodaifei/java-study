@@ -10,7 +10,7 @@ import com.bobo.utils.JdbcUtil;
 public class MyAdvice implements Advice {
 
   private Log_ log_;
-  private static LogDao logDao = new LogDao();
+  private LogDao logDao = new LogDao();
 
   public MyAdvice() {
   }

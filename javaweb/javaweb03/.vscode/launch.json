@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "aaa",
+      "request": "launch",
+      "mainClass": "com.bobo.utils.aaa",
+      "projectName": "ajaxtest"
+    },
+    {
+      "type": "java",
       "name": "ProxyFactory",
       "request": "launch",
       "mainClass": "com.bobo.utils.ProxyFactory",

@@ -12,7 +12,7 @@ public class EmpDao extends BasicDao<Emp>{
     return querySingle(sql, Emp.class, emp.getEname(), emp.getEmpno());
   }
 
-  public List<Emp> selectPage(int begin, int pageSize) {
+  public List<Emp> selectPage(long begin, long pageSize) {
     String sql = "SELECT e.empno,e.ename,e.job,e.mgr,e.hiredate,IFNULL(e.sal,0) AS sal,IFNULL(e.COMM,0) AS COMM,e.deptno,IFNULL(boss.ENAME,'') AS bossName,d.dname FROM	(	SELECT *	FROM	emp ) e	LEFT JOIN emp boss ON e.MGR = boss.EMPNO LEFT JOIN dept d ON e.deptno = d.deptno limit ?,?";
     return queryMulti(sql, Emp.class, begin, pageSize);
   }

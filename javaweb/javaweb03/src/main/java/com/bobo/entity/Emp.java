@@ -22,14 +22,14 @@ public class Emp {
   @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd")
   private Date hiredate;
   private BigDecimal sal;
-  private BigDecimal COMM;
+  private BigDecimal cOMM;
   private int deptno;
   
   private String dname;
   private String bossName;
   private String token;
   
-  public Emp(Integer empno, String ename, String job, int mgr, Date hiredate, BigDecimal sal, BigDecimal COMM,
+  public Emp(Integer empno, String ename, String job, int mgr, Date hiredate, BigDecimal sal, BigDecimal cOMM,
       int deptno) {
     this.empno = empno;
     this.ename = ename;
@@ -37,17 +37,17 @@ public class Emp {
     this.mgr = mgr;
     this.hiredate = hiredate;
     this.sal = sal;
-    this.COMM = COMM;
+    this.cOMM = cOMM;
     this.deptno = deptno;
   }
 
-  public Emp( String ename, String job, int mgr, Date hiredate, BigDecimal sal, BigDecimal COMM, int deptno) {
+  public Emp( String ename, String job, int mgr, Date hiredate, BigDecimal sal, BigDecimal cOMM, int deptno) {
     this.ename = ename;
     this.job = job;
     this.mgr = mgr;
     this.hiredate = hiredate;
     this.sal = sal;
-    this.COMM = COMM;
+    this.cOMM = cOMM;
     this.deptno = deptno;
   }
   

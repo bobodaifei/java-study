@@ -50,7 +50,7 @@ public class StockServlet extends BaseServlet {
       this.add(req, resp);
       return;
     } else if ("toAdd".equals(method)) {
-      this.toAdd(req, resp);
+      this.toAdd(req, resp); 
       return;
     }
   }

@@ -61,7 +61,7 @@ public class StockServlet extends BaseServlet {
     String shop_no = user.getShop().getShop_no();
     List<Good> res = stockService.absentList(shop_no);
 
-    out.write(JSON.toJSONString(Result.success(res)));
+    out.write(JSON.toJSONString(Result.success(res))); 
   }
  
   protected void add(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

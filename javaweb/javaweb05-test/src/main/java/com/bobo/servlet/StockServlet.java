@@ -63,7 +63,7 @@ public class StockServlet extends BaseServlet {
 
     out.write(JSON.toJSONString(Result.success(res)));
   }
-
+ 
   protected void add(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     PrintWriter out = resp.getWriter();
 

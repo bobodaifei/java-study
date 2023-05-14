@@ -19,7 +19,7 @@ export default defineConfig({
         target: 'http://localhost:8080',    // 目标代理接口地址,实际跨域要访问的接口，记得是填你后端springboot的端口，
         changeOrigin: true,  // 开启代理，在本地创建一个虚拟服务端
         rewrite: (path) => path.replace(/^\/proxy/, '')
-        // pathRewrite: {   // 去掉 路径中的  /api  的这一截
+        // pathRewrite: {   // 去掉 路径中的  /api  的这一截 vue2
         //   '/proxy': ''
         // }
       },

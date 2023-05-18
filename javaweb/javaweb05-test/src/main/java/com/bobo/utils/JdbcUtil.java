@@ -49,6 +49,8 @@ public class JdbcUtil {
     Connection connection = getConnection();
     try {
       connection.setAutoCommit(false);
+      System.out.println(connection.getAutoCommit());
+      System.out.println(connection);
     } catch (SQLException e) {
       e.printStackTrace();
     }
@@ -60,6 +62,8 @@ public class JdbcUtil {
     Connection connection = null; // 防止在此处出现异常
     try {
       connection = getConnection();
+      System.out.println(connection.getAutoCommit());
+      System.out.println(connection);
       connection.commit();
     } catch (SQLException e) {
       e.printStackTrace();

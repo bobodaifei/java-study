@@ -54,7 +54,7 @@ public class BasicDao<T> {
     } catch (SQLException e) {
       throw new RuntimeException(e); // 将编译异常->运行异常 ,抛出
     } finally {
-      JdbcUtil.close(null, null, connection);
+      // JdbcUtil.close(null, null, connection);
     }
 
   }
@@ -69,7 +69,7 @@ public class BasicDao<T> {
     } catch (SQLException e) {
       throw new RuntimeException(e); // 将编译异常->运行异常 ,抛出
     } finally {
-      JdbcUtil.close(null, null, connection);
+      // JdbcUtil.close(null, null, connection);
     }
 
   }
@@ -85,7 +85,7 @@ public class BasicDao<T> {
     } catch (SQLException e) {
       throw new RuntimeException(e); // 将编译异常->运行异常 ,抛出
     } finally {
-      JdbcUtil.close(null, null, connection);
+      // JdbcUtil.close(null, null, connection);
     }
   }
 
@@ -101,7 +101,7 @@ public class BasicDao<T> {
     } catch (SQLException e) {
       throw new RuntimeException(e); // 将编译异常->运行异常 ,抛出
     } finally {
-      JdbcUtil.close(null, null, connection);
+      // JdbcUtil.close(null, null, connection);
     }
   }
 

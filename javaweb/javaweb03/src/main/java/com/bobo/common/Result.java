@@ -1,5 +1,8 @@
 package com.bobo.common;
 
+import lombok.ToString;
+
+@ToString
 public class Result<T> {
     //判断是否成功
     private String code;

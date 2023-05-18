@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "HttpUtils",
+      "request": "launch",
+      "mainClass": "com.bobo.utils.http.HttpUtils",
+      "projectName": "ajaxtest"
+    },
+    {
+      "type": "java",
       "name": "aaa",
       "request": "launch",
       "mainClass": "com.bobo.utils.aaa",

@@ -28,7 +28,6 @@ public class MyAdvice implements Advice {
   @Override
   public void after() {
     System.out.println("后置");
-    // JdbcUtil.commit();
     log_.setCode("success");
   }
 

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.AppTest" time="0.008" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="e:\Visual Studio Code\java\java_study\javaweb\demo11\target\test-classes;e:\Visual Studio Code\java\java_study\javaweb\demo11\target\classes;E:\Visual Studio Code\Apache\apache-maven-4.0.0-alpha-5\Repository\junit\junit\3.8.1\junit-3.8.1.jar;E:\Visual Studio Code\Apache\apache-maven-4.0.0-alpha-5\Repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar;E:\Visual Studio Code\Apache\apache-maven-4.0.0-alpha-5\Repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
+    <property name="sun.java.command" value="F:\temp\surefire10178632642656652642\surefirebooter15097466593990535418.jar F:\temp\surefire10178632642656652642 2023-05-16T11-40-31_442-jvmRun1 surefire7793136432496862400tmp surefire_013271841602369373382tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="e:\Visual Studio Code\java\java_study\javaweb\demo11\target\test-classes;e:\Visual Studio Code\java\java_study\javaweb\demo11\target\classes;E:\Visual Studio Code\Apache\apache-maven-4.0.0-alpha-5\Repository\junit\junit\3.8.1\junit-3.8.1.jar;E:\Visual Studio Code\Apache\apache-maven-4.0.0-alpha-5\Repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar;E:\Visual Studio Code\Apache\apache-maven-4.0.0-alpha-5\Repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\30545"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.8"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="e:\Visual Studio Code\java\java_study\javaweb\demo11"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="F:\temp\surefire10178632642656652642\surefirebooter15097466593990535418.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.8+10-LTS"/>
+    <property name="user.name" value="30545"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="E:\Visual Studio Code\Apache\apache-maven-4.0.0-alpha-5\Repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="F:\temp\"/>
+    <property name="java.version" value="11.0.8"/>
+    <property name="user.dir" value="e:\Visual Studio Code\java\java_study\javaweb\demo11"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-11.0.8\bin;C:\Program Files\Java\jdk-11.0.8\jre\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;D:\app\30545\virtual\product\12.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Users\30545\AppData\Local\Android\Sdk\platform-tools;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\Visual Studio Code\mingw64\bin;%MAVEN_HOME%\bin;E:\Visual Studio Code\Apache\apache-tomcat-9.0.56\lib;E:\Visual Studio Code\Apache\apache-tomcat-9.0.56\bin;E:\NodeJs\;E:\WeChat Tool\微信web开发者工具\dll;E:\Git\cmd;E:\Xshell\;E:\Redis\;E:\mysql-8.0.32-winx64\bin;E:\NodeJs\node_global;C:\Users\30545\.cargo\bin;E:\pthyon\Scripts\;E:\pthyon\;C:\Users\30545\AppData\Local\Microsoft\WindowsApps;E:\pycharm\PyCharm 2020.2.3\bin;;E:\Visual Studio Code\Microsoft VS Code\bin;E:\Git\bin;E:\Visual Studio Code\Apache\apache-maven-4.0.0-alpha-5\bin;C:\Users\30545\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.8+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testApp" classname="org.example.AppTest" time="0.001"/>
+</testsuite>

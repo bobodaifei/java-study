@@ -29,7 +29,6 @@ import cn.hutool.json.JSONUtil;
 @WebServlet("/user")
 public class UserServlet extends HttpServlet {
 
-  private UserService userService = new UserServiceImpl();
   ShopService shopService = new ShopServiceImpl();
   
   @Override

@@ -50,36 +50,42 @@ public class Z_LoginFilter implements Filter {
       filterChain.doFilter(servletRequest, servletResponse);
       return;
     }
-    
+
     String token = request.getHeader("Access-Token");
     if (StrUtil.isBlank(token)) {
       // throw new CustomException("401", "未获取到token, 请重新登录");
-      out.write(JSON.toJSONString(Result.error("-1", "未获取到token, 请重新登录")));
+      out.write(JSON.toJSONString(Result.error("401", "未获取到token, 请重新登录")));
       return;
     }
 
-    String user_no = JWT.decode(token).getAudience().get(0);
-    User user = userService.selectById(user_no);
-    if (user == null) {
-      out.write(JSON.toJSONString(Result.error("-1", "token不合法")));
-      return;
-    }
-
-    // 验证 token
-    JWTVerifier jwtVerifier = JWT.require(Algorithm.HMAC256(user.getPassword())).build();
     try {
-      jwtVerifier.verify(token);
+      String user_no = JWT.decode(token).getAudience().get(0);
+      User user = userService.selectById(user_no);
+      if (user == null) {
+        out.write(JSON.toJSONString(Result.error("401", "token不合法")));
+        return;
+      }
+
+      // 验证 token
+      JWTVerifier jwtVerifier = JWT.require(Algorithm.HMAC256(user.getPassword())).build();
+      try {
+        jwtVerifier.verify(token);
+      } catch (Exception e) {
+        out.write(JSON.toJSONString(Result.error("401", "token不合法")));
+        return;
+      }
     } catch (Exception e) {
-      out.write(JSON.toJSONString(Result.error("-1", "token不合法")));
+      out.write(JSON.toJSONString(Result.error("401", "token不合法")));
       return;
     }
+
     filterChain.doFilter(servletRequest, servletResponse);
   }
 
   @Override
   public void destroy() {
     // TODO Auto-generated method stub
- 
+
   }
 
   @Override
@@ -87,5 +93,5 @@ public class Z_LoginFilter implements Filter {
     // TODO Auto-generated method stub
 
   }
-  
+
 }

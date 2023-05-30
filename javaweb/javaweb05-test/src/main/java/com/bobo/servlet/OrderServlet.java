@@ -47,34 +47,19 @@ public class OrderServlet extends BaseServlet {
     PrintWriter out = resp.getWriter();
     String currentPageStr = req.getParameter("currentPage");
     String pageSizeStr = req.getParameter("pageSize");
+    // String status = req.getParameter("status");
+    String shop_no = getUser(req, resp).getShop().getShop_no();
+
     int currentPage = 0;
     int pageSize = 10;
     if (!(currentPageStr == null || pageSizeStr == null)) {
       currentPage = Integer.valueOf(currentPageStr);
       pageSize = Integer.valueOf(pageSizeStr);
     }
-    HttpSession session = req.getSession();
-    String shop_no = (String) session.getAttribute("shopNo");
-    String status = req.getParameter("status");
-    long total = 0;
-    if (status == null) {
-      total = orderService.selectCount(shop_no);
-    } else {
-      total = orderService.selectCount(shop_no, status);
-    }
-    int begin = (currentPage - 1) * pageSize;
 
-    if (begin >= total) {
-      currentPage--;
-      begin = begin - pageSize;
-    }
-    if (currentPage < 1) {
-      currentPage = 1;
-      begin = 0;
-    }
-    List<OrderVO> list = orderService.selectPage(begin, pageSize, shop_no);
+    Page<OrderVO> res = orderService.selectPage(currentPage, pageSize, shop_no);
 
-    out.write(JSON.toJSONString(Result.success(new Page<OrderVO>(list, total, pageSize, currentPage))));
+    out.write(JSON.toJSONString(Result.success(res)));
   }
 
 }

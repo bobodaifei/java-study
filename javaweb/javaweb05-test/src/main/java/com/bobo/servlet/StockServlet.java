@@ -68,17 +68,15 @@ public class StockServlet extends BaseServlet {
     PrintWriter out = resp.getWriter();
 
     User user = getUser(req, resp);
-    String shop_no = user.getShop().getShop_no();
 
+    String shop_no = user.getShop().getShop_no();
     String str = req.getReader().readLine();
     Stock stock_ = JSONUtil.toBean(str, Stock.class);
     stock_.setShop_no(shop_no);
 
     StockService stockService = (StockService) ProxyFactory.getInstance(
         StockServiceImpl.class, new TestHandler(new MyAdvice(getUser(req, resp).getUser_no())));
-        
     int res = stockService.insert(stock_);
-
     if (res == 0) {
       out.write(JSON.toJSONString(Result.error("-1", "删除失败")));
       return;
@@ -120,6 +118,7 @@ public class StockServlet extends BaseServlet {
   protected void selectPage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     PrintWriter out = resp.getWriter();
     User user = getUser(req, resp);
+    String shop_no = user.getShop().getShop_no();
     String currentPageStr = req.getParameter("currentPage");
     String pageSizeStr = req.getParameter("pageSize");
 
@@ -130,22 +129,9 @@ public class StockServlet extends BaseServlet {
       pageSize = Long.valueOf(pageSizeStr);
     }
 
-    String shop_no = user.getShop().getShop_no();
-    long total = stockService.selectCount(shop_no);
+    Page<StockVO> res = stockService.selectPage(currentPage, pageSize, shop_no);
 
-    long begin = (currentPage - 1) * pageSize;
-    if (begin >= total) {
-      currentPage--;
-      begin = begin - pageSize;
-    }
-    if (currentPage < 1) {
-      currentPage = 1;
-      begin = 0;
-    }
-
-    List<StockVO> res = stockService.selectPage(begin, pageSize, shop_no);
-
-    out.write(JSON.toJSONString(Result.success(new Page<StockVO>(res, total, pageSize, currentPage))));
+    out.write(JSON.toJSONString(Result.success(res)));
   }
 
 }

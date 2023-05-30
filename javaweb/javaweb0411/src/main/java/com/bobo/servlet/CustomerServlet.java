@@ -45,6 +45,8 @@ public class CustomerServlet extends HttpServlet {
     CustomerService customerService = (CustomerService) ProxyFactory.getInstance(CustomerServiceImpl.class,
         new TestHandler(new MyAdvice(customer_no)));
 
+    req.getReader()
+
     Customer customer = new Customer();
     customer.setCustomer_no(customer_no);
     customer.setPassword(password);

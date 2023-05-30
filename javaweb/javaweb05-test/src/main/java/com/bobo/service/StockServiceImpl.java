@@ -2,6 +2,7 @@ package com.bobo.service;
 
 import java.util.List;
 
+import com.bobo.common.Page;
 import com.bobo.dao.StockDao;
 import com.bobo.entity.Good;
 import com.bobo.entity.Stock;
@@ -21,8 +22,21 @@ public class StockServiceImpl implements StockService {
   }
 
   @Override
-  public List<StockVO> selectPage(long begin, long pageSize, String shop_no) {
-    return stockDao.selectPage(begin, pageSize, shop_no);
+  public Page<StockVO> selectPage(long currentPage, long pageSize, String shop_no) {
+    long total = selectCount(shop_no);
+
+    long begin = (currentPage - 1) * pageSize;
+    if (begin >= total) {
+      currentPage--;
+      begin = begin - pageSize;
+    }
+    if (currentPage < 1) {
+      currentPage = 1;
+      begin = 0;
+    }
+    List<StockVO> res = stockDao.selectPage(begin, pageSize, shop_no);
+    
+    return new Page<StockVO>(res, total, pageSize, currentPage);
   }
 
   @Override

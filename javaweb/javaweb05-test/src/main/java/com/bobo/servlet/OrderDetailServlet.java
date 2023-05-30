@@ -2,11 +2,9 @@ package com.bobo.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -16,13 +14,10 @@ import com.bobo.common.Result;
 import com.bobo.entity.OrderDetail;
 import com.bobo.entity.OrderDetailVO;
 import com.bobo.entity.OrderVO;
-import com.bobo.entity.StockVO;
 import com.bobo.service.OrderDetailService;
 import com.bobo.service.OrderDetailServiceImpl;
 import com.bobo.service.OrderService;
 import com.bobo.service.OrderServiceImpl;
-import com.bobo.service.StockService;
-import com.bobo.service.StockServiceImpl;
 
 @WebServlet("/orderDetail")
 public class OrderDetailServlet extends BaseServlet {
@@ -57,21 +52,10 @@ public class OrderDetailServlet extends BaseServlet {
       currentPage = Integer.valueOf(currentPageStr);
       pageSize = Integer.valueOf(pageSizeStr);
     }
-    long total = orderDetailService.selectCount(order_no);
-    int begin = (currentPage - 1) * pageSize;
+    
+    Page<OrderDetail> res = orderDetailService.selectPage(currentPage, pageSize, order_no);
 
-    if (begin >= total) {
-      currentPage--;
-      begin = begin - pageSize;
-    }
-    if (currentPage < 1) {
-      currentPage = 1;
-      begin = 0;
-    }
-
-    List<OrderDetail> list = orderDetailService.selectPage(begin, pageSize, order_no);
-
-    out.write(JSON.toJSONString(Result.success(new Page<OrderDetail>(list, total, pageSize, currentPage))));
+    out.write(JSON.toJSONString(Result.success(res)));
   }
 
 
@@ -90,21 +74,8 @@ public class OrderDetailServlet extends BaseServlet {
       pageSize = Integer.valueOf(pageSizeStr);
     }
 
-    long total = orderDetailService.selectCountByGoodNo(good_no);
-
-    int begin = (currentPage - 1) * pageSize;
-
-    if (begin >= total) {
-      currentPage--;
-      begin = begin - pageSize;
-    }
-    if (currentPage < 1) {
-      currentPage = 1;
-      begin = 0;
-    }
-
-    List<OrderDetailVO> list = orderDetailService.selectPageByGoodNo(begin, pageSize, good_no);
-    out.write(JSON.toJSONString(Result.success(new Page<OrderDetailVO>(list,total,pageSize,currentPage))));
+    Page<OrderDetailVO> res = orderDetailService.selectPageByGoodNo(currentPage, pageSize, good_no);
+    out.write(JSON.toJSONString(Result.success(res)));
   }
 
 }

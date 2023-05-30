@@ -2,6 +2,7 @@ package com.bobo.service;
 
 import java.util.List;
 
+import com.bobo.common.Page;
 import com.bobo.dao.OrderDao;
 import com.bobo.entity.OrderVO;
 
@@ -20,8 +21,21 @@ public class OrderServiceImpl implements OrderService {
   }
 
   @Override
-  public List<OrderVO> selectPage(int begin, int pageSize, String shop_no) {
-    return orderDao.selectPage(begin, pageSize, shop_no);
+  public Page<OrderVO> selectPage(int currentPage, int pageSize, String shop_no) {
+    long total = selectCount(shop_no);
+
+    int begin = (currentPage - 1) * pageSize;
+    if (begin >= total) {
+      currentPage--;
+      begin = begin - pageSize;
+    }
+    if (currentPage < 1) {
+      currentPage = 1;
+      begin = 0;
+    }
+    List<OrderVO> res = orderDao.selectPage(begin, pageSize, shop_no);
+    
+    return new Page<OrderVO>(res, total, pageSize, currentPage);
   }
 
   @Override

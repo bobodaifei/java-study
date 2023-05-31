@@ -6,9 +6,12 @@ import org.example.mapper.ClassMapper;
 import org.example.service.ClassService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
-// @Component(value = "classService")
 @Component("classService")
+@Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED, readOnly = false)
 public class ClassServiceImpl implements ClassService {
 
   @Value("${jdbc.url}")
@@ -31,7 +34,7 @@ public class ClassServiceImpl implements ClassService {
 
   // @Autowired
   // private void xxx(List<UserDao> userDaoList){
-  //   System.out.println(userDaoList);
+  // System.out.println(userDaoList);
   // };
 
   @Override
@@ -39,16 +42,16 @@ public class ClassServiceImpl implements ClassService {
     // System.out.println(userDao03);
     System.out.println(classMapper.findAll());
   }
+
   @Override
   public void show1() {
-    // System.out.println(userDao03);
-    int i = 1/0;
     System.out.println(classMapper.findAll());
   }
+
   @Override
+  @Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED, readOnly = false)
   public void update() {
     classMapper.update("cl0001", "奥里给");
-    // System.out.println(userDao03);
     // int i = 1/0;
     classMapper.update("cl0001", "奥里给1");
   }

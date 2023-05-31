@@ -17,6 +17,5 @@ public class ApplicationContextTest {
     ClassService object = (ClassService)applicationContext.getBean("classService");
     object.update();
 
-    
   }
 }

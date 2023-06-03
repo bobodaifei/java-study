@@ -18,6 +18,7 @@
     <input type="text" id="ename" placeholder="ÇëÊäÈëÕËºÅ" /><br>
     <input type="password" id="empno" placeholder="ÇëÊäÈëÃÜÂë" /><br>
     <button onclick="login()">µÇÂ¼</button>
+    <a href="/emp">µÇÂ¼</a>
   </center>
 </body>
 
@@ -26,7 +27,7 @@
     var ename = $('#ename').val();
     var empno = $('#empno').val();
     console.log(ename);
-    $.post("/ajaxtest/emp", {
+    $.post("/emp", {
       method: 'login',
       ename: ename,
       empno: empno

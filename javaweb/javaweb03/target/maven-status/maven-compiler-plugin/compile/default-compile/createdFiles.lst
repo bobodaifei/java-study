@@ -1,5 +1,4 @@
 com\bobo\dao\DeptDao.class
-com\bobo\Filter\Z_LoginFilter.class
 com\bobo\dao\EmpDao.class
 com\bobo\service\CustomerService.class
 com\bobo\utils\aop\ProxyFactory.class
@@ -20,7 +19,6 @@ com\bobo\Filter\A_PostFilter.class
 com\bobo\entity\Emp.class
 com\bobo\servlet\BaseServlet.class
 com\bobo\utils\aop\CurrencyHandler.class
-com\bobo\utils\JSONUtil.class
 com\bobo\servlet\EmpServlet.class
 com\bobo\utils\AffairsHandler.class
 com\bobo\dao\CustomerDao.class

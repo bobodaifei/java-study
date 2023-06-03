@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:aop="http://www.springframework.org/schema/aop"
-  xmlns:context="http://www.springframework.org/schema/context"
-  xmlns:tx="http://www.springframework.org/schema/tx"
-  xmlns:haohao="http://www.bobo.com/haohao"
-  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:haohao="http://www.bobo.com/haohao"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
                       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
                       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
@@ -13,85 +13,90 @@
                       ">
 
 
-  <bean id="classService" class="org.example.service.impl.ClassServiceImpl">
-    <property name="classMapper" ref="classMapper"></property>
-  </bean>
+  <!--  <bean id="classService" class="org.example.service.impl.ClassServiceImpl">-->
+  <!--    <property name="classMapper" ref="classMapper"></property>-->
+  <!--  </bean>-->
 
-  <!-- <bean id="myAdvice" class="org.example.advice.MyAdvice"></bean> -->
-  <!-- <bean id="myAdvice2" class="org.example.advice.MyAdvice02"></bean> -->
-  <!-- <bean id="myAdvice3" class="org.example.advice.MyAdvice03"></bean> -->
+  <!--  &lt;!&ndash; <bean id="myAdvice" class="org.example.advice.MyAdvice"></bean> &ndash;&gt;-->
+  <!--  &lt;!&ndash; <bean id="myAdvice2" class="org.example.advice.MyAdvice02"></bean> &ndash;&gt;-->
+  <!--  &lt;!&ndash; <bean id="myAdvice3" class="org.example.advice.MyAdvice03"></bean> &ndash;&gt;-->
 
-  <!-- 配置平台事务管理器 -->
-  <bean id="transactionManager"
-    class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-    <property name="dataSource" ref="dataSource"></property>
-  </bean>
+  <!--  &lt;!&ndash; 配置平台事务管理器 &ndash;&gt;-->
+  <!--  <bean id="transactionManager"-->
+  <!--    class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+  <!--    <property name="dataSource" ref="dataSource"></property>-->
+  <!--  </bean>-->
 
-  <!-- spring定义好的事务 -->
-  <!-- transactionManager事务管理器 -->
-  <tx:advice id="txAdvice" transaction-manager="transactionManager">
-    <!-- 事务的attributes属性 -->
-    <tx:attributes>
-      <!-- 配置不同的方法的事务属性 -->
-      <!-- name:方法名称 -->
-      <!-- 添加操作：add* ;修改操作：update* ;删除操作：delete*-->
-      <tx:method name="update*" />
-      <!-- isolation事务隔离级别 -->
-      <!-- timeout 超时时间（秒） -->
-      <!-- read-only 是否只读，一般为false(true的前提是个查询操作) -->
-      <!-- propagation 事务的传播行为，解决业务方法调用业务方法（事务嵌套问题） -->
-      <tx:method name="delete*" isolation="DEFAULT" timeout="3" read-only="false" propagation="REQUIRED"/>
-      <tx:method name="add*" />
-      <tx:method name="*" />
-    </tx:attributes>
-  </tx:advice>
+  <!--  &lt;!&ndash; spring定义好的事务 &ndash;&gt;-->
+  <!--  &lt;!&ndash; transactionManager事务管理器 &ndash;&gt;-->
+  <!--  <tx:advice id="txAdvice" transaction-manager="transactionManager">-->
+  <!--    &lt;!&ndash; 事务的attributes属性 &ndash;&gt;-->
+  <!--    <tx:attributes>-->
+  <!--      &lt;!&ndash; 配置不同的方法的事务属性 &ndash;&gt;-->
+  <!--      &lt;!&ndash; name:方法名称 &ndash;&gt;-->
+  <!--      &lt;!&ndash; 添加操作：add* ;修改操作：update* ;删除操作：delete*&ndash;&gt;-->
+  <!--      <tx:method name="update*" />-->
+  <!--      &lt;!&ndash; isolation事务隔离级别 &ndash;&gt;-->
+  <!--      &lt;!&ndash; timeout 超时时间（秒） &ndash;&gt;-->
+  <!--      &lt;!&ndash; read-only 是否只读，一般为false(true的前提是个查询操作) &ndash;&gt;-->
+  <!--      &lt;!&ndash; propagation 事务的传播行为，解决业务方法调用业务方法（事务嵌套问题） &ndash;&gt;-->
+  <!--      <tx:method name="delete*" isolation="DEFAULT" timeout="3" read-only="false" propagation="REQUIRED"/>-->
+  <!--      <tx:method name="add*" />-->
+  <!--      <tx:method name="*" />-->
+  <!--    </tx:attributes>-->
+  <!--  </tx:advice>-->
 
-  <!-- aop配置 -->
-  <aop:config>
-    <!-- 切点表达式 目的就是要指定哪些方法被增强 -->
-    <aop:pointcut id="myPointcut"
-      expression="execution(void org.example.service.impl.*.*(..))" />
+  <!--  &lt;!&ndash; aop配置 &ndash;&gt;-->
+  <!--  <aop:config>-->
+  <!--    &lt;!&ndash; 切点表达式 目的就是要指定哪些方法被增强 &ndash;&gt;-->
+  <!--    <aop:pointcut id="myPointcut"-->
+  <!--      expression="execution(void org.example.service.impl.*.*(..))" />-->
 
-    <aop:advisor advice-ref="txAdvice" pointcut-ref="myPointcut" />
+  <!--    <aop:advisor advice-ref="txAdvice" pointcut-ref="myPointcut" />-->
 
-    <!-- 配置织入，目的是要执行哪些切点与哪些通知进行结合 -->
-    <!-- <aop:aspect ref="myAdvice"> -->
-    <!-- 提供前置增强 -->
-    <!-- <aop:before method="before" pointcut-ref="myPointcut" />
-      <aop:after method="after"
-        pointcut="execution(void org.example.service.impl.ClassServiceImpl.show1())" />
-    </aop:aspect> -->
-  </aop:config>
-  <!-- <haohao:annotation-driven /> -->
+  <!--    &lt;!&ndash; 配置织入，目的是要执行哪些切点与哪些通知进行结合 &ndash;&gt;-->
+  <!--    &lt;!&ndash; <aop:aspect ref="myAdvice"> &ndash;&gt;-->
+  <!--    &lt;!&ndash; 提供前置增强 &ndash;&gt;-->
+  <!--    &lt;!&ndash; <aop:before method="before" pointcut-ref="myPointcut" />-->
+  <!--      <aop:after method="after"-->
+  <!--        pointcut="execution(void org.example.service.impl.ClassServiceImpl.show1())" />-->
+  <!--    </aop:aspect> &ndash;&gt;-->
+  <!--  </aop:config>-->
+  <!--  &lt;!&ndash; <haohao:annotation-driven /> &ndash;&gt;-->
 
-  <bean class="org.mybatis.spring.SqlSessionFactoryBean">
-    <property name="dataSource" ref="dataSource"></property>
-  </bean>
+  <!--  <bean class="org.mybatis.spring.SqlSessionFactoryBean">-->
+  <!--    <property name="dataSource" ref="dataSource"></property>-->
+  <!--  </bean>-->
 
-  <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-    <property name="basePackage" value="org.example.mapper"></property>
-  </bean>
+  <!--  <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
+  <!--    <property name="basePackage" value="org.example.mapper"></property>-->
+  <!--  </bean>-->
 
-  <!-- 不需要了 -->
-  <!-- <import resource="mybatis-config.xml" /> -->
+  <!--  &lt;!&ndash; 不需要了 &ndash;&gt;-->
+  <!--  &lt;!&ndash; <import resource="mybatis-config.xml" /> &ndash;&gt;-->
 
-  <context:property-placeholder location="classpath:db.properties" />
+  <!--  <context:property-placeholder location="classpath:db.properties" />-->
 
-  <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
-    <property name="driverClassName" value="${jdbc.driverClassName}"></property>
-    <property name="url" value="${jdbc.url}"></property>
-    <property name="username" value="${jdbc.username}"></property>
-    <property name="password" value="${jdbc.password}"></property>
-  </bean>
+  <!--  <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+  <!--    <property name="driverClassName" value="${jdbc.driverClassName}"></property>-->
+  <!--    <property name="url" value="${jdbc.url}"></property>-->
+  <!--    <property name="username" value="${jdbc.username}"></property>-->
+  <!--    <property name="password" value="${jdbc.password}"></property>-->
+  <!--  </bean>-->
 
   <!-- <bean id="classService" class="org.example.service.ClassServiceImpl">
     <property name="classMapper" ref="classMapper"></property>
   </bean> -->
 
 
-  <!-- <bean class="org.example.processor.MyComPonentBeanFactoryPostProcessor"></bean> -->
-  <!-- <bean class="org.example.processor.MyBeanPostProcessor"></bean> -->
+  <bean class="org.example.processor.MyComPonentBeanFactoryPostProcessor"></bean>
+  <bean class="org.example.processor.MyBeanPostProcessor1"></bean>
 
+  <bean class="org.example.processor.MyBeanPostProcessor"></bean>
+
+  <bean id="aClass" class="org.example.entity.Class_">
+    <property name="class_name" value="zhangsan"></property>
+  </bean>
 
   <!-- <bean id="userService" class="org.example.service.UserServiceImpl">
     <property name="userDao" ref="userDao"></property>

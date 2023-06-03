@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="spring-web-test01:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d75a4bda-9119-4349-85c7-ed3d847ad0d6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../spring/spring-demo/src/main/java/org/example/processor/MyBeanPostProcessor1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent-test/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent-test/demo-contson-test/src/main/java/com/example/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent-test/demo-contson-test/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent-test/demo-contson-test/src/test/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent/demo-dao/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent/demo-dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent/demo-dao/src/main/java/com/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent/demo-dao/src/test/java/com/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent/demo-entity/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent/demo-entity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent/demo-entity/src/main/java/com/example/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo/src/main/java/com/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo/src/test/java/com/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-web-test/src/main/java/com/bobo/springweb/config/MyAnnotationConfigWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-web-test/src/main/java/com/bobo/springweb/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-web-test/src/main/java/com/bobo/springweb/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-web-test/src/main/java/com/bobo/springweb/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-web-test/src/main/java/com/bobo/springweb/service/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-web-test/src/main/java/com/bobo/springweb/web/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-web-test/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/webmvc/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/webmvc/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/webmvc/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/webmvc/service/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/src/main/java/com/bobo/Filter/Z_LoginFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/Filter/A_PostFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/Filter/A_PostFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/Filter/Z_LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/BasicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/BasicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/CustomerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/DeptDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/DeptDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/EmpDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/EmpDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/LogDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/LogDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Dept.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Dept.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Emp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Log_.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Log_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/BaseServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/DeptServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/DeptServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/EmpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/EmpServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/AffairsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/AffairsHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/CurrencyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/CurrencyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JdbcUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JdbcUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Jwtutils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Jwtutils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/ProxyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/ProxyFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Proxy_.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Proxy_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/Advice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/Advice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/CurrencyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/CurrencyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/MyAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/MyAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/ProxyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/ProxyFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/TestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/TestHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/HttpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/HttpUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/StreamUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/StreamUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/src/main/java/org/example/entity/Class_.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/src/main/java/org/example/entity/Class_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/src/main/java/org/example/processor/MyBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/src/main/java/org/example/processor/MyBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/src/main/java/org/example/test/ApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/src/main/java/org/example/test/ApplicationContextTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/advice/MyAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/advice/MyAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/advice/MyAdvice02.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/advice/MyAdvice02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/advice/MyAdvice03.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/advice/MyAdvice03.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/config/HaohaoBeanDefinitionParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/config/HaohaoBeanDefinitionParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/config/HaohaoNamespaceHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/config/HaohaoNamespaceHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/dao/MyComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/dao/MyComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/dao/PersionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/dao/PersionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/dao/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/entity/Class_.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/entity/Class_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/entity/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/entity/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/HttpClient01.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/HttpClient01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/daili01.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/daili01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/h01.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/h01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/ph01.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/ph01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post01from.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post01from.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post01https$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post01https$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post01https$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post01https$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post01https.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post01https.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post02json.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post02json.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post03fromfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/http/post03fromfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/mapper/ClassMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/mapper/ClassMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/mapper/StudentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/mapper/StudentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/mapper/TeacherMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/mapper/TeacherMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/processor/HaohaoBeanPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/processor/HaohaoBeanPostProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/processor/MyBeanPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/processor/MyBeanPostProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/processor/MyComPonentBeanFactoryPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/processor/MyComPonentBeanFactoryPostProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/service/ClassService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/service/ClassService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/service/impl/ClassServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/service/impl/ClassServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/test/ApplicationContextTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/test/ApplicationContextTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/test/BeanFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/test/BeanFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/test/MybatisTest.java--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/test/socketTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/test/socketTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/utils/BaseClassScanUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/utils/BaseClassScanUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/utils/HttpClientUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/utils/HttpClientUtil$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/utils/HttpClientUtil$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/utils/HttpClientUtil$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/utils/HttpClientUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/utils/HttpClientUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo/target/classes/org/example/utils/MybatisUtils.java--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/demo-parent/demo-son/src/main/java/com/example/demoson/controller/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/demo-parent/demo-son/src/main/java/com/example/controller/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Maven/23-04-20-maven.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Maven/23-04-20-maven.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2QdXLKl6gmE2VNTHlzereXnqyqW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Visual Studio Code/java/java_study/springmvc/spring-web-test01/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "spring",
+    "spring.configuration.checksum": "21b452d2e9b8c976814609840130b8f7",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Visual Studio Code\java\java_study\springmvc\spring-web-test01\src\main\resources" />
+      <recent name="E:\Visual Studio Code\java\java_study\springmvc\spring-web-test01\src\main\java\com\bobo\webmvc" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Visual Studio Code\java\java_study\springmvc\spring-web-test01\src\main\webapp\user" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bobo.webmvc.dao" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.56" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.56" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="spring-web-test01:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="917a51e2-3b7a-437c-9a98-8047fdd3a531" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55506" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="spring-web-test01:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d75a4bda-9119-4349-85c7-ed3d847ad0d6" name="Changes" comment="" />
+      <created>1685684377013</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685684377013</updated>
+      <workItem from="1685684378083" duration="941000" />
+      <workItem from="1685685432234" duration="5098000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

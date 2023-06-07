@@ -1,12 +1,13 @@
 package com.bobo.dao;
 
-import java.util.List;
-
-import com.bobo.dao.StockDao;
 import com.bobo.entity.Good;
 import com.bobo.entity.Stock;
 import com.bobo.entity.StockVO;
+import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
+@Repository
 public class StockDao extends BasicDao<Stock>{
 
   public StockVO selectOne(String good_no) {

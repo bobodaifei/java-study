@@ -1,17 +1,6 @@
 package com.bobo.servlet;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
-import java.util.stream.Collectors;
-
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
+import cn.hutool.json.JSONUtil;
 import com.alibaba.fastjson.JSON;
 import com.bobo.common.Page;
 import com.bobo.common.Result;
@@ -19,20 +8,22 @@ import com.bobo.entity.Good;
 import com.bobo.entity.Stock;
 import com.bobo.entity.StockVO;
 import com.bobo.entity.User;
-import com.bobo.service.GoodService;
-import com.bobo.service.GoodServiceImpl;
 import com.bobo.service.StockService;
-import com.bobo.service.StockServiceImpl;
-import com.bobo.utils.aop.MyAdvice;
-import com.bobo.utils.aop.ProxyFactory;
-import com.bobo.utils.aop.TestHandler;
+import com.bobo.utils.BeanFactory;
 
-import cn.hutool.json.JSONUtil;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
 
 @WebServlet("/stock")
 public class StockServlet extends BaseServlet {
 
-  private StockService stockService = new StockServiceImpl();
+
+  private StockService stockService = BeanFactory.getBean(StockService.class);
 
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -74,8 +65,6 @@ public class StockServlet extends BaseServlet {
     Stock stock_ = JSONUtil.toBean(str, Stock.class);
     stock_.setShop_no(shop_no);
 
-    StockService stockService = (StockService) ProxyFactory.getInstance(
-        StockServiceImpl.class, new TestHandler(new MyAdvice(getUser(req, resp).getUser_no())));
     int res = stockService.insert(stock_);
     if (res == 0) {
       out.write(JSON.toJSONString(Result.error("-1", "删除失败")));
@@ -88,8 +77,6 @@ public class StockServlet extends BaseServlet {
     PrintWriter out = resp.getWriter();
     String good_no = req.getParameter("good_no");
 
-    StockService stockService = (StockService) ProxyFactory.getInstance(
-        StockServiceImpl.class, new TestHandler(new MyAdvice(getUser(req, resp).getUser_no())));
     int res = stockService.delete(good_no);
     if (res == 0) {
       out.write(JSON.toJSONString(Result.error("-1", "删除失败")));
@@ -104,8 +91,6 @@ public class StockServlet extends BaseServlet {
     String str = req.getReader().readLine();
     Stock stock_ = JSONUtil.toBean(str, Stock.class);
 
-    StockService stockService = (StockService) ProxyFactory.getInstance(
-        StockServiceImpl.class, new TestHandler(new MyAdvice(getUser(req, resp).getUser_no())));
     int res = stockService.update(stock_);
 
     if (res == 0) {

@@ -1,8 +1,12 @@
 package com.bobo.webmvc.controller;
 
+import com.bobo.webmvc.entity.User;
 import com.bobo.webmvc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -12,9 +16,17 @@ public class UserController {
   @Autowired
   private UserService userService;
 
-  @RequestMapping("/login")
+  @GetMapping("/login")
   public String login() {
     userService.selectAll();
-    return "index.jsp";
+    return "index";
   }
+
+  @PostMapping("/update")
+  public String update(@RequestBody User user) {
+    System.out.println(user);
+    return "index";
+  }
+
 }
+

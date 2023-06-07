@@ -1,18 +1,6 @@
 package com.bobo.Filter;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebFilter;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
@@ -20,14 +8,20 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.bobo.common.Result;
 import com.bobo.entity.User;
 import com.bobo.service.UserService;
-import com.bobo.service.UserServiceImpl;
+import com.bobo.utils.BeanFactory;
 
-import cn.hutool.core.util.StrUtil;
+import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebFilter(filterName = "Z_LoginFilter", urlPatterns = "/*")
 public class Z_LoginFilter implements Filter {
 
-  private UserService userService = new UserServiceImpl();
+
+  UserService userService = BeanFactory.getBean(UserService.class);
 
   @Override
   public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)

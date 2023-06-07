@@ -2,10 +2,8 @@ package org.example.advice;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterThrowing;
-import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.stereotype.Component;
 
 
 // @Component
@@ -14,7 +12,6 @@ public class MyAdvice {
 
   @Pointcut("execution(void org.example.service.impl.ClassServiceImpl.show1())")
   public void myCut() {
-    
   }
 
   @Before("MyAdvice.myCut()")

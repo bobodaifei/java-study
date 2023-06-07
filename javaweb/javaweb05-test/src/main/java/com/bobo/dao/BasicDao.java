@@ -1,19 +1,19 @@
 package com.bobo.dao;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.List;
-
+import com.bobo.utils.JdbcUtil;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ColumnListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
+import org.springframework.stereotype.Repository;
 
-import com.bobo.utils.JdbcUtil;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
 
 
-
+@Repository
 public class BasicDao<T> {
 
   private QueryRunner qr = new QueryRunner();

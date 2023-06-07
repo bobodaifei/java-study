@@ -1,7 +1,9 @@
 package com.bobo.dao;
 
 import com.bobo.entity.User;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class UserDao extends BasicDao<User>{
   public User login(User user) {
     String sql = "select * from user where user_no = ? and password = ?";

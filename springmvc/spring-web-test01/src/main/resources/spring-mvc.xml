@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
   <context:component-scan base-package="com.bobo.webmvc.controller"/>
 
-  <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
-    <property name="messageConverters">
-      <list>
-        <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
-      </list>
-    </property>
+
+  <!--  配置文件上传解析器  -->
+  <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    <property name="defaultEncoding" value="UTF-8"/>
+    <property name="maxUploadSizePerFile" value="1048576"/>
+    <property name="maxUploadSize" value="3145728"/>
+    <property name="maxInMemorySize" value="1048576"/>
+  </bean>
+
+
+  <!--  &lt;!&ndash; 注入后就无法自动注入另外两个HandlerMapping &ndash;&gt;-->
+  <!--  <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>-->
+
+  <!--  &lt;!&ndash; post请求的请求体转对象 &ndash;&gt;-->
+  <!--  <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">-->
+  <!--    <property name="messageConverters">-->
+  <!--      <list>-->
+  <!--        <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>-->
+  <!--      </list>-->
+  <!--    </property>-->
+  <!--  </bean>-->
+
+  <!-- 为了简化配置，下面的标签将简化RequestMappingHandlerMapping、RequestMappingHandlerAdapter等的配置 -->
+  <mvc:annotation-driven/>
+
+  <!-- 允许访问静态资源，但如果RequestMappingHandlerMapping没有注入，会默认诸如一个SimpleUrlHandlerMapping，导致无法访问Controller -->
+  <mvc:default-servlet-handler/>
+  <!-- 允许访问静态资源的另一种解决方案 -->
+  <!--  <mvc:resources mapping="/img/*" location="/img/"/>-->
+  <!--  <mvc:resources mapping="/css/*" location="/css/"/>-->
+  <!--  <mvc:resources mapping="/css/*" location="/js/"/>-->
+  <!--  <mvc:resources mapping="/html/*" location="/html/"/>-->
+
+  <mvc:interceptors>
+    <mvc:interceptor>
+      <!--   哪些请求路径进行拦截   -->
+      <mvc:mapping path="/**"/>
+      <bean class="com.bobo.webmvc.interceptors.Interceptor1"/>
+    </mvc:interceptor>
+  </mvc:interceptors>
+
+  <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="prefix" value="/jsp/"/>
+    <property name="suffix" value=".jsp"/>
   </bean>
 
 </beans>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="09c2ae01-3bb7-4020-bcb1-7b3e5ea52717" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/advice/MyAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/impl/GoodServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/impl/ShopServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/utils/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/service/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/test/AbstractApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/test/ApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/test/BeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/test/BeanDefinitionReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/test/BeanDefinitionRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/test/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/test/ClassPathXmlApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/test/SimpleBeanDefinitionRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/test/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ioc/test/XmlBeanDefinitionReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/java/com/bobo/webmvc/config/MyAnnotationConfigWebApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/java/com/bobo/webmvc/config/MyWebMvcConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/java/com/bobo/webmvc/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/java/com/bobo/webmvc/config/SpringMVCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/java/com/bobo/webmvc/controller/FileUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/java/com/bobo/webmvc/controller/ModelAndViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/java/com/bobo/webmvc/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/java/com/bobo/webmvc/init/MyAbstractAnnotationConfigDispatcherServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/java/com/bobo/webmvc/interceptors/Interceptor1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/webapp/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/Filter/Z_LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/Filter/Z_LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/BasicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/BasicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/DeptDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/DeptDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/GoodDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/GoodDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/LogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/LogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/OrderDetailDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/OrderDetailDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/ShopDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/StockDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/StockDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/GoodServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/OrderDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/ShopServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/StockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/impl/StockServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/service/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/servlet/BaseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/servlet/BaseServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/servlet/OrderDetailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/servlet/OrderDetailServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/servlet/OrderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/servlet/OrderServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/servlet/StockServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/servlet/StockServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/src/main/java/com/bobo/servlet/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/Filter/Z_LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/Filter/Z_LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/BasicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/BasicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/DeptDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/DeptDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/GoodDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/GoodDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/LogDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/LogDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/OrderDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/OrderDetailDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/OrderDetailDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/ShopDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/ShopDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/StockDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/StockDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/service/GoodServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/service/OrderDetailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/service/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/service/ShopServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/service/StockServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/service/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/servlet/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/servlet/BaseServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/servlet/OrderDetailServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/servlet/OrderDetailServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/servlet/OrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/servlet/OrderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/servlet/StockServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/servlet/StockServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb05-test/target/javaweb05/WEB-INF/classes/com/bobo/servlet/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-demo03/src/main/java/org/example/advice/MyAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-demo03/src/main/java/org/example/advice/MyAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springmvc/spring-web-test01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/java/com/bobo/webmvc/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/java/com/bobo/webmvc/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/webapp/user/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springmvc/spring-web/src/main/java/com/bobo/springweb/utils/WebApplicationContextUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springmvc/spring-web/src/main/java/com/bobo/springweb/utils/WebApplicationContextUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/Spring/Spring的AOP开发/23-05-30-基于注解配置的AOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/Spring/Spring的AOP开发/23-05-30-基于注解配置的AOP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/log4j2/spring6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-javaweb常用对象获取.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-javaweb常用对象获取.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-注解驱动标签.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-注解驱动标签.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-请求数据的接收.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-请求数据的接收.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-请求静态资源.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-请求静态资源.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/23-06-01-Spring整合web环境的思路及实现.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/23-06-01-Spring的web开发组件spring-web.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/23-06-01-javaweb三大组件及环境特点.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/23-06-02-核心配置类方式怎么配置.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685619777647.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685620412689.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685623863420.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685623893996.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685674961641.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685675003608.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685675075638.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring的web开发组件spring-web/1685673614153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring的web开发组件spring-web/1685675096960.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring的web开发组件spring-web/1685675125458.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring的web开发组件spring-web/1685675141064.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-javaweb三大组件及环境特点/1685618854679.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/web层MVC架构思想和设计思路/23-06-02-web层MVC框架的思想.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/web层MVC架构思想和设计思路/23-06-02-web层MVC框架的思想/1685677023794.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/web层MVC架构思想和设计思路/23-06-02-web层MVC框架的思想/1685677144950.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/web层MVC架构思想和设计思路/23-06-02-web层MVC框架的思想/1685677217981.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/web层MVC架构思想和设计思路/23-06-02-web层MVC框架的思想/1685677264359.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2QmPd8ZIXoYFxytcoTo94Q2F4yQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Visual Studio Code/java/java_study/spring/spring-demo03&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0b6065b0319a1b098011aac9cc9aac0c&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Visual Studio Code\java\java_study\spring\spring-ioc\src\main\java\com\example\ioc" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ClassPathXmlApplicationContext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.ioc.test.ClassPathXmlApplicationContext" />
+      <module name="spring-ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.ioc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClassPathXmlApplicationContext" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09c2ae01-3bb7-4020-bcb1-7b3e5ea52717" name="Changes" comment="" />
+      <created>1685955869590</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685955869590</updated>
+      <workItem from="1685955870915" duration="8822000" />
+      <workItem from="1685969244021" duration="1426000" />
+      <workItem from="1686012113020" duration="5368000" />
+      <workItem from="1686020167998" duration="2985000" />
+      <workItem from="1686031118546" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ioc/test/ClassPathXmlApplicationContext.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

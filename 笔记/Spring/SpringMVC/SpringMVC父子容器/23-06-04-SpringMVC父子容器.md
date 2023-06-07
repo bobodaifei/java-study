@@ -1,0 +1,7 @@
+在Spring MVC中，通常会使用父子容器的方式来管理Bean。父容器主要用于管理应用程序中的通用Bean，而子容器主要用于管理Web应用程序中的Bean。
+
+在父子容器的设计中，父容器通常包含一些通用的Bean，例如Service、DAO等，这些Bean在整个应用程序中都可以共享。而子容器则包含Web应用程序中的Bean，例如Controller、ViewResolver等，这些Bean只在Web应用程序中使用。
+
+父子容器的实现可以通过在web.xml文件中配置ContextLoaderListener来实现。ContextLoaderListener会创建一个父容器，用于管理应用程序中的通用Bean。而DispatcherServlet则会创建一个子容器，用于管理Web应用程序中的Bean。在DispatcherServlet中可以通过配置文件或Java Config来配置子容器中的Bean。
+
+父子容器的优势在于可以有效地隔离应用程序中的不同模块，从而提高应用程序的可维护性和可扩展性。同时，父子容器可以提高应用程序的性能，因为父容器中的Bean只需要创建一次，而子容器中的Bean则可以根据需要创建多次。

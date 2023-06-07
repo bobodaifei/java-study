@@ -1,13 +1,5 @@
 package com.bobo.servlet;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import com.alibaba.fastjson.JSON;
 import com.bobo.common.Page;
 import com.bobo.common.Result;
@@ -15,16 +7,22 @@ import com.bobo.entity.OrderDetail;
 import com.bobo.entity.OrderDetailVO;
 import com.bobo.entity.OrderVO;
 import com.bobo.service.OrderDetailService;
-import com.bobo.service.OrderDetailServiceImpl;
 import com.bobo.service.OrderService;
-import com.bobo.service.OrderServiceImpl;
+import com.bobo.utils.BeanFactory;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet("/orderDetail")
 public class OrderDetailServlet extends BaseServlet {
 
-  private OrderDetailService orderDetailService = new OrderDetailServiceImpl();
+  private OrderDetailService orderDetailService = BeanFactory.getBean(OrderDetailService.class);
 
-  private OrderService orderService = new OrderServiceImpl();
+  private OrderService orderService = BeanFactory.getBean(OrderService.class);
 
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

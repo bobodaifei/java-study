@@ -1,12 +1,13 @@
 package com.bobo.dao;
 
 
+import com.bobo.entity.Order;
+import com.bobo.entity.OrderVO;
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
-import com.bobo.entity.Order;
-import com.bobo.dao.OrderDao;
-import com.bobo.entity.OrderVO;
-
+@Repository
 public class OrderDao extends BasicDao<Order>{
 
   public long selectCount(String shop_no) {

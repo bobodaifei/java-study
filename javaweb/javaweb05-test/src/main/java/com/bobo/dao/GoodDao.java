@@ -1,7 +1,9 @@
 package com.bobo.dao;
 
 import com.bobo.entity.Good;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class GoodDao extends BasicDao<Good>{
 
   public int update(Good good) {

@@ -1,7 +1,9 @@
 package com.bobo.dao;
 
 import com.bobo.entity.Log_;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class LogDao extends BasicDao<Log_>{
   public int add(Log_ log) {
     String sql = "insert into log(user_no,ope_type,create_time,code,message) values(?,?,?,?,?)";

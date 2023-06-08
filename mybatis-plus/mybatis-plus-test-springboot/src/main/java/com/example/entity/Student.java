@@ -3,6 +3,7 @@ package com.example.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,8 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @TableName("student")
-public class Student {
+public class Student extends Model<Student> {
+
   @TableId(type = IdType.AUTO)
   private String studentNo;
   private String name;

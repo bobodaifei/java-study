@@ -185,8 +185,7 @@ public interface StudentMapper {
   public void testUserList() throws Exception {
     String resource = "mybatis-config.xml";
     InputStream inputStream = Resources.getResourceAsStream(resource);
-    SqlSessionFactory sqlSessionFactory = new
-            SqlSessionFactoryBuilder().build(inputStream);
+    SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
     SqlSession sqlSession = sqlSessionFactory.openSession();
     StudentMapper userMapper = sqlSession.getMapper(StudentMapper.class);
     List<Student> list = userMapper.selectList();
@@ -260,12 +259,12 @@ public class Student {
 
 ## Spring+M+MP
 
-### 导入额外依赖
+### 导入依赖
 
 ```xml
 <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
+      <artifactId>spring-context</artifactId>
       <version>${spring.version}</version>
     </dependency>
     <dependency>
@@ -278,6 +277,50 @@ public class Student {
       <artifactId>spring-test</artifactId>
       <version>${spring.version}</version>
     </dependency>
+    <!-- 连接池 -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.2.8</version>
+    </dependency>
+    <!-- junit测试 -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- MySQL驱动 -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.27</version>
+    </dependency>
+    <!-- 日志 -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.30</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
+    </dependency>
+    <!-- lombok用来简化实体类 -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.16.16</version>
+    </dependency>
+    <!--MyBatis-Plus的核心依赖-->
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus</artifactId>
+      <version>3.4.3.4</version>
+    </dependency>
+
+
 ```
 
 ### jdbc.properties
@@ -351,7 +394,13 @@ public class AppTest {
 ### 导入依赖
 
 ```xml
-<groupId>org.springframework.boot</groupId>
+<dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
       <scope>runtime</scope>
       <optional>true</optional>
@@ -380,24 +429,6 @@ public class AppTest {
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.28</version>
     </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
-```
-
-### log4j.properties：
-
-```properties
-log4j.rootLogger=DEBUG,A1
-log4j.appender.A1=org.apache.log4j.ConsoleAppender
-log4j.appender.A1.layout=org.apache.log4j.PatternLayout
-log4j.appender.A1.layout.ConversionPattern=[%t] [%c]-[%p] %m%n
 ```
 
 ### application.properties
@@ -408,6 +439,10 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost:3300/table_test?useUnicode=true;characterEncoding=utf8;serverTimezone=Asia/Shanghai;useTimezone=true
 spring.datasource.username=root
 spring.datasource.password=123456
+
+# 配置MyBatis日志
+mybatis-plus.configuration.log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
 ```
 
 ### 启动类配置

@@ -10,49 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1735f87-e2ad-430b-b672-33a6538f87bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/java/com/bobo/webmvc/config/MyAnnotationConfigWebApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/java/com/bobo/webmvc/config/MyWebMvcConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/java/com/bobo/webmvc/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/java/com/bobo/webmvc/config/SpringMVCConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/java/com/bobo/webmvc/controller/FileUploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/java/com/bobo/webmvc/controller/ModelAndViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/java/com/bobo/webmvc/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/java/com/bobo/webmvc/init/MyAbstractAnnotationConfigDispatcherServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/java/com/bobo/webmvc/interceptors/Interceptor1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/webapp/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo03/src/main/java/org/example/advice/MyAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo03/src/main/java/org/example/advice/MyAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-web-test01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-web-test01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-web-test01/src/main/java/com/bobo/webmvc/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/java/com/bobo/webmvc/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-web-test01/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-web-test01/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-web-test01/src/main/webapp/user/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-web-test01/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/Spring/Spring的AOP开发/23-05-30-基于注解配置的AOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/Spring/Spring的AOP开发/23-05-30-基于注解配置的AOP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-javaweb常用对象获取.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-javaweb常用对象获取.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-注解驱动标签.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-注解驱动标签.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-请求数据的接收.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-请求数据的接收.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-请求静态资源.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/SpringMVC的请求处理/23-06-02-请求静态资源.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/23-06-01-Spring整合web环境的思路及实现.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/23-06-01-Spring的web开发组件spring-web.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/23-06-01-javaweb三大组件及环境特点.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/23-06-02-核心配置类方式怎么配置.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685619777647.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685620412689.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685623863420.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685623893996.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685674961641.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685675003608.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring整合web环境的思路及实现/1685675075638.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring的web开发组件spring-web/1685673614153.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring的web开发组件spring-web/1685675096960.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring的web开发组件spring-web/1685675125458.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-Spring的web开发组件spring-web/1685675141064.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/Spring整合web环境/image/23-06-01-javaweb三大组件及环境特点/1685618854679.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/web层MVC架构思想和设计思路/23-06-02-web层MVC框架的思想.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/web层MVC架构思想和设计思路/23-06-02-web层MVC框架的思想/1685677023794.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/web层MVC架构思想和设计思路/23-06-02-web层MVC框架的思想/1685677144950.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/web层MVC架构思想和设计思路/23-06-02-web层MVC框架的思想/1685677217981.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringMVC/web层MVC架构思想和设计思路/23-06-02-web层MVC框架的思想/1685677264359.png" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/aop/EnableLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/BasePageQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/controller.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/convert.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/dto.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/entity.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/paramQuery.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/service.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/serviceImpl.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/vo.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/plugins/MyInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/config/MyBtaisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/config/MyBtaisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/test/java/com/example/MybatisPlusTestSpringbootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/test/java/com/example/MybatisPlusTestSpringbootApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-06-Mybatis-Plus环境整合.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-06-Mybatis-Plus环境整合.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-06-通用CRUD.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-06-通用CRUD.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-07-条件构造器.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-07-条件构造器.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +80,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Visual Studio Code/java/java_study/springmvc/spring-web",
+    "last_opened_file_path": "E:/Visual Studio Code/java/java_study/mybatis-plus/FastAutoGeneratorTest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -222,6 +203,7 @@
       <workItem from="1685875404628" duration="55000" />
       <workItem from="1685945319150" duration="16000" />
       <workItem from="1685955745316" duration="10000" />
+      <workItem from="1686129524421" duration="619000" />
     </task>
     <servers />
   </component>

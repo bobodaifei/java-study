@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3f65d423-6803-43f8-b9a4-e70d04d5bfc5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/controller.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springmvc/spring-web-test01/src/main/resources/spring-mvc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2QuSZp8i9Gl319wcdorAaz04aPk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Visual Studio Code/java/java_study/springboot/book",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f65d423-6803-43f8-b9a4-e70d04d5bfc5" name="Changes" comment="" />
+      <created>1686202032991</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686202032991</updated>
+      <workItem from="1686202033975" duration="122000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

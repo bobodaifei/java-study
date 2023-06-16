@@ -21,7 +21,7 @@ public class Generator {
   /**
    * 当前要生成的表
    */
-  private static final String[] TO_GENERATE_TABLE_NAME = {"student"};
+  private static final String[] TO_GENERATE_TABLE_NAME = {"class"};
 
   public static void main(String[] args) {
 

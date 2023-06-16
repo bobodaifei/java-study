@@ -1,19 +1,17 @@
 package org.example.mapper;
 
-import java.util.List;
-
+import org.apache.ibatis.annotations.One;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
-
 import org.example.entity.Teacher;
 
-import org.apache.ibatis.annotations.One;
+import java.util.List;
 
 
 public interface TeacherMapper {
 
-  @Select("select * from teacher")
+  @Select("select * from teacher #{}")
   @Results({
       @Result(column = "teacher_no", property = "teacherNo"),
       @Result(column = "teacher_name", property = "teacherName"),

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:replace="header :: header"></div>
+<h1 th:text="${msg}">哈哈</h1>
+<h1 th:text="${file}">哈哈</h1>
+<h2>
+    <a href="www.atguigu.com" th:href="${link}">去百度</a>  <br/>
+    <a href="www.atguigu.com" th:href="@{link}">去百度2</a>
+    <img src="http://localhost:8080/file/2023-06-13/c925bbb5dc4b49fd93d292409e21bfd4.jpg"/>
+</h2>
+</body>
+</html>

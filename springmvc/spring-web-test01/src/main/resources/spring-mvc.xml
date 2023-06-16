@@ -19,17 +19,17 @@
   </bean>
 
 
-  <!--  &lt;!&ndash; 注入后就无法自动注入另外两个HandlerMapping &ndash;&gt;-->
-  <!--  <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>-->
+    <!-- 注入后就无法自动注入另外两个HandlerMapping -->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
 
-  <!--  &lt;!&ndash; post请求的请求体转对象 &ndash;&gt;-->
-  <!--  <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">-->
-  <!--    <property name="messageConverters">-->
-  <!--      <list>-->
-  <!--        <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>-->
-  <!--      </list>-->
-  <!--    </property>-->
-  <!--  </bean>-->
+    <!-- post请求的请求体转对象 -->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+      <property name="messageConverters">
+        <list>
+          <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+        </list>
+      </property>
+    </bean>
 
   <!-- 为了简化配置，下面的标签将简化RequestMappingHandlerMapping、RequestMappingHandlerAdapter等的配置 -->
   <mvc:annotation-driven/>

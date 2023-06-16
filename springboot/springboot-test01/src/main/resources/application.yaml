@@ -1,0 +1,56 @@
+spring:
+  mvc:
+    #网址中访问静态资源路径的前缀
+    static-path-pattern: /res/**
+    hiddenmethod:
+      filter:
+        #开启rest风格解决原生form无法使用的问题
+        enabled: true
+    contentnegotiation:
+      favor-parameter: true
+
+
+  web:
+    resources:
+      #静态资源路径
+      static-locations: [classpath:/bobo/]
+      #静态资源缓存
+      cache:
+        period: 11000
+      #是否启用静态资源
+      add-mappings: true
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 50MB
+
+file:
+  upload:
+    path: E:/新建文件夹 (2)/
+    relative: /**
+#server:
+#  servlet:
+#    context-path: /bobo
+
+
+#server:
+#  port: 8082
+#spring:
+#  config:
+#    activate:
+#      on-profile: dev
+#
+#---
+#server:
+#  port: 8081
+#spring:
+#  config:
+#    activate:
+#      on-profile: pro
+#
+#---
+#spring:
+#  profiles:
+
+#    active: pro

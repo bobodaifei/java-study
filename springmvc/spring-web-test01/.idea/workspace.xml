@@ -10,30 +10,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d75a4bda-9119-4349-85c7-ed3d847ad0d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/aop/EnableLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/BasePageQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Generator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/MyBatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/controller.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/convert.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/dto.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/entity.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/paramQuery.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/service.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/serviceImpl.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/vo.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/plugins/MyInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/service/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/config/MyBtaisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/config/MyBtaisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/test/java/com/example/MybatisPlusTestSpringbootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/test/java/com/example/MybatisPlusTestSpringbootApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-06-Mybatis-Plus环境整合.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-06-Mybatis-Plus环境整合.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-06-通用CRUD.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-06-通用CRUD.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-07-条件构造器.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mybatis-Plus/23-06-07-条件构造器.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/book/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/java/com/example/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/java/com/example/config/WebMvcConfigurerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/java/com/example/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/java/com/example/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/java/com/example/controller/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/java/com/example/converter/BoboMessageConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/resources/templates/error/4xx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/resources/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/advice/MyAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/common/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/config/SpringMVCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/controller/StockController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/dao/BasicDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/dao/DeptDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/dao/GoodDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/dao/LogDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/dao/OrderDetailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/dao/ShopDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/dao/StockDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/entity/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/entity/Good.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/entity/Log_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/entity/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/entity/OrderDetailVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/entity/OrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/entity/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/entity/Stock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/entity/StockVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/init/MyAbstractAnnotationConfigDispatcherServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/interceptors/AuthInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/GoodService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/ShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/StockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/impl/GoodServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/impl/ShopServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/impl/StockServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/utils/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/java/com/bobo/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-to-springmvc/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/component/convert/StudentConvert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/controller/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/entity/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/xml/StudentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/dto/StudentDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/query/StudentQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/vo/StudentVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/impl/StudentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/resources/templates/controller.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTestsrc/main/java/com/example/mapper/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTestsrc/main/java/com/example/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTestsrc/main/java/com/example/service/impl/StudentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/spring-demo03/src/main/java/org/example/mapper/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/spring-demo03/src/main/java/org/example/mapper/TeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/webmvc/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/webmvc/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/webmvc/interceptors/Interceptor1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/webmvc/interceptors/Interceptor1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/Spring/数据校验/23-06-01-数据校验.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/Spring/数据校验/23-06-01-数据校验.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +140,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Visual Studio Code/java/java_study/springmvc/spring-web-test",
+    "last_opened_file_path": "E:/Visual Studio Code/java/java_study/springboot/springboot-test01",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -220,6 +279,18 @@
       <workItem from="1685943109459" duration="7140000" />
       <workItem from="1685955936986" duration="779000" />
       <workItem from="1686129513051" duration="10000" />
+      <workItem from="1686193548707" duration="1305000" />
+      <workItem from="1686195616148" duration="549000" />
+      <workItem from="1686201988377" duration="34000" />
+      <workItem from="1686217380358" duration="13000" />
+      <workItem from="1686294712034" duration="921000" />
+      <workItem from="1686300414478" duration="1230000" />
+      <workItem from="1686540629281" duration="287000" />
+      <workItem from="1686639096602" duration="592000" />
+      <workItem from="1686649981459" duration="6000" />
+      <workItem from="1686726759477" duration="148000" />
+      <workItem from="1686734158090" duration="2955000" />
+      <workItem from="1686791335387" duration="780000" />
     </task>
     <servers />
   </component>
@@ -229,30 +300,30 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4/localRepository/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
-          <line>599</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4/localRepository/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
           <line>1034</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4/localRepository/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
           <line>1039</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4/localRepository/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
           <line>1046</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4/localRepository/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
           <line>1069</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bobo/webmvc/controller/UserController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

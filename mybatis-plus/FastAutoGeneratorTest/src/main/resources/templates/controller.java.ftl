@@ -50,7 +50,7 @@ class ${table.controllerName}<#if superControllerClass??> : ${superControllerCla
     public class ${table.controllerName} {
 </#if>
 @Autowired
-private final ${table.serviceName} service;
+private ${table.serviceName} service;
 
 <#if swagger>
     @ApiOperation("新增 ${table.comment!}")

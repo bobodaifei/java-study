@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 @RequestMapping("/user")
 public class UserController {
@@ -17,7 +20,9 @@ public class UserController {
   private UserService userService;
 
   @GetMapping("/login")
-  public String login() {
+  public String login(HttpServletRequest request) {
+    ServletContext servletContext = request.getServletContext();
+    System.out.println(servletContext);
     userService.selectAll();
     return "index";
   }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bobo.mapper.OrderMapper">
+
+  <insert id="save">
+    insert into `order` (order_no, user_id, addr_msg, status, create_time, total_price)
+    values (#{orderNo}, #{userId}, #{addrMsg}, #{status}, #{createTime}, #{totalPrice})
+  </insert>
+  <update id="updateByNo">
+    update `order`
+    set pay_time   = #{payTime},
+        status     = #{status},
+        pay_method = #{payMethod}
+    where order_no = #{orderNo}
+  </update>
+  <update id="updateStatusByNo">
+    update `order`
+    set status = #{status}
+    where order_no = #{orderNo}
+  </update>
+  <delete id="removeById"></delete>
+  <select id="selectById" resultType="Order"></select>
+  <select id="selectPage" resultType="Order"></select>
+  <select id="selectByNo" resultType="com.bobo.entity.Order">
+    select *
+    from `order`
+    where order_no = #{orderNo}
+  </select>
+</mapper>

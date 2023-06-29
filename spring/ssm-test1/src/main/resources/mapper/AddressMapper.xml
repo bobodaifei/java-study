@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bobo.mapper.AddressMapper">
+
+  <insert id="save">
+    insert into address (user_id, addr, phone)
+    values (#{userId}, #{addr}, #{phone})
+  </insert>
+  <update id="updateById">
+    update address
+    set addr      = #{addr},
+        phone     = #{phone}
+    where addr_id = #{addrId}
+  </update>
+  <delete id="removeById">
+    delete from address where addr_id = #{addrId}
+  </delete>
+
+  <select id="selectById" resultType="com.bobo.entity.Address">
+    select *
+    from address
+    where addr_id = #{addrId}
+  </select>
+  <select id="selectList" resultType="com.bobo.entity.Address">
+    select *
+    from address
+    where user_id = #{userId}
+  </select>
+</mapper>

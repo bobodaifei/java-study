@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "com.bobo.Main",
+      "projectName": "alipay"
+    },
+    {
+      "type": "java",
       "name": "TradePay",
       "request": "launch",
       "mainClass": "com.bobo.service.TradePay",

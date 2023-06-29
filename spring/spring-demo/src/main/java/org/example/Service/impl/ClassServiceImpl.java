@@ -1,10 +1,13 @@
 package org.example.service.impl;
 
+import org.example.dao.MyComponent;
 import org.example.mapper.ClassMapper;
 import org.example.service.ClassService;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-// @MyComponent("ClassService")
+//@Service
+ @MyComponent("ClassService")
 public class ClassServiceImpl implements ClassService{
   private ClassMapper classMapper;
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bobo.mapper.GoodsMapper">
+  <update id="updateNum">
+    update goods set stock = stock-#{reducedNum} where goods_id = #{goodsId}
+  </update>
+
+  <select id="selectById" resultType="Goods">
+    select * from goods where goods_id = #{goodsId}
+  </select>
+
+  <select id="selectPage" resultType="Goods">
+    select *
+    from goods
+    <where>
+      <if test="search != null">
+        goods_name like "%"#{search}"%"
+      </if>
+    </where>
+  </select>
+</mapper>

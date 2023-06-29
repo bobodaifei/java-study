@@ -91,3 +91,39 @@ li {
   font-size: 16px;
   color: #666;
 }
+
+
+.btn-1 {
+  width: 80px;
+  height: 30px;
+  background-color: #e1251b;
+  margin: auto;
+  border: none;
+  border-radius: 17px;
+}
+
+.btn-2 {
+  width: 80px;
+  height: 30px;
+  background-color: #363634;
+  margin: auto;
+  border: none;
+  border-radius: 17px;
+}
+
+.text-14 {
+  width: 20px;
+  height: 14px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  line-height: 14px;
+  margin: auto
+}
+.text-15 {
+  width: 20px;
+  height: 14px;
+  color: #e5d790;
+  font-size: 14px;
+  line-height: 14px;
+  margin: auto
+}

@@ -30,13 +30,13 @@ public class TradePay extends AliPayBasic {
     // 网页支付
     // trade_page_pay();
     // 确认是否完成
-    // trade_query();
+    trade_query();
     // 退款
     // trade_refund();
     // 商家主动关闭
     // trade_close();
     // 对账
-    bill_downloadurl_query();
+    // bill_downloadurl_query();
 
   }
 
@@ -95,7 +95,6 @@ public class TradePay extends AliPayBasic {
     request.setBizContent(bizContent.toString());
     AlipayTradeQueryResponse response = alipayClient.execute(request);
     if (response.isSuccess()) {
-
       System.out.println("调用成功");
       System.out.println(response.getBody());
     } else {

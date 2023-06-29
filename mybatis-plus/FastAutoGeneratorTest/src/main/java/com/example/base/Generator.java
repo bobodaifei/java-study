@@ -21,12 +21,12 @@ public class Generator {
   /**
    * 当前要生成的表
    */
-  private static final String[] TO_GENERATE_TABLE_NAME = {"class"};
+  private static final String[] TO_GENERATE_TABLE_NAME = {"user","address","goods","order","order_detail"};
 
   public static void main(String[] args) {
 
     FastAutoGenerator
-            .create("jdbc:mysql://localhost:3300/table_test?useUnicode=true;characterEncoding=utf8;serverTimezone=Asia/Shanghai;useTimezone=true", "root", "123456")
+            .create("jdbc:mysql://localhost:3300/shop_test1?useUnicode=true;characterEncoding=utf8;serverTimezone=Asia/Shanghai;useTimezone=true", "root", "123456")
             .globalConfig(builder ->
                     builder
                             .outputDir(System.getProperty("user.dir") + "/src/main/java") //输出到哪个目录

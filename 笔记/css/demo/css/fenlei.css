@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-1 {
+  width: 750px;
+  padding-bottom: 128px;
+  margin: auto;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+}
+
+.box-1 {
+  position: relative;
+  width: 750px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.images-1 {
+  width: 687px;
+  height: 22px;
+  margin: 5px 0 0 32px;
+}
+
+.box-2 {
+  width: 320px;
+  height: 22px;
+}
+
+.image-1 {
+  width: 23px;
+  height: 19px;
+}
+
+.image-2 {
+  width: 22px;
+  height: 15px;
+  margin: 3px 0 0 20px;
+}
+
+.text-1 {
+  display: inline-block;
+  width: 302px;
+  height: 22px;
+  color: rgba(51, 51, 51, 1);
+  font-size: 22px;
+  font-family: PingFang-SC-Medium;
+  font-weight: NaN;
+  line-height: 22px;
+}
+
+.box-3 {
+  width: 150px;
+  height: 22px;
+}
+
+.image-3 {
+  width: 12px;
+  height: 22px;
+  margin: 0 0 0 00px;
+}
+
+.image-4 {
+  width: 43px;
+  height: 21px;
+  margin-left: 60px;
+}
+
+.box-4 {
+  background-color: rgba(255, 255, 255, 1);
+  width: 750px;
+  height: 88px;
+}
+
+.text-2 {
+  display: inline-block;
+  width: 105px;
+  height: 38px;
+  color: rgba(51, 51, 51, 1);
+  font-size: 32px;
+  font-family: PingFang-SC-Medium;
+  text-align: center;
+  margin: auto 0 auto 322px;
+}
+
+.image-5 {
+  width: 154px;
+  height: 55px;
+  margin: auto 0 auto 129px;
+}
+
+.box-5 {
+  width: 750px;
+  height: 66px;
+}
+
+.input-1 {
+  background-color: rgba(245, 245, 245, 1);
+  border-radius: 10px;
+  width: 610px;
+  height: 60px;
+  color: rgba(153, 153, 153, 1);
+  font-size: 26px;
+  text-align: left;
+  line-height: 26px;
+  margin-left: 13px;
+  background: url("../images/微信截图_20230616100535.png") no-repeat 8px center / 30px 30px;
+}
+
+.text-3 {
+  width: 100px;
+  height: 44px;
+  color: rgba(51, 51, 51, 1);
+  font-size: 26px;
+  line-height: 66px;
+}
+
+.box-6 {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.menu-1 {
+  width: 20%;
+  text-align: center;
+  border-right: 1px solid rgb(219, 219, 219);
+  margin-top: 30px;
+}
+
+.left-border-1 {
+  width: 140px;
+  height: 27px;
+  margin-bottom: 50px;
+}
+
+.left-border-2 {
+  width: 140px;
+  height: 27px;
+  margin: 50px 0px;
+  border-left: 3px solid rgba(251, 134, 39, 1);
+}
+
+.menu-text-1 {
+  display: inline-block;
+  width: 120px;
+  height: 27px;
+  color: rgba(51, 51, 51, 1);
+  font-size: 28px;
+  line-height: 28px;
+  margin-left: 10px;
+}
+
+.menu-text-2 {
+  display: inline-block;
+  width: 120px;
+  height: 27px;
+  color: rgba(51, 51, 51, 1);
+  font-size: 28px;
+  line-height: 28px;
+  margin-left: 10px;
+  color: rgba(251, 134, 39, 1);
+}
+
+.good-list-1 {
+  width: 80%;
+  margin-top: 20px;
+  align-content: flex-start
+}
+
+.img-text-1 {
+  width: 200px;
+  height: 220px;
+  text-align: center;
+  position: relative;
+}
+
+.image-6 {
+  width: 109px;
+  height: 86px;
+  margin: 40px auto 0 10px;
+}
+
+.box-7 {
+  margin-top: 10px;
+}
+
+.text-4 {
+  width: 51px;
+  height: 25px;
+  color: rgba(51, 51, 51, 1);
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.tag-1 {
+  position: absolute;
+  top: 0;
+  width: 86px;
+  height: 30px;
+  background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/ca348d0ba06f3d4227f260fb27f3921a) 100% no-repeat;
+  background-size: 100% 100%;
+}
+
+.text-5 {
+  width: 60px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  text-align: center;
+  line-height: 26px;
+}
+
+
+
+
+
+
+
+
+.bottom-1 {
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 0;
+  width: 750px;
+  height: 98px;
+  border-top: 1px solid rgb(219, 219, 219);
+}
+
+.bt-box-auto {
+  width: 85%;
+  height: 100%;
+  padding-top: 16px;
+  margin: auto;
+}
+
+.bt-box-img-1 {
+  width: 39px;
+  height: 42px;
+  margin: 0 auto;
+}
+
+.bt-box-span-1 {
+  color: rgba(153, 153, 153, 1);
+  font-size: 22px;
+}
+
+
+.img-block {
+  display: block;
+}

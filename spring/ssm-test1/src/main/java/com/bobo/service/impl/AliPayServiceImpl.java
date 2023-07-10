@@ -7,10 +7,12 @@ import com.alipay.api.AlipayConfig;
 import com.alipay.api.internal.util.AlipaySignature;
 import com.alipay.api.request.AlipayTradeQueryRequest;
 import com.alipay.api.response.AlipayTradeQueryResponse;
+import com.bobo.base.Result;
 import com.bobo.component.convert.AliPayConvert;
 import com.bobo.entity.AliPay;
 import com.bobo.entity.Order;
 import com.bobo.pojo.dto.AliPayDTO;
+import com.bobo.pojo.dto.AlipayNotifyDTO;
 import com.bobo.pojo.vo.AliPayVO;
 import com.bobo.pojo.vo.OrderVO;
 import com.bobo.service.AliPayService;
@@ -83,13 +85,13 @@ public class AliPayServiceImpl implements AliPayService {
 
   @Override
   public String pay(AliPayDTO dto) throws AlipayApiException {
-//    String url = "http://47.94.220.67:10001/aliPcPay";
-    String url = "http://47.94.220.67:8080/Pay/aliH5Pay";
+//    String url = "http://127.0.0.1:8080/alipay/pay";
+    String url = "http://m.jnbat.com:8080//PayGateway/alipay/pay";
     AliPay aliPay = INSTANCE.toEntity(dto);
 //    aliPay.setProduct_code("FAST_INSTANT_TRADE_PAY");
     aliPay.setNotify_url(notifyUrl);
     aliPay.setReturn_url(returnUrl);
-    aliPay.setQuit_url(returnUrl);
+//    aliPay.setQuit_url(returnUrl);
     String bizContent = JSON.toJSONString(aliPay);
     HttpHeaders headers = new HttpHeaders();
     headers.setContentType(MediaType.APPLICATION_JSON);
@@ -97,7 +99,7 @@ public class AliPayServiceImpl implements AliPayService {
     ResponseEntity<AliPayVO> responseEntity = restTemplate.postForEntity(url, requestEntity, AliPayVO.class);
     AliPayVO aliPayVO = responseEntity.getBody();
     assert aliPayVO != null;
-    if (aliPayVO.getCode() == 1) {
+    if ("200".equals(aliPayVO.getCode())) {
       System.out.println(aliPayVO.getData());
       System.out.println("调用成功");
     } else {
@@ -126,7 +128,6 @@ public class AliPayServiceImpl implements AliPayService {
     aliPay.setSubject("aaa");
     aliPay.setOut_trade_no("1231231231123");
     aliPay.setTotal_amount("10.11");
-    aliPay.setProduct_code("FAST_INSTANT_TRADE_PAY");
     String biz_content = JSON.toJSONString(aliPay);
 
     MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
@@ -230,6 +231,19 @@ public class AliPayServiceImpl implements AliPayService {
       System.out.println("调用失败,订单暂时不存在,检查订单是否超时");
       String out_trade_no = response.getOutTradeNo();
       orderService.checkDelTimeOut(out_trade_no, OrderUtil.STATUS2, false);
+    }
+  }
+
+  @Override
+  public void payNotify1(Result<AlipayNotifyDTO> result) {
+    if ("200".equals(result.getCode())) {
+      Order order = new Order();
+      AlipayNotifyDTO data = result.getData();
+      order.setOrderNo(data.getOut_trade_no());
+      order.setPayTime(data.getGmt_payment());
+      order.setStatus(OrderUtil.STATUS4);
+      order.setPayMethod("支付宝");
+      orderService.modifyOrder(order);
     }
   }
 }

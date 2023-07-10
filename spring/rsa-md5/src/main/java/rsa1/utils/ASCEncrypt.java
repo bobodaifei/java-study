@@ -1,14 +1,12 @@
 package rsa1.utils;
 
-import java.security.SecureRandom;
+import sun.misc.BASE64Decoder;
+import sun.misc.BASE64Encoder;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.spec.SecretKeySpec;
-
-
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
+import java.security.SecureRandom;
 
 public class ASCEncrypt implements IEncrypt {
 
@@ -81,6 +79,9 @@ public class ASCEncrypt implements IEncrypt {
         return new String(decryptBytes);
     }
 
+
+
+
     /**
      * base 64 decode
      * 
@@ -103,6 +104,9 @@ public class ASCEncrypt implements IEncrypt {
     public static String base64Encode(byte[] bytes) {
         return new BASE64Encoder().encode(bytes);
     }
+
+
+
 
     /**
      * AES加密

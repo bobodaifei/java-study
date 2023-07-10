@@ -7,12 +7,14 @@ import cn.hutool.core.util.IdUtil;
 import com.bobo.component.convert.OrderConvert;
 import com.bobo.config.AliPayConfig;
 import com.bobo.entity.Order;
+import com.bobo.exception.CustomException;
 import com.bobo.mapper.OrderMapper;
 import com.bobo.pojo.dto.OrderDTO;
 import com.bobo.pojo.dto.OrderDetailDTO;
 import com.bobo.pojo.dto.WXPayDTO;
 import com.bobo.pojo.query.OrderQuery;
 import com.bobo.pojo.vo.AddressVO;
+import com.bobo.pojo.vo.GoodsVO;
 import com.bobo.pojo.vo.OrderVO;
 import com.bobo.pojo.vo.ShopCarVO;
 import com.bobo.service.*;
@@ -75,7 +77,7 @@ public class OrderServiceImpl implements OrderService {
    */
   @Override
   @Transactional(rollbackFor = Exception.class)
-  public String placeOrder(OrderDTO dto) {
+  public String placeOrder(OrderDTO dto) throws InterruptedException {
     String[] goodIdArr = dto.getGoodsIds().split(",");
 //    获取要提交的购物车信息
     List<ShopCarVO> shopCarVOS = shopCarService.selectByIds(dto.getUserId(), goodIdArr);
@@ -92,7 +94,6 @@ public class OrderServiceImpl implements OrderService {
     entity.setStatus(OrderUtil.STATUS1);
     entity.setCreateTime(new Date());
     entity.setTotalPrice(totalPrice);
-    orderMapper.save(entity);
 
     Iterator<ShopCarVO> iterator = shopCarVOS.iterator();
     while (iterator.hasNext()) {
@@ -103,11 +104,26 @@ public class OrderServiceImpl implements OrderService {
       orderDetailDTO.setGoodsName(shopCarVO.getGoodsVO().getGoodsName());
       orderDetailDTO.setNum(shopCarVO.getNum().intValue());
       orderDetailDTO.setPrice(shopCarVO.getGoodsVO().getPrice());
+      //减库存,方案一
+//      if(goodsService.modifyGoodsStock(shopCarVO.getGoodsId(), shopCarVO.getNum().intValue())==0){
+//        throw new CustomException("-1","库存不足");
+//      }
+
+      while (true){
+        //减库存 方案二
+        GoodsVO goodsVO = goodsService.selectById(shopCarVO.getGoodsId());
+        if (goodsVO.getStock()<shopCarVO.getNum()){
+          throw new CustomException("-1","库存不足");
+        }
+        if (goodsService.modifyGoodsStock1(shopCarVO.getGoodsId(), (int) (goodsVO.getStock()-shopCarVO.getNum()),goodsVO.getVersion())!=0){
+          break;
+        }
+        Thread.sleep(1000);
+      }
       //生成订单详情
       orderDetailService.addOrderDetail(orderDetailDTO);
-      //减库存
-      goodsService.modifyGoodsStock(shopCarVO.getGoodsId(), shopCarVO.getNum().intValue());
     }
+    orderMapper.save(entity);
     //清除购物车
     jedisUtil.hdel(MapStructUtil.userIdToShopCarId(dto.getUserId()), goodIdArr);
     //加入redis用于定时扫描支付状态,35分钟的超时时间
@@ -124,11 +140,11 @@ public class OrderServiceImpl implements OrderService {
     Order order = orderMapper.selectByNo(dto.getOrderNo());
     String payUrl = null;
     if ("支付宝".equals(dto.getPayMethod())) {
-      payUrl = aliPayConfig.getPayUrl() + "?subject=" + "111" + "&outTradeNo=" + order.getOrderNo().substring(0, 3) + "&totalAmount=" + order.getTotalPrice();
+      payUrl = aliPayConfig.getPayUrl() + "?subject=" + "111" + "&outTradeNo=" + order.getOrderNo() + "&totalAmount=" + order.getTotalPrice();
     }
     if ("微信".equals(dto.getPayMethod())) {
       WXPayDTO wxPayDTO = new WXPayDTO();
-      wxPayDTO.setBody("腾讯充值中心-QQ会员充值");
+      wxPayDTO.setBody("bobopay");
       wxPayDTO.setOut_trade_no(order.getOrderNo());
       wxPayDTO.setTotal_fee(order.getTotalPrice().intValue());
       payUrl = wxService.pay(wxPayDTO);

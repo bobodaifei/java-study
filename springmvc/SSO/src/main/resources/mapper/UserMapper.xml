@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bobo.sso.mapper.UserMapper">
+
+  <select id="selectById" resultType="User">
+    select *
+    from user
+    where user_id = #{id}
+  </select>
+
+  <select id="login" resultType="User">
+    select user_id,password, user_name from user where user_name = #{userName} and password = #{password}
+  </select>
+</mapper>

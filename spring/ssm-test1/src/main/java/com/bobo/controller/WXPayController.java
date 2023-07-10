@@ -30,9 +30,9 @@ public class WXPayController {
   }
 
   @PostMapping("/notify")
-  public Result<?> payNotify(@RequestBody WXPayVO wxPayVO) throws AlipayApiException {
-    System.out.println("微信支付回调"+wxPayVO.toString());
-    wxService.payNotify(wxPayVO);
+  public Result<?> payNotify(@RequestBody Result<WXPayVO> result) throws AlipayApiException {
+    System.out.println("微信支付回调"+result.getData().toString());
+    wxService.payNotify(result.getData());
     return Result.success();
   }
 

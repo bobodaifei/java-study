@@ -26,39 +26,44 @@ import org.springframework.stereotype.Service;
 @Service
 public class GoodsServiceImpl implements GoodsService {
 
-  @Autowired
-  GoodsMapper goodsMapper;
+    @Autowired
+    GoodsMapper goodsMapper;
 
-  private final GoodsConvert INSTANCE = GoodsConvert.INSTANCE;
+    private final GoodsConvert INSTANCE = GoodsConvert.INSTANCE;
 
-  @Override
-  public int modifyGoodsStock(Integer id, Integer reducedNum) {
-    return goodsMapper.updateNum(id,reducedNum);
-  }
+    @Override
+    public int modifyGoodsStock(Integer id, Integer reducedNum) {
+        return goodsMapper.updateNum(id, reducedNum);
+    }
 
-  /**
-   * 根据id获取  详情
-   *
-   * @param id 主键
-   */
-  @Override
-  public GoodsVO selectById(Integer id) {
-    Goods entity = goodsMapper.selectById(id);
-    return INSTANCE.toVO(entity);
-  }
+    @Override
+    public int modifyGoodsStock1(Integer id, Integer stock, Integer version) {
+        return goodsMapper.updateNum1(id, stock, version);
+    }
+
+    /**
+     * 根据id获取  详情
+     *
+     * @param id 主键
+     */
+    @Override
+    public GoodsVO selectById(Integer id) {
+        Goods entity = goodsMapper.selectById(id);
+        return INSTANCE.toVO(entity);
+    }
 
 
-  /**
-   * 分页查询
-   *
-   * @param query 参数
-   * @return
-   */
-  @Override
-  public PageInfo<GoodsVO> pageList(GoodsQuery query) {
-    Page page = PageHelper.startPage(query.getPageNum(), query.getPageSize());
-    PageInfo<GoodsVO> pageInfo = new PageInfo<>(INSTANCE.toVOS(goodsMapper.selectPage(query)));
-    pageInfo.setTotal(page.getTotal());
-    return pageInfo;
-  }
+    /**
+     * 分页查询
+     *
+     * @param query 参数
+     * @return
+     */
+    @Override
+    public PageInfo<GoodsVO> pageList(GoodsQuery query) {
+        Page page = PageHelper.startPage(query.getPageNum(), query.getPageSize());
+        PageInfo<GoodsVO> pageInfo = new PageInfo<>(INSTANCE.toVOS(goodsMapper.selectPage(query)));
+        pageInfo.setTotal(page.getTotal());
+        return pageInfo;
+    }
 }

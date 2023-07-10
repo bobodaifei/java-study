@@ -19,7 +19,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -59,13 +58,13 @@ public class WXServiceImpl implements WXService {
 //    String sign = WXUtil.generatesignature(map, wxPayConfig.getAppkey());
 //    map.put("sign", sign);
 
-    String url = "http://47.94.220.67:8080/Pay/wxPays";
+    String url = "http://m.jnbat.com:8080/PayGateway/wxpay/pay";
     Map<String, Object> map = new HashMap<>();
-    map.put("subject", dto.getBody());
+    map.put("body", dto.getBody());
     map.put("out_trade_no", dto.getOut_trade_no());
-    map.put("total_amount", dto.getTotal_fee());
+    map.put("total_fee", dto.getTotal_fee());
     map.put("notify_url", wxPayConfig.getNotify_url());
-    map.put("return_url", wxPayConfig.getReturn_url());
+    map.put("redirect_url", wxPayConfig.getReturn_url());
 
     String jsonString = JSON.toJSONString(map);
     HttpHeaders headers = new HttpHeaders();
@@ -80,7 +79,6 @@ public class WXServiceImpl implements WXService {
   public void payNotify(WXPayVO vo) {
     Order order = new Order();
     order.setOrderNo(vo.getOut_trade_no());
-    order.setPayTime(new Date(vo.getPayTime()));
     order.setStatus(OrderUtil.STATUS4);
     order.setPayMethod("微信");
     orderService.modifyOrder(order);

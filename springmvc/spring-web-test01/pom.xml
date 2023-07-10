@@ -31,7 +31,30 @@
       <artifactId>commons-fileupload</artifactId>
       <version>1.4</version>
     </dependency>
+
+    <dependency>
+      <groupId>com.jnbat</groupId>
+      <artifactId>weedfsUtils</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
   </dependencies>
+
+
+
+  <repositories>
+    <repository>
+      <id>company-releases</id>
+      <url>http://43.143.175.64:8081//repository/maven-public/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </snapshots>
+    </repository>
+  </repositories>
   <build>
     <finalName>spring-web-test01</finalName>
   </build>

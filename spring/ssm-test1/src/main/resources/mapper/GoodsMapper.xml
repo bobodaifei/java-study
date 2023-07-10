@@ -2,7 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.bobo.mapper.GoodsMapper">
   <update id="updateNum">
-    update goods set stock = stock-#{reducedNum} where goods_id = #{goodsId}
+    update goods
+    set stock = stock - #{reducedNum}
+    where goods_id = #{goodsId}
+      and stock > #{reducedNum}
+  </update>
+
+  <update id="updateNum1">
+      update goods
+      set stock   = #{stock},
+          version = version + 1
+      where goods_id = #{goodsId}
+        and version = #{version}
   </update>
 
   <select id="selectById" resultType="Goods">

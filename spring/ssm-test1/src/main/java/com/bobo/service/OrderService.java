@@ -20,7 +20,7 @@ public interface OrderService {
    *
    * @param dto 参数
    */
-  public String placeOrder(OrderDTO dto);
+  public String placeOrder(OrderDTO dto) throws InterruptedException;
 
   /**
    * 不同支付方式

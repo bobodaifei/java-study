@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * <p>
- *  Mapper 接口
+ * Mapper 接口
  * </p>
  *
  * @author bobodaifei
@@ -17,11 +17,13 @@ import java.util.List;
 public interface GoodsMapper {
 
 
-  int updateNum(@Param("goodsId") Integer id,@Param("reducedNum") Integer reducedNum);
+    int updateNum(@Param("goodsId") Integer id, @Param("reducedNum") Integer reducedNum);
+
+    int updateNum1(@Param("goodsId") Integer id, @Param("stock") Integer stock, @Param("version") Integer version);
 
 
-  public Goods selectById(@Param("goodsId") Integer id);
+    public Goods selectById(@Param("goodsId") Integer id);
 
-  public List<Goods> selectPage(GoodsQuery query);
+    public List<Goods> selectPage(GoodsQuery query);
 
 }

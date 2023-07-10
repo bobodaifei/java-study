@@ -4,9 +4,7 @@ import lombok.Data;
 
 @Data
 public class AliPayVO {
-  private int code;
-
-  private String message;
+  private String code;
 
   private String msg;
 

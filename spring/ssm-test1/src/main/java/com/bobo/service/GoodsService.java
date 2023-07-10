@@ -18,6 +18,8 @@ public interface GoodsService {
    */
   public int modifyGoodsStock(Integer id, Integer reducedNum);
 
+  public int modifyGoodsStock1(Integer id, Integer stock, Integer version);
+
   /**
    * 根据id获取  详情
    * @param id 主键

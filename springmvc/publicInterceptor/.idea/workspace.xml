@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca5b28e7-74c8-44f8-a86b-80b0649e64ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/config/MyDataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/api/alipay/AlipayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/api/alipay/AlipayRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/api/alipay/AlipayResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/api/alipay/AlipaySigner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/api/alipay/DefaultAlipayClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/api/wxpay/DefaultWXpayClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/api/wxpay/WXpayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/api/wxpay/WXpayRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/api/wxpay/WXpayResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/api/wxpay/WXpaySigner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/base/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/component/convert/AlipayConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/component/convert/WXpayConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/config/JedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/config/SpringMVCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/config/TransactionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/controller/AlipayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/controller/WXpayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/entity/Alipay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/entity/WXpay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/init/MyAbstractAnnotationConfigDispatcherServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/interceptors/AuthInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/mapper/AlipayMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/mapper/WXpayMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/pojo/dto/AlipayDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/pojo/dto/WXpayDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/pojo/dto/WXpayXml1DTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/pojo/dto/WXpayXmlDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/pojo/vo/AlipayVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/pojo/vo/WXpayVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/service/AlipayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/service/WXpayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/service/impl/AlipayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/service/impl/WXpayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/JedisConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/JedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/alipay/AlipayCommonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/alipay/AlipayConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/alipay/AlipayHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/alipay/AlipaySignUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/alipay/AlipaySignature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/alipay/RequestParametersHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/wxpay/RequestParametersHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/wxpay/WXpayCommonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/wxpay/WXpayConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/wxpay/WXpayHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/utils/wxpay/WXpaySignature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/alipay.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/jedis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/mapper/WXpayMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/wxpay.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/AlipayNotifyDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/component/base/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/component/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/component/config/JedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/component/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/component/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/component/config/SpringMVCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/component/config/TransactionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/component/convert/UserConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/component/init/MyAbstractAnnotationConfigDispatcherServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/controller/SsoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/interceptors/AuthInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/pojo/dto/SsoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/pojo/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/pojo/vo/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/service/SsoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/service/impl/SsoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/utils/JedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/com/bobo/sso/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/resources/jedis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/component/base/BasePageQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/component/base/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/component/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/component/config/JedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/component/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/component/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/component/config/SpringMVCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/component/config/TransactionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/component/convert/GoodsConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/component/init/MyAbstractAnnotationConfigDispatcherServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/controller/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/controller/TokenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/entity/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/mapper/GoodsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/pojo/dto/GoodsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/pojo/query/GoodsQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/pojo/vo/GoodsVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/pojo/vo/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/service/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/utils/JedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/java/com/bobo/bshop/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/resources/jedis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bshop/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/publicInterceptor/component/base/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/publicInterceptor/exception/TokenAndTicketException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/publicInterceptor/interceptors/AuthInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/publicInterceptor/pojo/vo/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/publicInterceptor/utils/SsoJedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/publicInterceptor/utils/SsoJwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jedis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/controller/AddressController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/controller/GoodsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/controller/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/controller/OrderDetailController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/convert/AddressConvert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/convert/GoodsConvert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/convert/OrderConvert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/convert/OrderDetailConvert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/convert/UserConvert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/entity/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/entity/Goods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/entity/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/entity/OrderDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/AddressMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/GoodsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/OrderDetailMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/OrderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/xml/AddressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/mapper/AlipayMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/xml/GoodsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/xml/OrderDetailMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/xml/OrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/xml/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/dto/AddressDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/dto/GoodsDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/dto/OrderDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/dto/OrderDetailDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/query/AddressQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/query/GoodsQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/query/OrderDetailQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/query/OrderQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/query/UserQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/vo/AddressVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/vo/GoodsVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/vo/OrderDetailVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/vo/OrderVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/vo/UserVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/AddressService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/GoodsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/OrderDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/impl/AddressServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/impl/GoodsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/impl/OrderDetailServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/impl/OrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/resources/mybatis/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/resources/mybatis/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/test/java/com/example/MybatisPlusTestSpringbootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/test/java/com/example/MybatisPlusTestSpringbootApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/rsa-md5/src/main/java/rsa1/utils/ASCEncrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/rsa-md5/src/main/java/rsa1/utils/ASCEncrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/AliPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/AliPayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/WXPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/WXPayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/entity/AliPay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/entity/AliPay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/mapper/GoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/vo/AliPayVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/vo/AliPayVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/vo/GoodsVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/vo/GoodsVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/vo/WXPayVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/vo/WXPayVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/AliPayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/AliPayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/WXServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/WXServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/alipay.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/alipay.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/wxpay.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/wxpay.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/尚硅谷/核心功能/23-06-08-单元测试.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/尚硅谷/核心功能/23-06-08-单元测试.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/尚硅谷/核心功能/23-06-08-原理解析.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/尚硅谷/核心功能/23-06-08-原理解析.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/尚硅谷/核心功能/23-06-08-指标监控.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/尚硅谷/核心功能/23-06-08-指标监控.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/尚硅谷/核心功能/23-06-08-数据访问.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/尚硅谷/核心功能/23-06-08-数据访问.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2SK7n42s1Wr4lwdAR5PaXIvsS9C" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Visual Studio Code/java/java_study/springmvc/publicInterceptor/src/main/java/com/bobo/publicInterceptor",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "spring.configuration.checksum": "33f701093479c5de0af7be690418fd2f",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Visual Studio Code\java\java_study\springmvc\publicInterceptor\src\main\java\com\bobo\publicInterceptor" />
+      <recent name="E:\Visual Studio Code\java\java_study\springmvc\publicInterceptor\src\main\resources" />
+      <recent name="E:\Visual Studio Code\java\java_study\springmvc\publicInterceptor\src\main\java\com\bobo\publicInterceptor\utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bobo.publicInterceptor.interceptor" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca5b28e7-74c8-44f8-a86b-80b0649e64ec" name="Changes" comment="" />
+      <created>1688883583550</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688883583550</updated>
+      <workItem from="1688883584578" duration="11540000" />
+      <workItem from="1688953715516" duration="4867000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

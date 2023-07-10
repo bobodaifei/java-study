@@ -3,18 +3,18 @@
 <mapper namespace="com.bobo.mapper.OrderMapper">
 
   <insert id="save">
-    insert into `order` (order_no, user_id, addr_msg, status, create_time, total_price)
+    insert into `order1` (order_no, user_id, addr_msg, status, create_time, total_price)
     values (#{orderNo}, #{userId}, #{addrMsg}, #{status}, #{createTime}, #{totalPrice})
   </insert>
   <update id="updateByNo">
-    update `order`
+    update `order1`
     set pay_time   = #{payTime},
         status     = #{status},
         pay_method = #{payMethod}
     where order_no = #{orderNo}
   </update>
   <update id="updateStatusByNo">
-    update `order`
+    update `order1`
     set status = #{status}
     where order_no = #{orderNo}
   </update>
@@ -23,7 +23,7 @@
   <select id="selectPage" resultType="Order"></select>
   <select id="selectByNo" resultType="com.bobo.entity.Order">
     select *
-    from `order`
+    from `order1`
     where order_no = #{orderNo}
   </select>
 </mapper>

@@ -4,8 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.mapper.StudentMapper">
   <select id="findAll" resultType="Student">
-    select *
-    from student
+    select s.*,c.class_name
+    from student s, `class` c where s.class_no = c.class_no
   </select>
+
+<!--  <select id="findAll" resultType="Student">-->
+<!--    select *-->
+<!--    from student-->
+<!--  </select>-->
 </mapper>
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bobo.purview.mapper.RoleMapper">
+
+    <select id="selectMenusByRoleId" resultType="Menu">
+        SELECT * FROM menu WHERE menu_id IN( SELECT menu_id FROM role_menu
+        <where>
+            <if test='roleId!=null'>AND role_id = #{roleId}</if>
+        </where>
+        )
+    </select>
+
+    <select id="selectPermissionsByRoleIdAndMenuId" resultType="Permission">
+        SELECT *
+        FROM permission
+        <where>
+            <if test='roleId!=null'>
+                permission_id IN (SELECT permission_id FROM role_permission where role_id = #{roleId})
+            </if>
+            AND menu_id = #{menuId}
+        </where>
+    </select>
+
+
+</mapper>
+

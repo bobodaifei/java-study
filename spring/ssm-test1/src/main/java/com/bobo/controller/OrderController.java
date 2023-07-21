@@ -34,7 +34,7 @@ public class OrderController extends BaseController {
   @ApiOperation("下订单 ")
   @PostMapping
   @EnableLog("新增 ")
-  public Result<?> addOrder(@Valid @RequestBody OrderDTO dto) {
+  public Result<?> addOrder(@Valid @RequestBody OrderDTO dto) throws InterruptedException {
     dto.setUserId(getUser().getUserId());
     return Result.success(orderService.placeOrder(dto));
   }

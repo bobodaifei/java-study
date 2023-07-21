@@ -25,10 +25,23 @@ spring:
       max-file-size: 5MB
       max-request-size: 50MB
 
+
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+
+  #默认是点对点，pub-sub-domain设置为订阅模式
+  jms:
+    template:
+      default-destination: bobo
+    pub-sub-domain: true
+
+
 file:
   upload:
     path: E:/新建文件夹 (2)/
     relative: /**
+
+
 #server:
 #  servlet:
 #    context-path: /bobo

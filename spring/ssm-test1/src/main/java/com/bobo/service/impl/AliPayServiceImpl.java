@@ -86,7 +86,7 @@ public class AliPayServiceImpl implements AliPayService {
   @Override
   public String pay(AliPayDTO dto) throws AlipayApiException {
 //    String url = "http://127.0.0.1:8080/alipay/pay";
-    String url = "http://m.jnbat.com:8080//PayGateway/alipay/pay";
+    String url = "http://m.jnbat.com:8080/PayGateway/alipay/pay";
     AliPay aliPay = INSTANCE.toEntity(dto);
 //    aliPay.setProduct_code("FAST_INSTANT_TRADE_PAY");
     aliPay.setNotify_url(notifyUrl);

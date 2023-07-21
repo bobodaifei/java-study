@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <div class="flag">
+    <div class="flag">
+      <div class="cross"></div>
+      <!--<div class="stripe"></div>-->
+      <!--<div class="stripe" style="transform: rotate(90deg);"></div>-->
+      <div class="diagonal-stripe"></div>
+      <!--<div class="diagonal-stripe" style="transform: rotate(-90deg);"></div>-->
+    </div>
+  </div>
+</body>
+<style>
+  .flag {
+    width: 300px;
+    height: 200px;
+    background-color: #0065BD;
+    position: relative;
+  }
+
+  .cross {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(34deg);
+    width: 120%;
+    height: 35px;
+    background-color: #fff;
+  }
+
+  .stripe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 60%;
+    background-color: #fff;
+  }
+
+  .diagonal-stripe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(56deg);
+    width: 35px;
+    height: 364px;
+    /* 200 * sqrt(2) */
+    background-color: #fff;
+  }
+</style>
+
+</html>

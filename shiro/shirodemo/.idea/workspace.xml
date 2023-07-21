@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5f8e8e54-2495-49be-a972-b9c869d65c86" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../demo03/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/Demo03Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/base/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/config/ShiroConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/controller/MyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/controller/PermissionsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/shiro/JWTToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/shiro/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/shiro/JwtRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/test/TestCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/java/com/example/demo03/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo1/src/main/java/com/bobo/MyRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo1/src/main/java/com/bobo/ShiroMD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo1/src/main/java/com/bobo/shiro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo1/src/main/resources/shiro.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo1/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/Demo2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/config/ShiroConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/controller/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/controller/MyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/controller/PermissionsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/realm/JWTToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/realm/JwtRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/realm/MyRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/test/TestCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/java/com/bobo/demo2/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/resources/ehcache--.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/resources/ehcache/ehcache-shiro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/main/resources/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/demo2/src/test/java/com/bobo/demo2/Demo2ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shiro01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/PurviewApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/annotate/RequiresPermissions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/annotate/RequiresRoles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/base/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/config/MyBtaisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/config/WebConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/convert/MenuConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/convert/UserConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/entity/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/exception/AuthorizationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/exception/UnauthorizedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/interceptors/PermissionInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/interceptors/TokenInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/pojo/dto/MenuDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/pojo/dto/PermissionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/pojo/dto/RoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/pojo/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/pojo/query/RolePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/pojo/query/UserPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/pojo/vo/MenuVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/pojo/vo/PermissionVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/pojo/vo/RoleVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/pojo/vo/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/service/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/utils/MapStructUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/purview/src/test/java/com/bobo/purview/PurviewApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/java/com/example/controller/ActivemqController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/java/com/example/lintener/MqListenerMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/starter/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/starter/bobo-hello-spring-boot-starter-autoconfiguration/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/starter/bobo-hello-spring-boot-starter-autoconfiguration/src/main/java/com/example/bobo/auto/HelloServiceAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/starter/bobo-hello-spring-boot-starter-autoconfiguration/src/main/java/com/example/bobo/bean/HelloProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/starter/bobo-hello-spring-boot-starter-autoconfiguration/src/main/java/com/example/bobo/service/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/starter/bobo-hello-spring-boot-starter-autoconfiguration/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/starter/bobo-hello-spring-boot-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/Filter/A_PostFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/Filter/A_PostFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/Filter/Z_LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/Filter/Z_LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/common/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/common/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/common/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/BasicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/BasicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/CustomerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/GoodDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/GoodDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/LogDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/LogDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/OrderDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/OrderDetailDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/OrderDetailDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/ShopCarDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/ShopCarDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/ShopDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/ShopDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/StockDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/dao/StockDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Good.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Good.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Log_.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Log_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/OrderDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/ShopCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/ShopCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/ShopCarVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/ShopCarVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/entity/Stock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/GoodService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/GoodService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/GoodServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/GoodServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/OrderDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/OrderDetailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/OrderDetailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/OrderDetailServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/ShopCarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/ShopCarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/ShopCarServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/ShopCarServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/ShopService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/ShopServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/ShopServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/StockService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/StockService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/StockServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/service/StockServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/BaseServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/GoodServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/GoodServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/OrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/OrderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/ShopCarServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/ShopCarServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/ShopServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/servlet/ShopServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/JdbcUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/JdbcUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/aop/Advice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/aop/Advice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/aop/CurrencyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/aop/CurrencyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/aop/MyAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/aop/MyAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/aop/ProxyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/aop/ProxyFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/aop/TestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/aop/TestHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/jedis/JedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/jedis/JedisUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/jedis/RedisFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb0411/target/javaweb04/WEB-INF/classes/com/bobo/utils/jedis/RedisFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/alipay.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/alipay.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/wxpay.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/wxpay.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/entity/AliPay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/entity/AliPay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/springboot-test01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/java/com/example/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/java/com/example/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/resources/application.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2SPkXh2l59YwkXmMh9JPZIeEhuI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Visual Studio Code/java/java_study/shiro/demo03&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f8e8e54-2495-49be-a972-b9c869d65c86" name="Changes" comment="" />
+      <created>1689055648664</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689055648664</updated>
+      <workItem from="1689055650140" duration="24000" />
+      <workItem from="1689055688983" duration="70000" />
+      <workItem from="1689057980162" duration="301000" />
+      <workItem from="1689241326473" duration="69000" />
+      <workItem from="1689241976663" duration="2000" />
+      <workItem from="1689583050475" duration="7000" />
+      <workItem from="1689832379626" duration="5000" />
+      <workItem from="1689909363157" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

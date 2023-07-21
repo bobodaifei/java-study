@@ -1,4 +1,7 @@
 spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
   datasource:
     url: jdbc:mysql://localhost:3300/purview?useUnicode=true;characterEncoding=utf8;serverTimezone=Asia/Shanghai;useTimezone=true
     username: root

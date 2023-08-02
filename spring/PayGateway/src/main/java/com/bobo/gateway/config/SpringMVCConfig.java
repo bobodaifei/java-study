@@ -2,6 +2,7 @@ package com.bobo.gateway.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -51,6 +52,15 @@ public class SpringMVCConfig implements WebMvcConfigurer {
   public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
     //开启DefaultServletHandling
     configurer.enable();
+  }
+
+  @Override
+  public void addCorsMappings(CorsRegistry registry) {
+    registry.addMapping("/**")  // 允许跨域的路径
+            .allowedOriginPatterns("*")  // 允许跨域请求的源
+            .allowedMethods("*")  // 允许请求的方法
+            .allowCredentials(true)  // 是否发送 Cookie
+            .maxAge(3600);  // 预检请求的有效期，单位为秒
   }
 
 //  @Override

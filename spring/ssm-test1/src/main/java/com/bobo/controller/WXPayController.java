@@ -1,13 +1,14 @@
 package com.bobo.controller;
 
 import com.alipay.api.AlipayApiException;
-import com.bobo.base.Result;
 import com.bobo.pojo.dto.WXPayDTO;
-import com.bobo.pojo.vo.WXPayVO;
 import com.bobo.service.WXService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -28,13 +29,5 @@ public class WXPayController {
     dto.setSpbill_create_ip(request.getRemoteAddr());
     return wxService.pay(dto);
   }
-
-  @PostMapping("/notify")
-  public Result<?> payNotify(@RequestBody Result<WXPayVO> result) throws AlipayApiException {
-    System.out.println("微信支付回调"+result.getData().toString());
-    wxService.payNotify(result.getData());
-    return Result.success();
-  }
-
 
 }

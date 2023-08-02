@@ -16,6 +16,6 @@
             trade_type          = #{tradeType},
             settlement_total_fee=#{settlementTotalFee},
             time_end            = #{timeEnd}
-        where out_trade_no = #{outTradeNo}
+        where out_trade_no = #{outTradeNo} and result_code is null
     </update>
 </mapper>

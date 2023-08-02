@@ -118,7 +118,8 @@ public class AlipayServiceImpl implements AlipayService {
         alipay.setGmtPayment(DateUtil.parse(params.get("gmt_payment")));
 
         if (alipayMapper.update(alipay) == 0) {
-          return "failure";
+          System.out.println("重复回调");
+          return "success";
         }
         System.out.println("支付成功，且异步回调修改数据库成功");
       }

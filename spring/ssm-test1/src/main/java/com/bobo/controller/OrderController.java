@@ -1,12 +1,17 @@
 package com.bobo.controller;
 
 
+import com.alipay.api.AlipayApiException;
 import com.bobo.aop.EnableLog;
 import com.bobo.base.Result;
 import com.bobo.pojo.dto.OrderDTO;
+import com.bobo.pojo.dto.OrderAlipayNotifyDTO;
 import com.bobo.pojo.query.OrderQuery;
 import com.bobo.pojo.vo.OrderVO;
+import com.bobo.pojo.dto.OrderWXpayNotifyDTO;
+import com.bobo.service.AliPayService;
 import com.bobo.service.OrderService;
+import com.bobo.service.WXService;
 import com.github.pagehelper.PageInfo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -81,4 +86,25 @@ public class OrderController extends BaseController {
     PageInfo<OrderVO> page = orderService.pageList(query);
     return Result.success(page);
   }
+
+  @Autowired
+  AliPayService aliPayService;
+
+  @PostMapping("/alipayNotify")
+  public void payNotify1(@RequestBody Result<OrderAlipayNotifyDTO> result) {
+    System.out.println("系统：回调成功");
+    orderService.payNotify1(result);
+  }
+
+  @Autowired
+  WXService wxService;
+
+  @PostMapping("/wxpayNotify")
+  public Result<?> payNotify(@RequestBody Result<OrderWXpayNotifyDTO> result) throws AlipayApiException {
+    System.out.println("微信支付回调"+result.getData().toString());
+    orderService.payNotify(result.getData());
+    return Result.success();
+  }
+
+
 }

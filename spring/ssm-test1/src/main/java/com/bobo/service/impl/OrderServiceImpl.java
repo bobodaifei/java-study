@@ -4,14 +4,13 @@ package com.bobo.service.impl;
 import cn.hutool.core.date.DateField;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.IdUtil;
+import com.bobo.base.Result;
 import com.bobo.component.convert.OrderConvert;
 import com.bobo.config.AliPayConfig;
 import com.bobo.entity.Order;
 import com.bobo.exception.CustomException;
 import com.bobo.mapper.OrderMapper;
-import com.bobo.pojo.dto.OrderDTO;
-import com.bobo.pojo.dto.OrderDetailDTO;
-import com.bobo.pojo.dto.WXPayDTO;
+import com.bobo.pojo.dto.*;
 import com.bobo.pojo.query.OrderQuery;
 import com.bobo.pojo.vo.AddressVO;
 import com.bobo.pojo.vo.GoodsVO;
@@ -25,6 +24,8 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -41,6 +42,8 @@ import java.util.*;
  */
 @Slf4j
 @Service
+@PropertySource({"classpath:alipay.properties"})
+@PropertySource({"classpath:wxpay.properties"})
 public class OrderServiceImpl implements OrderService {
 
   @Autowired
@@ -67,6 +70,18 @@ public class OrderServiceImpl implements OrderService {
   @Autowired
   JedisUtil jedisUtil;
 
+  @Value("${alipay.order.notifyUrl}")
+  private String alipayNotifyUrl;
+
+  @Value("${alipay.order.returnUrl}")
+  private String alipayReturnUrl;
+
+  @Value("${wxpay.order.notifyUrl}")
+  private String wxpayNotifyUrl;
+
+  @Value("${wxpay.order.returnUrl}")
+  private String wxpayReturnUrl;
+
 
   private final OrderConvert INSTANCE = OrderConvert.INSTANCE;
 
@@ -78,6 +93,21 @@ public class OrderServiceImpl implements OrderService {
   @Override
   @Transactional(rollbackFor = Exception.class)
   public String placeOrder(OrderDTO dto) throws InterruptedException {
+    //防止重复提交
+//    String token = dto.getToken();
+//    if (StrUtil.isEmpty(token)) {
+//      throw new CustomException("-1", "调接口呢小子");
+//    }
+//
+//    Integer userId = dto.getUserId();
+//    String token1 = jedisUtil.get("orderToken" + ":" + userId);
+//
+//    if (StrUtil.isEmpty(token1) || !token.equals(token1)) {
+//      throw new CustomException("-1", "表单重复提交");
+//    }
+
+//    jedisUtil.del("orderToken" + ":" + userId);
+
     String[] goodIdArr = dto.getGoodsIds().split(",");
 //    获取要提交的购物车信息
     List<ShopCarVO> shopCarVOS = shopCarService.selectByIds(dto.getUserId(), goodIdArr);
@@ -109,13 +139,13 @@ public class OrderServiceImpl implements OrderService {
 //        throw new CustomException("-1","库存不足");
 //      }
 
-      while (true){
+      while (true) {
         //减库存 方案二
         GoodsVO goodsVO = goodsService.selectById(shopCarVO.getGoodsId());
-        if (goodsVO.getStock()<shopCarVO.getNum()){
-          throw new CustomException("-1","库存不足");
+        if (goodsVO.getStock() < shopCarVO.getNum()) {
+          throw new CustomException("-1", "库存不足");
         }
-        if (goodsService.modifyGoodsStock1(shopCarVO.getGoodsId(), (int) (goodsVO.getStock()-shopCarVO.getNum()),goodsVO.getVersion())!=0){
+        if (goodsService.modifyGoodsStock1(shopCarVO.getGoodsId(), (int) (goodsVO.getStock() - shopCarVO.getNum()), goodsVO.getVersion()) != 0) {
           break;
         }
         Thread.sleep(1000);
@@ -126,6 +156,7 @@ public class OrderServiceImpl implements OrderService {
     orderMapper.save(entity);
     //清除购物车
     jedisUtil.hdel(MapStructUtil.userIdToShopCarId(dto.getUserId()), goodIdArr);
+
     //加入redis用于定时扫描支付状态,35分钟的超时时间
     jedisUtil.hset(OrderUtil.KEY, entity.getOrderNo(), DateUtil.offset(entity.getCreateTime(), DateField.MINUTE, OrderUtil.TIMEOUT).toString());
     return orderNo;
@@ -140,16 +171,41 @@ public class OrderServiceImpl implements OrderService {
     Order order = orderMapper.selectByNo(dto.getOrderNo());
     String payUrl = null;
     if ("支付宝".equals(dto.getPayMethod())) {
-      payUrl = aliPayConfig.getPayUrl() + "?subject=" + "111" + "&outTradeNo=" + order.getOrderNo() + "&totalAmount=" + order.getTotalPrice();
+      payUrl = aliPayConfig.getPayUrl() + "?subject=" + "111" + "&outTradeNo=" + order.getOrderNo() + "&totalAmount=" + order.getTotalPrice()
+              + "&notifyUrl=" + alipayNotifyUrl + "&returnUrl=" + alipayReturnUrl;
     }
     if ("微信".equals(dto.getPayMethod())) {
       WXPayDTO wxPayDTO = new WXPayDTO();
       wxPayDTO.setBody("bobopay");
       wxPayDTO.setOut_trade_no(order.getOrderNo());
       wxPayDTO.setTotal_fee(order.getTotalPrice().intValue());
+      wxPayDTO.setNotifyUrl(wxpayNotifyUrl);
+      wxPayDTO.setReturnUrl(wxpayReturnUrl);
       payUrl = wxService.pay(wxPayDTO);
     }
     return payUrl;
+  }
+
+  @Override
+  public void payNotify1(Result<OrderAlipayNotifyDTO> result) {
+    if ("200".equals(result.getCode())) {
+      Order order = new Order();
+      OrderAlipayNotifyDTO data = result.getData();
+      order.setOrderNo(data.getOut_trade_no());
+      order.setPayTime(data.getGmt_payment());
+      order.setStatus(OrderUtil.STATUS4);
+      order.setPayMethod("支付宝");
+      modifyOrder(order);
+    }
+  }
+
+  @Override
+  public void payNotify(OrderWXpayNotifyDTO vo) {
+    Order order = new Order();
+    order.setOrderNo(vo.getOut_trade_no());
+    order.setStatus(OrderUtil.STATUS4);
+    order.setPayMethod("微信");
+    modifyOrder(order);
   }
 
   /**

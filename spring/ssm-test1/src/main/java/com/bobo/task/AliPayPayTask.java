@@ -1,15 +1,10 @@
 package com.bobo.task;
 
-import com.bobo.pojo.vo.OrderVO;
 import com.bobo.service.AliPayService;
 import com.bobo.service.OrderService;
 import com.bobo.utils.JedisUtil;
-import com.bobo.utils.OrderUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
 
 @Component
 public class AliPayPayTask {
@@ -37,22 +32,19 @@ public class AliPayPayTask {
   /**
    * 从第0秒开始，每隔30秒执行一次，查询创建超过5分钟并且未支付的订单
    */
-  @Scheduled(cron = "5 * * * * ?")
-  public void orderConfirm() throws Exception {
-    List<OrderVO> orderVOList = orderService.checkStatusList();
-    if (orderVOList.size() > 0) {
-      for (OrderVO orderVO : orderVOList) {
-        //如果数据库中已经不为未支付的状态，删除redis信息即可
-        System.out.println(orderVO.getOrderNo());
-        if (orderVO.getStatus().intValue() != OrderUtil.STATUS1.intValue()) {
-          jedisUtil.hdel(OrderUtil.KEY, orderVO.getOrderNo());
-          return;
-        }
-        aliPayService.checkPayStatus(orderVO.getOrderNo());
-      }
-    }
-
-
-
-  }
+//  @Scheduled(cron = "5 * * * * ?")
+//  public void orderConfirm() throws Exception {
+//    List<OrderVO> orderVOList = orderService.checkStatusList();
+//    if (orderVOList.size() > 0) {
+//      for (OrderVO orderVO : orderVOList) {
+//        //如果数据库中已经不为未支付的状态，删除redis信息即可
+//        System.out.println(orderVO.getOrderNo());
+//        if (orderVO.getStatus().intValue() != OrderUtil.STATUS1.intValue()) {
+//          jedisUtil.hdel(OrderUtil.KEY, orderVO.getOrderNo());
+//          return;
+//        }
+//        aliPayService.checkPayStatus(orderVO.getOrderNo());
+//      }
+//    }
+//  }
 }

@@ -33,5 +33,7 @@ public class OrderDTO implements Serializable {
   @ApiModelProperty("商品ids")
   private String goodsIds;
 
+  private String token;
+
 }
 

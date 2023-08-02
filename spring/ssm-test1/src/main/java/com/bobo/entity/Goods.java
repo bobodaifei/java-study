@@ -51,5 +51,8 @@ public class Goods implements Serializable {
 
   @ApiModelProperty("描述")
   private String info;
+
+  @ApiModelProperty("描述")
+  private Integer version;
 }
 

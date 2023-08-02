@@ -23,7 +23,7 @@ public class SpringMVCConfig implements WebMvcConfigurer {
   public void addInterceptors(InterceptorRegistry registry) {
     registry.addInterceptor(authInterceptor)
             .addPathPatterns("/**")
-            .excludePathPatterns("/user/login", "/goods/**","/alipay/**","/wxpay/**");
+            .excludePathPatterns("/user/login", "/goods/**","/alipay/**","/wxpay/**","/order/alipayNotify","/order/wxpayNotify","/recharge/alipayNotify","/recharge/wxpayNotify");
   }
 
 /*  <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
@@ -55,6 +55,15 @@ public class SpringMVCConfig implements WebMvcConfigurer {
   public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
     //开启DefaultServletHandling
     configurer.enable();
+  }
+
+  @Override
+  public void addCorsMappings(CorsRegistry registry) {
+    registry.addMapping("/**")  // 允许跨域的路径
+            .allowedOriginPatterns("*")  // 允许跨域请求的源
+            .allowedMethods("*")  // 允许请求的方法
+            .allowCredentials(true)  // 是否发送 Cookie
+            .maxAge(3600);  // 预检请求的有效期，单位为秒
   }
 
 //  @Override

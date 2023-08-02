@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * <p>
@@ -29,5 +30,9 @@ public class UserVO implements Serializable {
 
   @ApiModelProperty("token")
   private String token;
+
+  private BigDecimal balance;
+
+  private Integer version;
 }
 

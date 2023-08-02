@@ -83,6 +83,7 @@ public class WXpayServiceImpl implements WXpayService {
 
   @Override
   public String payNotify(String xmlResp) throws CustomException {
+    System.out.println("回调成功" + xmlResp);
     //验签失败
     if (!WXpaySignature.isSignatureValid(xmlResp, config.getAppKey())) {
       System.out.println("验签失败");
@@ -96,17 +97,25 @@ public class WXpayServiceImpl implements WXpayService {
       return WXpayConstants.RETURN_ERROR2;
     }
     //成功则修改支付信息
-    update(dto);
+    System.out.println("验签成功");
+    int i = update(dto);
+    if (i == 0) {
+      System.out.println("重复回调");
+      return WXpayConstants.RETURN_SUCCESS;
+    }
+    System.out.println("修改数据库成功");
     WXpayVO wXpayVO = new WXpayVO();
     wXpayVO.setResult_code(dto.getResult_code());
     wXpayVO.setOut_trade_no(dto.getOut_trade_no());
     wXpayVO.setSettlement_total_fee(dto.getSettlement_total_fee());
     wXpayVO.setTime_end(dto.getTime_end());
+    wXpayVO.setTotal_fee(dto.getTotal_fee());
     String data = JSON.toJSONString(Result.success(wXpayVO));
     HttpHeaders headers = new HttpHeaders();
     headers.setContentType(MediaType.APPLICATION_JSON);
     HttpEntity<String> requestEntity = new HttpEntity<>(data, headers);
     //给系统进行异步回调
+    System.out.println("尝试给系统进行回调");
     try {
       restTemplate.postForObject(notifyUrl, requestEntity, String.class);
     } catch (RestClientException e) {
@@ -127,6 +136,7 @@ public class WXpayServiceImpl implements WXpayService {
   @Override
   public int update(WXpayXml1DTO dto) {
     WXpay entity = INSTANCE.toEntity(dto);
+    System.out.println("转换成功");
     return wxpayMapper.update(entity);
   }
 

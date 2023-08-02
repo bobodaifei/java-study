@@ -16,6 +16,6 @@
             receipt_amount = #{receiptAmount},
             gmt_create     = #{gmtCreate},
             gmt_payment    = #{gmtPayment}
-        where out_trade_no = #{outTradeNo}
+        where out_trade_no = #{outTradeNo} and trade_status is null
     </update>
 </mapper>

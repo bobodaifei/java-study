@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      #本地MongoDB服务器和名为“book”的数据库。
+      uri: mongodb://localhost/book

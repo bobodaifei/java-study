@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aef08083-7043-48a8-98f8-81ac0522be82" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/component/convert/RechargeConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/OtherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/RechargeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/entity/Recharge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/mapper/RechargeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/RechargeAlipayNotifyDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/RechargeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/RechargeWXpayNotifyDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/query/RechargeQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/vo/RechargeVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/RechargeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/RechargeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/mapper/RechargeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cache1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cache1/src/main/java/com/bobo/cache1/Cache1Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cache1/src/main/java/com/bobo/cache1/config/XMemcachedConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cache1/src/main/java/com/bobo/cache1/testcache/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cache1/src/main/java/com/bobo/cache1/testcache/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cache1/src/main/java/com/bobo/cache1/utils/CodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cache1/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cache1/src/main/resources/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cache1/src/test/java/com/bobo/cache1/Cache1ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch/src/main/java/com/bobo/elasticsearch/ElasticsearchApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch/src/main/java/com/bobo/elasticsearch/entity/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch/src/test/java/com/bobo/elasticsearch/ElasticsearchApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/src/main/java/com/example/jetcache/JetcacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/src/main/java/com/example/jetcache/test/Aaa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/src/main/java/com/example/jetcache/test/Smsutol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/src/main/java/com/example/jetcache/test/aaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jetcache/src/test/java/com/example/jetcache/JetcacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mongodb01/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mongodb01/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mongodb01/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mongodb01/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mongodb01/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mongodb01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mongodb01/src/main/java/com/bobo/mongodb01/Mongodb01Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mongodb01/src/main/java/com/bobo/mongodb01/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mongodb01/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mongodb01/src/test/java/com/bobo/mongodb01/Mongodb01ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/controller/TreeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/entity/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/entity/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/mapper/AddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/mapper/EmpMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/service/EmpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/service/impl/EmpServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/aa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/AddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/EmpMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/aa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/PurviewApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/annotate/RequiresPermissions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/annotate/RequiresRoles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/base/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/config/MyBtaisPlusConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/config/WebConfigurer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/convert/MenuConvert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/convert/MenuConvertImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/convert/PermissionConvert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/convert/PermissionConvertImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/convert/RoleConvert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/convert/RoleConvertImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/convert/UserConvert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/component/convert/UserConvertImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/controller/MenuController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/controller/PermissionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/controller/RoleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/controller/TreeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/entity/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/entity/Emp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/entity/Menu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/entity/Permission.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/entity/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/exception/AuthorizationException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/exception/CustomException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/exception/UnauthorizedException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/interceptors/PermissionInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/interceptors/TokenInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/mapper/AddressMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/mapper/EmpMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/mapper/MenuMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/mapper/PermissionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/mapper/RoleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/pojo/dto/MenuDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/pojo/dto/PermissionDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/pojo/dto/RoleDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/pojo/dto/UserDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/pojo/query/MenuPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/pojo/query/RolePage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/pojo/query/UserPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/pojo/vo/MenuVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/pojo/vo/PermissionVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/pojo/vo/RoleVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/pojo/vo/UserVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/AddressService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/EmpService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/MenuService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/PermissionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/RoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/impl/AddressServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/impl/EmpServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/impl/MenuServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/impl/PermissionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/impl/RoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/utils/JwtUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/utils/MapStructUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/bobo/purview/utils/TreeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/AddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/EmpMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/bobo/purview/component/convert/MenuConvertImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/bobo/purview/component/convert/PermissionConvertImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/bobo/purview/component/convert/RoleConvertImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/bobo/purview/component/convert/UserConvertImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/PurviewApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/component/annotate/RequiresPermissions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/component/annotate/RequiresRoles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/component/base/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/component/config/MyBtaisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/component/config/WebConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/component/convert/MenuConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/component/convert/PermissionConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/component/convert/RoleConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/component/convert/UserConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/controller/TreeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/entity/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/entity/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/entity/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/exception/AuthorizationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/exception/UnauthorizedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/interceptors/PermissionInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/interceptors/TokenInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/mapper/AddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/mapper/EmpMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/mapper/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/pojo/dto/MenuDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/pojo/dto/PermissionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/pojo/dto/RoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/pojo/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/pojo/query/MenuPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/pojo/query/RolePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/pojo/query/UserPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/pojo/vo/MenuVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/pojo/vo/PermissionVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/pojo/vo/RoleVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/pojo/vo/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/EmpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/impl/EmpServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/utils/MapStructUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/java/com/bobo/purview/utils/TreeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/resources/aa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/resources/mapper/AddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/resources/mapper/EmpMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../purview1/src/test/java/com/bobo/purview/PurviewApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/main/java/com/example/rabbitmq01/Rabbitmq01Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/main/java/com/example/rabbitmq01/controller/ActivemqController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/direct/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/direct/MessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/direct/MessageSevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/direct/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/MessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/MessageSevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq01/src/test/java/com/example/rabbitmq01/Rabbitmq01ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/server.2022-01-21.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/server.2022-01-21.1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/server.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_01_quickstart/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_01_quickstart/src/main/java/top/jacktgq/Springboot0101QuickstartApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_01_quickstart/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_01_quickstart/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_01_quickstart/src/test/java/top/jacktgq/Springboot0101QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_02_quickstart/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_02_quickstart/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_02_quickstart/src/main/java/top/jacktgq/Springboot0102QuickstartApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_02_quickstart/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_02_quickstart/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_02_quickstart/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_03_quickstart/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_03_quickstart/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_03_quickstart/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_03_quickstart/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_03_quickstart/src/main/java/top/jacktgq/Springboot0103QuickstartApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_03_quickstart/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_03_quickstart/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_03_quickstart/src/test/java/top/jacktgq/Springboot0103QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_04_quickstart/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_04_quickstart/src/main/java/top/jacktgq/MyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_04_quickstart/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_04_quickstart/src/main/java/top/jacktgq/controller/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/src/main/java/top/jacktgq/Springboot0105RestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/src/main/java/top/jacktgq/controller/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/src/main/java/top/jacktgq/controller/User1Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/src/main/java/top/jacktgq/controller/User2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_05_rest/src/test/java/top/jacktgq/Springboot0105RestApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_06_restful_upload_download/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_06_restful_upload_download/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_06_restful_upload_download/src/main/java/top/jacktgq/RESTfulDownloadAndUploadApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_06_restful_upload_download/src/main/java/top/jacktgq/controller/FileDownloadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_06_restful_upload_download/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_06_restful_upload_download/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_01_06_restful_upload_download/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_02_base_configuration/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_02_base_configuration/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_02_base_configuration/src/main/java/top/jacktgq/BaseConfigurationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_02_base_configuration/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_02_base_configuration/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_02_base_configuration/src/main/resources/bak/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_02_base_configuration/src/main/resources/bak/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_02_base_configuration/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_02_base_configuration/src/main/resources/universe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_02_base_configuration/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_03_yaml/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_03_yaml/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_03_yaml/src/main/java/top/jacktgq/YamlTestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_03_yaml/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_03_yaml/src/main/java/top/jacktgq/controller/MyDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_03_yaml/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_03_yaml/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_03_yaml/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/src/main/java/top/jacktgq/Springboot04JunitApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/src/main/java/top/jacktgq/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/src/main/java/top/jacktgq/dao/impl/BookDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_04_junit/src/test/java/top/Springboot04JunitApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/src/main/java/top/jacktgq/Springboot05MybatisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/src/main/resources/bak/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_05_mybatis/src/test/java/top/jacktgq/Springboot05MybatisApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/src/main/java/top/jacktgq/Springboot06MybatisPlusApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/src/main/resources/bak/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_06_mybatis_plus/src/test/java/top/jacktgq/Springboot06MybatisPlusApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/src/main/java/top/jacktgq/Springboot07DruidApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_07_druid/src/test/java/top/jacktgq/Springboot07DruidApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/SSMPApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/config/MPConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/controller/BookController2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/controller/utils/ProjectExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/controller/utils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/java/top/jacktgq/service/impl/BookServiceImpl2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/js/axios-0.18.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/pages/books.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/plugins/elementui/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/plugins/elementui/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/plugins/elementui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/test/java/top/jacktgq/mapper/BookMapperTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/test/java/top/jacktgq/service/BookServiceTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_08_ssmp/src/test/java/top/jacktgq/service/BookServiceTestCase2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_09_config/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_09_config/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_09_config/src/main/java/top/jacktgq/SpringbootConfigApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_09_config/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_09_config/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_09_config/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_09_config/src/main/resources/ebank-server.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_09_config/src/main/resources/ebank.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_09_config/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/java/top/jacktgq/ProfilesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/application-devDB.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/application-devMVC.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/bak/mul/properties/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/bak/mul/properties/application-pro.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/bak/mul/properties/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/bak/mul/properties/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/bak/mul/yml/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/bak/mul/yml/application-pro.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/bak/mul/yml/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/bak/mul/yml/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/bak/single/application-all.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_10_profiles/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_11_log/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_11_log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_11_log/src/main/java/top/jacktgq/LogApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_11_log/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_11_log/src/main/java/top/jacktgq/controller/BookController2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_11_log/src/main/java/top/jacktgq/controller/BookController_lombok.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_11_log/src/main/java/top/jacktgq/controller/utils/LogUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_11_log/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_11_log/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_11_log/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/java/top/jacktgq/SSMPApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/java/top/jacktgq/config/MPConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/java/top/jacktgq/controller/utils/ProjectExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/java/top/jacktgq/controller/utils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/java/top/jacktgq/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/java/top/jacktgq/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/js/axios-0.18.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/pages/books.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/plugins/elementui/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/plugins/elementui/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/plugins/elementui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_12_hot_deploy/src/test/java/top/jacktgq/service/BookServiceTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_13_configuration/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_13_configuration/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_13_configuration/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_13_configuration/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_13_configuration/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_13_configuration/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_13_configuration/src/main/java/top/jacktgq/ConfigurationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_13_configuration/src/main/java/top/jacktgq/config/ServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_13_configuration/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_13_configuration/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_13_configuration/src/test/java/top/jacktgq/ConfigurationApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/main/java/top/jacktgq/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/main/java/top/jacktgq/TestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/main/java/top/jacktgq/pojo/BookCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/main/java/top/jacktgq/service/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/main/java/top/jacktgq/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/test/java/top/jacktgq/ConfigurationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/test/java/top/jacktgq/PropertiesAndArgsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/test/java/top/jacktgq/WebTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/test/java/top/jacktgq/config/MsgConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_14_test/src/test/java/top/jacktgq/service/BookServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/src/main/java/top/jacktgq/DatasourceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_01_datasource/src/test/java/top/jacktgq/SqlApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_02_jdbc_template/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_02_jdbc_template/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_02_jdbc_template/src/main/java/top/jacktgq/JdbcTemplateApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_02_jdbc_template/src/main/java/top/jacktgq/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_02_jdbc_template/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_02_jdbc_template/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_02_jdbc_template/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_02_jdbc_template/src/test/java/top/jacktgq/JdbcTemplateApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_03_h2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_03_h2/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_03_h2/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_03_h2/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_03_h2/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_03_h2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_03_h2/src/main/java/top/jacktgq/H2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_03_h2/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_03_h2/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_03_h2/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_03_h2/src/test/java/top/jacktgq/H2ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/src/main/java/top/jacktgq/RedisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/src/main/java/top/jacktgq/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/src/main/java/top/jacktgq/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/src/test/java/top/jacktgq/RedisTemplateTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_04_redis/src/test/java/top/jacktgq/StringRedisTemplateTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_05_mongodb/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_05_mongodb/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_05_mongodb/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_05_mongodb/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_05_mongodb/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_05_mongodb/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_05_mongodb/src/main/java/top/jacktgq/MongodbApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_05_mongodb/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_05_mongodb/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_05_mongodb/src/test/java/top/jacktgq/MongodbApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/src/main/java/top/jacktgq/ElasticsearchApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/src/main/java/top/jacktgq/utils/CandyJsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_15_06_elasticsearch/src/test/java/top/jacktgq/ElasticsearchApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/src/main/java/top/jacktgq/CacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/src/main/java/top/jacktgq/controller/utils/ProjectExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/src/main/java/top/jacktgq/controller/utils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/src/main/java/top/jacktgq/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/src/main/java/top/jacktgq/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_01_cache_book_quickstart/src/test/java/top/jacktgq/CacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/src/main/java/top/jacktgq/CacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/src/main/java/top/jacktgq/controller/utils/ProjectExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/src/main/java/top/jacktgq/controller/utils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/src/main/java/top/jacktgq/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/src/main/java/top/jacktgq/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_02_cache_book_simple/src/test/java/top/jacktgq/CacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_03_cache_smscode_simple/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_03_cache_smscode_simple/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_03_cache_smscode_simple/src/main/java/top/jacktgq/CacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_03_cache_smscode_simple/src/main/java/top/jacktgq/controller/SMSCodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_03_cache_smscode_simple/src/main/java/top/jacktgq/controller/utils/CodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_03_cache_smscode_simple/src/main/java/top/jacktgq/pojo/SMSCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_03_cache_smscode_simple/src/main/java/top/jacktgq/service/SMSCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_03_cache_smscode_simple/src/main/java/top/jacktgq/service/impl/SMSCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_03_cache_smscode_simple/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_03_cache_smscode_simple/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_03_cache_smscode_simple/src/test/java/top/jacktgq/CacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/src/main/java/top/jacktgq/CacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/src/main/java/top/jacktgq/controller/SMSCodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/src/main/java/top/jacktgq/controller/utils/CodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/src/main/java/top/jacktgq/pojo/SMSCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/src/main/java/top/jacktgq/service/SMSCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/src/main/java/top/jacktgq/service/impl/SMSCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/src/main/resources/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_04_cache_smscode_ehcache/src/test/java/top/jacktgq/CacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_05_cache_smscode_redis/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_05_cache_smscode_redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_05_cache_smscode_redis/src/main/java/top/jacktgq/CacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_05_cache_smscode_redis/src/main/java/top/jacktgq/controller/SMSCodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_05_cache_smscode_redis/src/main/java/top/jacktgq/controller/utils/CodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_05_cache_smscode_redis/src/main/java/top/jacktgq/pojo/SMSCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_05_cache_smscode_redis/src/main/java/top/jacktgq/service/SMSCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_05_cache_smscode_redis/src/main/java/top/jacktgq/service/impl/SMSCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_05_cache_smscode_redis/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_05_cache_smscode_redis/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_05_cache_smscode_redis/src/test/java/top/jacktgq/CacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/src/main/java/top/jacktgq/CacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/src/main/java/top/jacktgq/config/XMemcachedConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/src/main/java/top/jacktgq/config/XMemcachedProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/src/main/java/top/jacktgq/controller/SMSCodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/src/main/java/top/jacktgq/controller/utils/CodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/src/main/java/top/jacktgq/pojo/SMSCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/src/main/java/top/jacktgq/service/SMSCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/src/main/java/top/jacktgq/service/impl/SMSCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_06_cache_smscode_memcached/src/test/java/top/jacktgq/CacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_07_cache_smscode_jetcache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_07_cache_smscode_jetcache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_07_cache_smscode_jetcache/src/main/java/top/jacktgq/CacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_07_cache_smscode_jetcache/src/main/java/top/jacktgq/controller/SMSCodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_07_cache_smscode_jetcache/src/main/java/top/jacktgq/controller/utils/CodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_07_cache_smscode_jetcache/src/main/java/top/jacktgq/pojo/SMSCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_07_cache_smscode_jetcache/src/main/java/top/jacktgq/service/SMSCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_07_cache_smscode_jetcache/src/main/java/top/jacktgq/service/impl/SMSCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_07_cache_smscode_jetcache/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_07_cache_smscode_jetcache/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_07_cache_smscode_jetcache/src/test/java/top/jacktgq/CacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/main/java/top/jacktgq/CacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/main/java/top/jacktgq/controller/utils/CodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/main/java/top/jacktgq/controller/utils/ProjectExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/main/java/top/jacktgq/controller/utils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/main/java/top/jacktgq/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/main/java/top/jacktgq/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_08_cache_book_jetcache_method/src/test/java/top/jacktgq/CacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/src/main/java/top/jacktgq/CacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/src/main/java/top/jacktgq/controller/SMSCodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/src/main/java/top/jacktgq/controller/utils/CodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/src/main/java/top/jacktgq/pojo/SMSCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/src/main/java/top/jacktgq/service/SMSCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/src/main/java/top/jacktgq/service/impl/SMSCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/src/main/resources/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/src/main/resources/j2cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_01_09_cache_smscode_j2cache_ehcache_redis/src/test/java/top/jacktgq/CacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_01_task_quartz/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_01_task_quartz/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_01_task_quartz/src/main/java/top/jacktgq/TaskApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_01_task_quartz/src/main/java/top/jacktgq/TimerTaskApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_01_task_quartz/src/main/java/top/jacktgq/config/QuartzConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_01_task_quartz/src/main/java/top/jacktgq/quartz/MyQuartz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_01_task_quartz/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_01_task_quartz/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_01_task_quartz/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_02_task_spring/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_02_task_spring/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_02_task_spring/src/main/java/top/jacktgq/MyTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_02_task_spring/src/main/java/top/jacktgq/TaskApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_02_task_spring/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_02_task_spring/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_02_02_task_spring/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_03_mail/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_03_mail/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_03_mail/src/main/java/top/jacktgq/MailApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_03_mail/src/main/java/top/jacktgq/service/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_03_mail/src/main/java/top/jacktgq/service/impl/MailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_03_mail/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_03_mail/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_03_mail/src/main/resources/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_03_mail/src/test/java/top/jacktgq/MailApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/src/main/java/top/jacktgq/MQApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/src/main/java/top/jacktgq/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/src/main/java/top/jacktgq/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/src/main/java/top/jacktgq/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/src/main/java/top/jacktgq/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/src/main/java/top/jacktgq/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/src/main/java/top/jacktgq/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_01_mq_prepare/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/main/java/top/jacktgq/MQApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/main/java/top/jacktgq/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/main/java/top/jacktgq/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/main/java/top/jacktgq/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/main/java/top/jacktgq/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/main/java/top/jacktgq/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/main/java/top/jacktgq/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/main/java/top/jacktgq/service/impl/activemq/MessageServiceActivemqImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/main/java/top/jacktgq/service/impl/activemq/listener/MessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_02_mq_activemq/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/java/top/jacktgq/MQApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/java/top/jacktgq/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/java/top/jacktgq/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/java/top/jacktgq/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/java/top/jacktgq/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/java/top/jacktgq/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/java/top/jacktgq/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/java/top/jacktgq/service/impl/rabbitmq/direct/MessageServiceRabbitmqDirectImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/java/top/jacktgq/service/impl/rabbitmq/direct/config/RabbitDirectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/java/top/jacktgq/service/impl/rabbitmq/direct/listener/MessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/java/top/jacktgq/service/impl/rabbitmq/direct/listener/MessageListener2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_03_mq_rabbitmq_direct/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/java/top/jacktgq/MQApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/java/top/jacktgq/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/java/top/jacktgq/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/java/top/jacktgq/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/java/top/jacktgq/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/java/top/jacktgq/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/java/top/jacktgq/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/java/top/jacktgq/service/impl/rabbitmq/topic/MessageServiceRabbitmqTopicImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/java/top/jacktgq/service/impl/rabbitmq/topic/config/RabbitTopicConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/java/top/jacktgq/service/impl/rabbitmq/topic/listener/MessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_04_mq_rabbitmq_topic/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/main/java/top/jacktgq/MQApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/main/java/top/jacktgq/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/main/java/top/jacktgq/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/main/java/top/jacktgq/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/main/java/top/jacktgq/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/main/java/top/jacktgq/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/main/java/top/jacktgq/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/main/java/top/jacktgq/service/impl/rocketmq/MessageServiceRocketmqImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/main/java/top/jacktgq/service/impl/rocketmq/listener/MessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_05_mq_rocketmq/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/main/java/top/jacktgq/MQApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/main/java/top/jacktgq/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/main/java/top/jacktgq/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/main/java/top/jacktgq/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/main/java/top/jacktgq/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/main/java/top/jacktgq/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/main/java/top/jacktgq/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/main/java/top/jacktgq/service/impl/kafka/MessageServiceKafkaImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/main/java/top/jacktgq/service/impl/kafka/listener/MessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_16_04_06_mq_kafka/src/test/java/top/jacktgq/Springboot0102QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_01_admin_server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_01_admin_server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_01_admin_server/src/main/java/top/jacktgq/SpringBootAdminServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_01_admin_server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_01_admin_server/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_01_admin_server/src/test/java/top/jacktgq/Springboot17AdminServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_02_admin_client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_02_admin_client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_02_admin_client/src/main/java/top/jacktgq/SpringBootAdminClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_02_admin_client/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_02_admin_client/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_02_admin_client/src/test/java/top/jacktgq/Springboot17AdminServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/SSMPApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/config/MPConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/config/actuator/InfoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/controller/BookController2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/controller/utils/ProjectExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/controller/utils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/java/top/jacktgq/service/impl/BookServiceImpl2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/js/axios-0.18.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/pages/books.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/plugins/elementui/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/plugins/elementui/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/plugins/elementui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/test/java/top/jacktgq/mapper/BookMapperTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/test/java/top/jacktgq/service/BookServiceTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/springboot_17_03_admin_client_ssmp/src/test/java/top/jacktgq/service/BookServiceTestCase2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study-master/tbl_book.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/01-ES6的介绍和环境配置.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/02-ES5中的严格模式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/03-ES5中的一些扩展.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/04-ES6：变量 let、const 和块级作用域.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/05-ES6：变量的解构赋值.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/06-ES6：箭头函数.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/07-剩余参数和扩展运算符.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/08-字符串、数组、对象的扩展.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/09-内置对象扩展：Set数据结构.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/10-Promise入门详解.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/11-Promise的常见用法和API.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/12-ES7：async函数详解.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/05-JavaScript之ES6语法/ES6：Symbol.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/._05-JavaScript之ES6语法" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._01-ES6的介绍和环境配置.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._02-ES5中的严格模式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._03-ES5中的一些扩展.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._04-ES6：变量 let、const 和块级作用域.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._05-ES6：变量的解构赋值.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._06-ES6：箭头函数.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._07-剩余参数和扩展运算符.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._08-字符串、数组、对象的扩展.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._09-内置对象扩展：Set数据结构.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._10-Promise入门详解.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._11-Promise的常见用法和API.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._12-ES7：async函数详解.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/05-JavaScript之ES6语法/__MACOSX/05-JavaScript之ES6语法/._ES6：Symbol.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/es6笔记2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/es6笔记2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/image/es6笔记2/1690350127282.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/temp/23-07-25.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/temp/es6笔记.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/00-编程语言.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/01-JS简介.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/02-变量.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/03-变量的数据类型：基本数据类型和引用数据类型.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/04-基本数据类型：String 和 Boolean.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/05-基本数据类型：Number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/06-基本数据类型：Null 和 Undefined.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/07-typeof和数据类型转换.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/08-运算符.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/09-流程控制语句：选择结构（if和switch）.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/10-流程控制语句：循环结构（for和while）.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/11-对象简介.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/12-基本包装类型.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/13-内置对象 String：字符串的常见方法.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/14-内置对象：Number和Math.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/15-内置对象：Date.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/16-数组简介.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/17-数组的常见方法.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/18-函数.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/19-作用域和变量提升.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/20-预编译.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/21-this指向.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/22-call、apply 和 bind.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/23-高阶函数.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/24-闭包.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/25-面向对象概述.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/26-对象的创建&amp;构造函数.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/27-对象的基本操作.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/28-浅拷贝和深拷贝.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/29-对象的高级操作（待更新）.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/30-原型链和原型继承（待更新）.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/31-类和构造继承（待更新）.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/32-正则表达式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/33-事件简介.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/34-DOM简介和DOM操作.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/35-通过style对象获取和设置行内样式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/36-offset相关属性和匀速动画(含轮播图的实现).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/37-scroll相关属性和缓动动画.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/38-client(可视区)相关属性.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/39-事件的绑定和事件对象Event.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/40-事件的传播和事件冒泡.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/41-事件委托.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/42-键盘事件.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/43-BOM简介和navigator.userAgent&amp;History&amp;Location.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/44-定时器.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/45-jQuery的介绍和选择器.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/46-jQuery动画详解.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/47-jQuery操作DOM.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/48-jQuery的事件机制和其他知识.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/49-Zepto入门.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/BOM的常见内置方法和内置对象.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/原型对象.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/原型链.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Html/JS/段版/04-JavaScript基础/常见代码解读.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/23-07-31-rabbitmq.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/image/23-07-31-rabbitmq/1690792571193.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/image/23-07-31-rabbitmq/1690794017667.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/image/23-07-31-rabbitmq/1690797730267.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/image/23-07-31-rabbitmq/1690797764373.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/23-07-24-整合第三方技术.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/23-07-31-消息.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690162698950.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690163646364.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690163656132.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690165050946.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690165068808.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690165085912.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690166163449.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690167711429.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690170149927.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690170168473.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690170180990.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690177339007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690177371550.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690177414696.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690189679616.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690189740502.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690189802534.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690191960089.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690191977111.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690191987705.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690192003902.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690198884575.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-23-数据层解决方案/1690198900685.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690248805297.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690250031676.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690250580936.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690250597907.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690250613755.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690250808833.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690264459177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690264478419.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690264553572.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690268619308.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690268632945.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690268701246.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690269772875.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690270206428.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690270222572.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690270239193.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690270916995.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690271835973.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690271856454.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690271872505.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690271887843.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690271912660.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690271923966.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690273355205.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690275075125.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690275359762.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690275426768.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690275436273.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690275457598.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690275475931.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690275486235.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690275524491.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690275546171.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690275560343.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690275581880.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690514843492.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690514864708.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690514876632.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690514892518.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690514975080.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690529513720.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690529548761.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690529564922.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690529613098.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690529632832.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690529646191.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690531633088.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690531644181.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690531698401.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690531749382.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690533393073.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690533413158.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690533428756.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690535041056.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690535789542.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690535801316.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690535823869.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-24整合第三方技术/1690535834694.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-rabbitmq/1690782531288.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-rabbitmq/1690782541460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-rabbitmq/1690782548969.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-rabbitmq/1690782567436.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-rabbitmq/1690782682050.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690782795198.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690783054713.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690783119645.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690783156798.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690783390627.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690783402279.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690783474292.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690783494527.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690785687128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690785697916.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690785728922.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690785769178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690785893893.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690785911165.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690786016906.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690786166991.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690786179908.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690786189098.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690786214219.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690786222680.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690786236177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690787237184.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690787264107.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690787300486.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/image/23-07-31-消息/1690787313833.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/linux/linux常见问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../笔记/linux/linux常见问题.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/config/MyBtaisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/mybatis-plus-test-springboot/src/main/java/com/example/config/MyBtaisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/config/SpringMVCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/config/SpringMVCConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/controller/AlipayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/controller/AlipayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/controller/WXpayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/controller/WXpayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/pojo/vo/WXpayVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/pojo/vo/WXpayVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/service/impl/AlipayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/service/impl/AlipayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/service/impl/WXpayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/service/impl/WXpayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/mapper/AlipayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/mapper/AlipayMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/mapper/WXpayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/resources/mapper/WXpayMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/config/SpringMVCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/config/SpringMVCConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/config/WXPayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/config/WXPayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/AliPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/AliPayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/WXPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/controller/WXPayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/entity/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/entity/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/AliPayDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/AliPayDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/AlipayNotifyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/OrderAlipayNotifyDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/WXPayDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/WXPayDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/vo/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/vo/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/vo/WXPayVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/pojo/dto/OrderWXpayNotifyDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/AliPayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/AliPayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/WXService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/WXService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/WXServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/WXServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/task/AliPayPayTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/task/AliPayPayTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/alipay.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/alipay.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/catalina.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/localtion.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/localtion.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/wxpay.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/resources/wxpay.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../cache1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../cache1/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../cache1/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../cache1/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../cache1/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/PurviewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/PurviewApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/entity/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/pojo/vo/MenuVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/pojo/vo/MenuVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/pojo/vo/PermissionVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/pojo/vo/PermissionVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/pojo/vo/RoleVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/pojo/vo/RoleVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/.vscode/.easyRedis.redis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Html/ES6/23-06-03-let和const.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Html/ES6/temp/23-07-26.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/23-07-21-配置高级.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/23-07-21-配置高级.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/23-07-23-数据层解决方案.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/23-07-23-数据层解决方案.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/黑马/实用篇-补全-加强-解决/开发实用篇/23-07-24整合第三方技术.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2SgPCE19DBiDj8hBY45pPBhX7y2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Visual Studio Code/java/java_study/springboot/purview/src/main/resources/mapper&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a16539d490c83e2e949ca3038f788205&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Visual Studio Code\java\java_study\springboot\purview\src\main\resources\mapper" />
+      <recent name="E:\Visual Studio Code\java\java_study\springboot\purview\src\main\java\com\bobo\purview" />
+      <recent name="E:\Visual Studio Code\java\java_study\springboot\purview\src\main\java\com\bobo\purview\pojo" />
+      <recent name="E:\Visual Studio Code\java\java_study\springboot\purview\src\main\java\com\bobo\purview\component" />
+      <recent name="E:\Visual Studio Code\java\java_study\springboot\purview\src\main\java\com\bobo\purview\component\base" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bobo.purview.service.impl" />
+      <recent name="com.bobo.purview.service" />
+      <recent name="com.bobo.purview.mapper" />
+      <recent name="com.bobo.purview.utils" />
+      <recent name="com.bobo.purview.pojo.query" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PurviewApplication">
+    <configuration name="RoleVO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bobo.purview.pojo.vo.RoleVO" />
+      <module name="purview" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bobo.purview.pojo.vo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurviewApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="purview" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bobo.purview.PurviewApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RoleVO" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aef08083-7043-48a8-98f8-81ac0522be82" name="Changes" comment="" />
+      <created>1689565125132</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689565125132</updated>
+      <workItem from="1689565126132" duration="571000" />
+      <workItem from="1689572369289" duration="3939000" />
+      <workItem from="1689594256617" duration="5033000" />
+      <workItem from="1689641354992" duration="23465000" />
+      <workItem from="1689727708663" duration="24356000" />
+      <workItem from="1689814672571" duration="13964000" />
+      <workItem from="1689839073060" duration="55000" />
+      <workItem from="1689839162203" duration="1736000" />
+      <workItem from="1689851377866" duration="955000" />
+      <workItem from="1689854026570" duration="975000" />
+      <workItem from="1689900872836" duration="662000" />
+      <workItem from="1689909132148" duration="629000" />
+      <workItem from="1689924632128" duration="2702000" />
+      <workItem from="1689931778719" duration="550000" />
+      <workItem from="1689991541293" duration="15780000" />
+      <workItem from="1690110059396" duration="80000" />
+      <workItem from="1690110755540" duration="178000" />
+      <workItem from="1690159568550" duration="4439000" />
+      <workItem from="1690172627121" duration="98000" />
+      <workItem from="1690177732152" duration="1985000" />
+      <workItem from="1690181399605" duration="1266000" />
+      <workItem from="1690183889598" duration="1329000" />
+      <workItem from="1690295676184" duration="442000" />
+      <workItem from="1690354475378" duration="21000" />
+      <workItem from="1690427461023" duration="222000" />
+      <workItem from="1690856441293" duration="299000" />
+      <workItem from="1690857606357" duration="601000" />
+      <workItem from="1690940385494" duration="399000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

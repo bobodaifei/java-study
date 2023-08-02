@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bobo.purview.mapper.AddressMapper">
+
+    <resultMap id="tree" type="Address">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="level" property="level"/>
+        <result column="parentId" property="parentId"/>
+        <collection property="children" ofType="Address"
+                    select="selectAddressTreeByPid" column="{parentId=id}"/>
+    </resultMap>
+
+    <select id="selectAddressTreeByPid" resultMap="tree">
+        select * from address
+        <where>
+            <if test="parentId!=null">
+                parent_id = #{parentId}
+            </if>
+            <if test="parentId==null">
+                parent_id is null
+            </if>
+        </where>
+    </select>
+
+</mapper>
+

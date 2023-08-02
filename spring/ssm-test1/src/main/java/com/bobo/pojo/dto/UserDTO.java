@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * <p>
@@ -23,5 +24,9 @@ public class UserDTO implements Serializable {
 
   @ApiModelProperty("密码")
   private String password;
+
+  private BigDecimal balance;
+
+  private Integer version;
 }
 

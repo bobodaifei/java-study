@@ -1,10 +1,13 @@
 package com.bobo.service;
 
 
+import com.bobo.base.Result;
 import com.bobo.entity.Order;
 import com.bobo.pojo.dto.OrderDTO;
+import com.bobo.pojo.dto.OrderAlipayNotifyDTO;
 import com.bobo.pojo.query.OrderQuery;
 import com.bobo.pojo.vo.OrderVO;
+import com.bobo.pojo.dto.OrderWXpayNotifyDTO;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;
@@ -28,6 +31,11 @@ public interface OrderService {
    * @param dto 参数
    */
   public String toPay(OrderDTO dto);
+
+
+  public void payNotify1(Result<OrderAlipayNotifyDTO> result);
+
+  public void payNotify(OrderWXpayNotifyDTO vo);
 
   /**
    * 修改

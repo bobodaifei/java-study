@@ -7,6 +7,7 @@ import lombok.experimental.Accessors;
 import org.apache.ibatis.type.Alias;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * <p>
@@ -32,5 +33,9 @@ public class User implements Serializable {
 
   @ApiModelProperty("密码")
   private String password;
+
+  private BigDecimal balance;
+
+  private Integer version;
 }
 

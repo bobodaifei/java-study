@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bobo.purview.mapper.EmpMapper">
+
+    <resultMap id="tree" type="Emp">
+        <id column="empno" property="empno"/>
+        <result column="ename" property="ename"/>
+        <result column="level" property="level"/>
+        <result column="job" property="job"/>
+        <result column="mgr" property="mgr"/>
+        <collection property="children" ofType="Emp"
+                    select="selectEmpTreeByPid" column="{mgr=empno}"/>
+    </resultMap>
+
+    <select id="selectEmpTreeByPid" resultMap="tree">
+        select * from emp
+        <where>
+            <if test="mgr!=null">
+                mgr = #{mgr}
+            </if>
+            <if test="mgr==null">
+                mgr is null
+            </if>
+        </where>
+    </select>
+
+</mapper>
+

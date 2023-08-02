@@ -1,0 +1,24 @@
+
+jetcache:
+  local:
+    default:
+      type: linkedhashmap
+      keyConvertor: fastjson
+    bmb:
+      type: linkedhashmap
+      keyConvertor: fastjson
+
+  remote:
+    default:
+      type: redis
+      host: localhost
+      port: 6379
+      poolConfig:
+        maxTotal: 50
+    sms:
+      type: redis
+      host: localhost
+      port: 6379
+      poolConfig:
+        maxTotal: 50
+

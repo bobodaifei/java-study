@@ -6,15 +6,13 @@ import com.bobo.gateway.exception.CustomException;
 import com.bobo.gateway.pojo.dto.AlipayDTO;
 import com.bobo.gateway.service.AlipayService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/alipay")
 public class AlipayController {
 

@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
+
 
 /**
  * @author bobodaifei
@@ -48,5 +50,13 @@ public class UserServiceImpl implements UserService {
   public UserVO login(UserDTO dto){
     User entity = INSTANCE.toEntity(dto);
     return INSTANCE.toVO(userMapper.login(entity));
+  }
+
+  @Override
+  public int modifyBlance(Integer userId, BigDecimal balance) {
+    User user = new User();
+    user.setUserId(userId);
+    user.setBalance(balance);
+    return userMapper.modifyBlance(user);
   }
 }

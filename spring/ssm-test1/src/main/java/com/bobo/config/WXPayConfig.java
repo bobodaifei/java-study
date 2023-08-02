@@ -14,10 +14,6 @@ public class WXPayConfig {
   private String appid;
   @Value("${wxpay.mch_id}")
   private String mch_id;
-  @Value("${wxpay.notify_url}")
-  private String notify_url;
-  @Value("${wxpay.return_url}")
-  private String return_url;
   @Value("${wxpay.trade_type}")
   private String trade_type;
   @Value("${wxpay.scene_info}")

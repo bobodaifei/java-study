@@ -8,6 +8,8 @@ public class WXpayVO {
 
   private Integer settlement_total_fee;//实付金额
 
+  private Integer total_fee;
+
   private String time_end;//支付时间
 
   public String getResult_code() {
@@ -40,5 +42,13 @@ public class WXpayVO {
 
   public void setTime_end(String time_end) {
     this.time_end = time_end;
+  }
+
+  public Integer getTotal_fee() {
+    return total_fee;
+  }
+
+  public void setTotal_fee(Integer total_fee) {
+    this.total_fee = total_fee;
   }
 }

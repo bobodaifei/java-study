@@ -16,4 +16,6 @@ public interface UserMapper {
   public User selectById(@Param("id") Integer id);
 
   public User login(User entity);
+
+  public int modifyBlance(User user);
 }

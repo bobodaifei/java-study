@@ -132,6 +132,7 @@ public class RechargeServiceImpl implements RechargeService {
     Recharge recharge = INSTANCE.toEntity(dto);
     rechargeMapper.updateSuccessByNo(recharge);
     Integer userId = rechargeMapper.selectByNo(recharge.getRechargeNo()).getUserId();
+    //忘记返回修改后的余额了
     userService.modifyBlance(userId, new BigDecimal(recharge.getPayPrice()));
     rechargeMapper.updateAfterMoneyByNo(recharge);
   }

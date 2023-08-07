@@ -17,6 +17,15 @@ public class Config {
     return new Queue("topic_queue");
   }
 
+  @Bean
+  public Queue topicQueue1() {
+    //后续三个参数
+    //是否持久化
+    //连接专用
+    //是否删除
+    return new Queue("topic_queue1");
+  }
+
   //交换机
   @Bean
   public TopicExchange topicExchange() {
@@ -31,6 +40,15 @@ public class Config {
             to(topicExchange())
             //模糊匹配
             .with("topic.*.id");
+  }
+
+  @Bean
+  public Binding bindingtopic2() {
+    return BindingBuilder
+            .bind(topicQueue1()).
+            to(topicExchange())
+            //模糊匹配
+            .with("topic.*.id1");
   }
 
 }

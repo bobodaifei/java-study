@@ -24,7 +24,7 @@ cd ~/mysql
 
 ```shell
 docker run -id \
--p 3307:3306 \
+-p 3306:3306 \
 --name=c_mysql \
 -v $PWD/conf:/etc/mysql/conf.d \
 -v $PWD/logs:/logs \
@@ -40,8 +40,6 @@ mysql:5.6
   - **-v $PWD/data:/var/lib/mysql** ：将主机当前目录下的data目录挂载到容器的 /var/lib/mysql 。数据目录
   - **-e MYSQL_ROOT_PASSWORD=123456：**初始化 root 用户的密码。
 
-
-
 4. 进入容器，操作mysql
 
 ```shell
@@ -51,23 +49,6 @@ docker exec –it c_mysql /bin/bash
 5. 使用外部机器连接容器中的mysql
 
 ![1573636765632](.\imgs\1573636765632.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### 二、部署Tomcat
 
@@ -100,29 +81,12 @@ tomcat
 
 - 参数说明：
   - **-p 8080:8080：**将容器的8080端口映射到主机的8080端口
-  
+
     **-v $PWD:/usr/local/tomcat/webapps：**将主机中当前目录挂载到容器的webapps
-
-
 
 4. 使用外部机器访问tomcat
 
 ![1573649804623](./imgs\1573649804623.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### 三、部署Nginx
 
@@ -140,7 +104,6 @@ docker pull nginx
 
 3. 创建容器，设置端口映射、目录映射
 
-
 ```shell
 # 在/root目录下创建nginx目录用于存储nginx数据信息
 mkdir ~/nginx
@@ -150,6 +113,7 @@ cd conf
 # 在~/nginx/conf/下创建nginx.conf文件,粘贴下面内容
 vim nginx.conf
 ```
+
 ```shell
 
 user  nginx;
@@ -187,9 +151,6 @@ http {
 
 ```
 
-
-
-
 ```shell
 docker run -id --name=c_nginx \
 -p 80:80 \
@@ -207,16 +168,6 @@ nginx
 4. 使用外部机器访问nginx
 
 ![1573652396669](.\imgs\1573652396669.png)
-
-
-
-
-
-
-
-
-
-
 
 ### 四、部署Redis
 
@@ -243,10 +194,3 @@ docker run -id --name=c_redis -p 6379:6379 redis:5.0
 ```shell
 ./redis-cli.exe -h 192.168.149.135 -p 6379
 ```
-
-
-
-
-
-
-

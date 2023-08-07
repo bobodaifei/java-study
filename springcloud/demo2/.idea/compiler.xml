@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-providerconsul-payment8006" />
+        <module name="cloud-provider-payment8002" />
+        <module name="cloud-eureka-server7001" />
+        <module name="cloud-api-commons" />
+        <module name="cloud-provider-payment8001" />
+        <module name="cloud-eureka-server7002" />
+        <module name="cloud-eureka-simple-server7001" />
+        <module name="cloud-consumer-feign-hystrix-order80" />
+        <module name="cloud-providerzk-payment8004" />
+        <module name="cloud-stream-rabbitmq-provider8801" />
+        <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloud-stream-rabbitmq-consumer8802" />
+        <module name="cloud-consumerzk-order81" />
+        <module name="cloud-stream-rabbitmq-consumer8803" />
+        <module name="cloud-consumerconsul-order82" />
+        <module name="cloud-config-center-3344" />
+        <module name="cloud-gateway-gateway9527" />
+        <module name="cloud-consumer-fegin-order80" />
+        <module name="cloud-provider-hygtrix-payment8001" />
+        <module name="cloud-consumer-order80" />
+        <module name="cloud-config-client-3355" />
+        <module name="cloud-config-client-3366" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="cloud-config-client-3356" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo2" options="" />
+    </option>
+  </component>
+</project>

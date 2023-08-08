@@ -5,208 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ec6b4cd-f94b-4e6c-b85b-505025077c47" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-consumer-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-consumer-order80/src/main/java/com/example/cloud/CloudConsumerOrder80Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-consumer-order80/src/main/java/com/example/cloud/component/base/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-consumer-order80/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-consumer-order80/src/main/java/com/example/cloud/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-provider-payment8001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/PaymentMain8001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/component/base/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/MyBtaisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/mapper/PaymentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-api-commons/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-api-commons/src/main/java/com/example/cloud/component/base/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-api-commons/src/main/java/com/example/cloud/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-api-commons/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-center-3344/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-center-3344/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-center-3344/src/main/java/com/example/cloud/ConfigCenterMain3344.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-center-3344/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-client-3355/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-client-3355/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-client-3355/src/main/java/com/example/cloud/ConfigClientMain3355.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-client-3355/src/main/java/com/example/cloud/controller/ConfigClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-client-3355/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-client-3366/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-client-3366/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-client-3366/src/main/java/com/example/cloud/ConfigClientMain3366.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-client-3366/src/main/java/com/example/cloud/controller/ConfigClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-config-client-3366/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-fegin-order80/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-fegin-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-fegin-order80/src/main/java/com/example/cloud/OrderFeignMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-fegin-order80/src/main/java/com/example/cloud/component/config/FeignConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-fegin-order80/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-fegin-order80/src/main/java/com/example/cloud/controller/OrderFeignController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-fegin-order80/src/main/java/com/example/cloud/service/PaymentFeignService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-fegin-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-feign-hystrix-order80/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-feign-hystrix-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/OrderHystrixMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/component/config/MyLB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/controller/OrderHystrixController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/service/PaymentFallbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/service/PaymentHystrixService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-feign-hystrix-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-hystrix-dashboard9001/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-hystrix-dashboard9001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-hystrix-dashboard9001/src/main/java/com/example/cloud/HystrixDashboardMain9001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-hystrix-dashboard9001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-order80/src/main/java/com/example/cloud/OrderMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-order80/src/main/java/com/example/cloud/component/config/MyLB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-order80/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-order80/src/main/java/com/example/cloud/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-order80/src/main/java/com/example/lb/LoadBalancer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-order80/src/main/java/com/example/ribbon/MySelfRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerconsul-order82/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerconsul-order82/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerconsul-order82/src/main/java/com/example/cloud/OrderConsulMain82.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerconsul-order82/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerconsul-order82/src/main/java/com/example/cloud/controller/OrderConsulController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerconsul-order82/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerzk-order81/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerzk-order81/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerzk-order81/src/main/java/com/example/cloud/OrderZKMain81.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerzk-order81/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerzk-order81/src/main/java/com/example/cloud/controller/OrderZKController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-consumerzk-order81/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-eureka-server7001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-eureka-server7001/src/main/java/com/example/cloud/EurekaMain7001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-eureka-server7001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-eureka-server7002/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-eureka-server7002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-eureka-server7002/src/main/java/com/example/cloud/EurekaMain7002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-eureka-server7002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-eureka-simple-server7001/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-eureka-simple-server7001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-eureka-simple-server7001/src/main/java/com/example/cloud/EurekaSimpleMain7001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-eureka-simple-server7001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-gateway-gateway9527/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-gateway-gateway9527/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-gateway-gateway9527/src/main/java/com/example/cloud/GateWayMain9527.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-gateway-gateway9527/src/main/java/com/example/cloud/config/GateWayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-gateway-gateway9527/src/main/java/com/example/cloud/filter/MyLogGateWayFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-gateway-gateway9527/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-hygtrix-payment8001/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-hygtrix-payment8001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-hygtrix-payment8001/src/main/java/com/example/cloud/PaymentHystrixMain8001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-hygtrix-payment8001/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-hygtrix-payment8001/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-hygtrix-payment8001/src/main/java/com/example/cloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-hygtrix-payment8001/src/main/java/com/example/cloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-hygtrix-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/PaymentMain8001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/MyBtaisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/mapper/PaymentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8002/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/PaymentMain8002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/component/config/MyBtaisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/mapper/PaymentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-provider-payment8002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerconsul-payment8006/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerconsul-payment8006/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerconsul-payment8006/src/main/java/com/example/cloud/PaymentMain8006.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerconsul-payment8006/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerconsul-payment8006/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerconsul-payment8006/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerzk-payment8004/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerzk-payment8004/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerzk-payment8004/src/main/java/com/example/cloud/PaymentMain8004.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerzk-payment8004/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerzk-payment8004/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-providerzk-payment8004/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-consumer8802/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-consumer8802/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-consumer8802/src/main/java/com/example/cloud/StreamMQMain8802.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-consumer8802/src/main/java/com/example/cloud/controller/ReceiveMessageListenerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-consumer8802/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-consumer8803/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-consumer8803/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-consumer8803/src/main/java/com/example/cloud/StreamMQMain8803.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-consumer8803/src/main/java/com/example/cloud/controller/ReceiveMessageListenerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-consumer8803/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-provider8801/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-provider8801/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-provider8801/src/main/java/com/example/cloud/StreamMQMain8801.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-provider8801/src/main/java/com/example/cloud/controller/SendMessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-provider8801/src/main/java/com/example/cloud/service/IMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-provider8801/src/main/java/com/example/cloud/service/impl/MessageProviderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo2/cloud-stream-rabbitmq-provider8801/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/java/com/example/cloud/NacosConfigClientMain3377.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/java/com/example/cloud/controller/ConfigClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/src/main/java/com/example/cloud/OrderNacosMain83.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/src/main/java/com/example/cloud/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/src/main/java/com/example/cloud/controller/OrderNacosController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/example/cloud/OrderNacosMain84.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/example/cloud/controller/CircleBreakerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/example/cloud/service/PaymentFallbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/example/cloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9001/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9001/src/main/java/com/example/cloud/PaymentMain9001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9001/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/src/main/java/com/example/cloud/PaymentMain9002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/java/com/example/cloud/PaymentMain9003.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/java/com/example/cloud/PaymentMain9004.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/com/example/cloud/MainApp8401.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/com/example/cloud/controller/CustomerBlockHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/com/example/cloud/controller/FlowLimitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/com/example/cloud/controller/RateLimitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/RechargeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/RechargeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/direct/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/direct/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/23-07-31-rabbitmq.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/23-07-31-rabbitmq.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/docker/黑马版本/docker应用部署.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/docker/黑马版本/docker应用部署.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/Seata152Application2003.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/base/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/Seata152Application2001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/base/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/Seata152Application2002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/base/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/controller/StorageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/dao/StorageDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/entity/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/service/impl/StorageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Mysql/23-08-07-分布式事务.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mysql/23-08-07-分布式事务.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/springcloud/23-08-07-Seata 分布式事务.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/springcloud/23-08-07-Seata 分布式事务.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,6 +58,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -256,7 +99,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "spring.configuration.checksum": "8921b10e72e4c1ef9197e89653b34ada",
+    "spring.configuration.checksum": "18a86598a60a903c2c42a4227c7a7e0b",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -265,10 +108,10 @@
       <recent name="E:\Visual Studio Code\java\java_study\springcloud\demo3" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MainApp8401">
-    <configuration name="MainApp8401" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloudalibaba-sentinel-service8401" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cloud.MainApp8401" />
+  <component name="RunManager" selected="Spring Boot.Seata152Application2003">
+    <configuration name="MainApp2001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-order-service2001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cloud.MainApp2001" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.cloud.*" />
@@ -279,9 +122,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NacosConfigClientMain3377" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloudalibaba-config-nacos-client3377" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cloud.NacosConfigClientMain3377" />
+    <configuration name="Seata152Application2001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-order-service2001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cloud.Seata152Application2001" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.cloud.*" />
@@ -292,9 +135,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderNacosMain84" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloudalibaba-consumer-nacos-order84" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cloud.OrderNacosMain84" />
+    <configuration name="Seata152Application2002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-storage-service2002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cloud.Seata152Application2002" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.cloud.*" />
@@ -305,9 +148,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentMain9003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloudalibaba-provider-payment9003" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cloud.PaymentMain9003" />
+    <configuration name="Seata152Application2003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-account-service2003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cloud.Seata152Application2003" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.cloud.*" />
@@ -318,9 +161,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentMain9004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloudalibaba-provider-payment9004" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cloud.PaymentMain9004" />
+    <configuration name="Seata152Application8501" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-order-service2001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cloud.Seata152Application8501" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.cloud.*" />
@@ -333,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.MainApp8401" />
-        <item itemvalue="Spring Boot.OrderNacosMain84" />
-        <item itemvalue="Spring Boot.PaymentMain9003" />
-        <item itemvalue="Spring Boot.PaymentMain9004" />
-        <item itemvalue="Spring Boot.NacosConfigClientMain3377" />
+        <item itemvalue="Spring Boot.Seata152Application2003" />
+        <item itemvalue="Spring Boot.Seata152Application2001" />
+        <item itemvalue="Spring Boot.Seata152Application2002" />
+        <item itemvalue="Spring Boot.Seata152Application8501" />
+        <item itemvalue="Spring Boot.MainApp2001" />
       </list>
     </recent_temporary>
   </component>
@@ -350,7 +193,8 @@
       <option name="presentableId" value="Default" />
       <updated>1691304539724</updated>
       <workItem from="1691304541284" duration="6416000" />
-      <workItem from="1691370312767" duration="10513000" />
+      <workItem from="1691370312767" duration="19334000" />
+      <workItem from="1691456139415" duration="519000" />
     </task>
     <servers />
   </component>

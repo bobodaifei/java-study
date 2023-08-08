@@ -1,0 +1,81 @@
+# Tomcat
+server:
+  port: 2003
+
+# Spring
+spring:
+  application:
+    # 应用名称
+    name: seata-account-service
+#  main:
+#    allow-circular-references: true
+#    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        # 注册组 要与 seata 相同
+        group: SEATA_GROUP
+        server-addr: 127.0.0.1:8848
+        namespace: seata152
+      config:
+        # 注册组 要与 seata 相同
+        group: SEATA_GROUP
+        server-addr: 127.0.0.1:8848
+        namespace: seata152
+        file-extension: yml
+        # 共享配置
+        #shared-configs:
+        #  - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: defaultDataSource
+    url: jdbc:mysql://127.0.0.1:3300/seata_account?useUnicode=true;characterEncoding=utf8;serverTimezone=Asia/Shanghai;useTimezone=true
+    username: root
+    password: 123456
+    #dynamic:
+    #  seata: true    # 开启seata代理，开启后默认每个数据源都代理，如果某个不需要代理可单独关闭
+feign:
+  hystrix:
+    enabled: false
+
+seata:
+  enabled: true
+#  application-id: ${spring.application.name}
+  # 自定义服务群组，该值必须与 Nacos 配置中的 service.vgroupMapping.{my-service-group}=default 中的 {my-service-group}相同
+  tx-service-group: account_tx_group
+  service:
+    vgroup-mapping:
+      # 自定义服务群组，该值必须与 Nacos 配置中的 service.vgroupMapping.{my-service-group}=default 中的 {my-service-group}相同
+      account_tx_group: default
+    grouplist:
+      default: 127.0.0.1:8091
+#  config:
+#    type: nacos
+#    nacos:
+#      server-addr: 127.0.0.1:8848
+#      group: SEATA_GROUP
+#      namespace: seata152
+#      username: nacos
+#      password: nacos
+#      data-id: seataServer.properties
+#  registry:
+#    type: nacos
+#    nacos:
+#      application: seata-server
+#      server-addr: 127.0.0.1:8848
+#      group: SEATA_GROUP
+#      namespace: seata152
+#      username: nacos
+#      password: nacos
+
+###################################### MyBatis 配置 ######################################
+mybatis:
+  # 指定 mapper.xml 的位置
+  mapper-locations: classpath:mapper/*.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"   # * 在yaml 文件属于关键字，所以需要加引号

@@ -9,7 +9,7 @@ public class CyclicBarrierTest {
   public static void main(String[] args) {
     ExecutorService executorService = Executors.newCachedThreadPool();
     final CyclicBarrier cyclicBarrier = new CyclicBarrier(3);
-    for (int i = 1; i <= 3; i++) {
+    for (int i = 1; i <= 4; i++) {
       Runnable runnable = new Runnable() {
         public void run() {
           try {

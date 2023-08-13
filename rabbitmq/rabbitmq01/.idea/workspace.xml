@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="189391c3-d01e-4133-802e-701489ed9461" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/BlockQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/CountDownLatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/ExchangerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/BuyticketApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/config/ConfirmConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/config/DelayedQueueConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/config/MsgTtlQueueConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/config/TtlQueueConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/consumer/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/consumer/DeadLetterQueueC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/consumer/DelayQueueConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/consumer/MyCallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/consumer/WarningConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/java/com/example/buyticket/controller/SendMsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../buyticket/src/test/java/com/example/buyticket/BuyticketApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0809/S893/Task02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0809/S893/Work03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0809/S893/Work04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0809/s891/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0809/s891/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0809/s892/Task01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0809/s892/Work01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0809/s892/Work02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08101/ConfirmMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08101/ConfirmMessage2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08101/ConfirmMessage3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08102/EmitLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08102/ReceiveLogs01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08102/ReceiveLogs02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08103/DirectLogs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08103/ReceiveLogsDirect01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08103/ReceiveLogsDirect02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08104/EmitLogTopic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08104/ReceiveLogsTopic01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08104/ReceiveLogsTopic02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08105/Consumer01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08105/Consumer02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s0810/s08105/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s08121/PriorityConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/s08121/PriorityProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/utils/RabbitMQUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/utils/SleepUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/AtomicIntegerFieldUpdaterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/AtomicIntegerFieldUpdaterDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/CyclicBarrierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/CyclicBarrierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/ExecutorServicePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/ExecutorServicePool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/MultiThreadShareData2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/MultiThreadShareData2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/JAVA基础/15多线程/23-08-07-线程.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/JAVA基础/15多线程/23-08-07-线程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/23-07-31-rabbitmq.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/23-07-31-rabbitmq.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2TjJfYw0mt4U4Rogo6rInXaT3B2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Visual Studio Code/java/java_study/rabbitmq/rabbitmq01/src/main/java/com/example/s0814&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Visual Studio Code\java\java_study\rabbitmq\rabbitmq01\src\main\java\com\example\s0814" />
+      <recent name="E:\Visual Studio Code\java\java_study\rabbitmq\rabbitmq01\src\main\java\com\example\s0810" />
+      <recent name="E:\Visual Studio Code\java\java_study\rabbitmq\rabbitmq01\src\main\java\com\example\s08103" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.s0810.s08102" />
+      <recent name="com.example.S893" />
+      <recent name="com.example.s892" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.PriorityConsumer">
+    <configuration name="Consumer01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.s0810.s08105.Consumer01" />
+      <module name="rabbitmq01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.s0810.s08105.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Consumer02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.s0810.s08105.Consumer02" />
+      <module name="rabbitmq01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.s0810.s08105.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriorityConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.s08121.PriorityConsumer" />
+      <module name="rabbitmq01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.s08121.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriorityProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.s08121.PriorityProducer" />
+      <module name="rabbitmq01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.s08121.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.s0810.s08105.Producer" />
+      <module name="rabbitmq01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.s0810.s08105.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PriorityConsumer" />
+        <item itemvalue="Application.PriorityProducer" />
+        <item itemvalue="Application.Producer" />
+        <item itemvalue="Application.Consumer01" />
+        <item itemvalue="Application.Consumer02" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="189391c3-d01e-4133-802e-701489ed9461" name="Changes" comment="" />
+      <created>1691550663572</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691550663572</updated>
+      <workItem from="1691550664699" duration="2447000" />
+      <workItem from="1691558563091" duration="2415000" />
+      <workItem from="1691581651559" duration="2516000" />
+      <workItem from="1691628565444" duration="3676000" />
+      <workItem from="1691644515576" duration="9666000" />
+      <workItem from="1691747877777" duration="847000" />
+      <workItem from="1691841717471" duration="882000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/rabbitmq01$Work01.ic" NAME="Work01 Coverage Results" MODIFIED="1691552512238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.s892.*</FILTER>
+    </SUITE>
+  </component>
+</project>

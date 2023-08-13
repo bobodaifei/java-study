@@ -72,7 +72,7 @@ RabbitMQ 是一个消息中间件：它接受并转发消息。你可以把它�
 
 `Broker`：接收和分发消息的应用，RabbitMQ Server 就是 Message Broker
 
-`Virtual host`：出于多租户和安全因素设计的，把 AMQP 的基本组件划分到一个虚拟的分组中，类似于网络中的 namespace 概念。当多个不同的用户使用同一个 RabbitMQ server 提供的服务时，可以划分出多个 vhost，每个用户在自己的 vhost 创建 exchange／queue 等
+`Virtual host`：（数据库？）出于多租户和安全因素设计的，把 AMQP 的基本组件划分到一个虚拟的分组中，类似于网络中的 namespace 概念。当多个不同的用户使用同一个 RabbitMQ server 提供的服务时，可以划分出多个 vhost，每个用户在自己的 vhost 创建 exchange／queue 等
 
 `Connection`：publisher／consumer 和 broker 之间的 TCP 连接
 
@@ -83,53 +83,3 @@ RabbitMQ 是一个消息中间件：它接受并转发消息。你可以把它�
 `Queue`：消息最终被送到这里等待 consumer 取走
 
 `Binding`：exchange 和 queue 之间的虚拟连接，binding 中可以包含 routing key，Binding 信息被保 存到 exchange 中的查询表中，用于 message 的分发依据
-
-# 入门
-
-# 核心部分
-
-## Hello World
-
-## Work queues
-
-## Publish/Subscribe
-
-## Routing
-
-## Topics
-
-## Publisher Confirms
-
-# 高级部分
-
-## 死信队列
-
-## 延迟队列
-
-## 发布确认高级
-
-### 确认发布
-
-### 回退消息
-
-### 备份交换机
-
-## 幂等性
-
-## 优先级队列
-
-## 惰性队列
-
-# 集群部分
-
-## Clustering
-
-## 镜像队列
-
-## Haproxy+Keepalive实现高可用负载均衡
-
-## Federation Exchange
-
-## Federation Queue
-
-## Shovel

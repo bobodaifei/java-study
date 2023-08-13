@@ -2,10 +2,10 @@ package org.example;
 
 public class MultiThreadShareData2 {
 
-  static ShareData2 shareData = new ShareData2();
+//  static ShareData2 shareData = new ShareData2();
 
   public static void main(String[] args) {
-//    final ShareData2 shareData = new ShareData2();
+    final ShareData2 shareData = new ShareData2();
     new Thread(new Runnable() {
       public void run() {
         shareData.increment();

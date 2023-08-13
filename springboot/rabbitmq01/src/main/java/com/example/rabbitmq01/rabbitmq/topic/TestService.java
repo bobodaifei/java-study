@@ -13,7 +13,7 @@ public class TestService implements MessageSevice {
   @Override
   public void sendMessage(String id) {
     System.out.println("准备干活" + id);
-    amqpTemplate.convertAndSend("topicExchange", "topic.order.id", id);
+    amqpTemplate.convertAndSend("topicExchange", "topic.*.id", id);
   }
 
   @Override

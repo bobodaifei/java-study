@@ -33,7 +33,7 @@ class ScheduledExecutorServiceTest{
 //      public void run() {
 //        System.out.println("bomb!!!");
 //      }
-//    },10, TimeUnit.SECONDS);
+//    },2, TimeUnit.SECONDS);
 
     ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(3);
     for (int i = 1; i <= 5; i++) {

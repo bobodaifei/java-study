@@ -5,70 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef7a736-99dc-48f8-ad4b-cbea25d58890" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AtomicIntegerExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AtomicIntegerFieldUpdaterDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BoundedBuffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CacheDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CallableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ExecutorServicePool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MultiThreadShareData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MultiThreadShareData1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MultiThreadShareData2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ReadWriteLockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ThreadLocalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ThreadLocalTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ThreadScopeShareData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ThreadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Timer1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TraditionalThread1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TwoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/src/main/java/com/example/cloud/Seata152Application2003.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/src/main/java/com/example/cloud/base/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/src/main/java/com/example/cloud/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/src/main/java/com/example/cloud/config/MyBatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/src/main/java/com/example/cloud/controller/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/src/main/java/com/example/cloud/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/src/main/java/com/example/cloud/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/src/main/java/com/example/cloud/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/src/main/java/com/example/cloud/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-account-service2003/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/java/com/example/cloud/Seata152Application2001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/java/com/example/cloud/base/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/java/com/example/cloud/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/java/com/example/cloud/config/MyBatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/java/com/example/cloud/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/java/com/example/cloud/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/java/com/example/cloud/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/java/com/example/cloud/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/java/com/example/cloud/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/java/com/example/cloud/service/StorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/java/com/example/cloud/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-order-service2001/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/src/main/java/com/example/cloud/Seata152Application2002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/src/main/java/com/example/cloud/base/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/src/main/java/com/example/cloud/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/src/main/java/com/example/cloud/config/MyBatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/src/main/java/com/example/cloud/controller/StorageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/src/main/java/com/example/cloud/dao/StorageDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/src/main/java/com/example/cloud/entity/Storage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/src/main/java/com/example/cloud/service/StorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/src/main/java/com/example/cloud/service/impl/StorageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../springcloud/demo3/seata-storage-service2002/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../springcloud/demo3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../springcloud/demo3/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/Mysql/23-08-07-分布式事务.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../笔记/Mysql/23-08-07-分布式事务.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/Spring/springcloud/23-08-07-Seata 分布式事务.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../笔记/Spring/springcloud/23-08-07-Seata 分布式事务.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BlockQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CountDownLatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ExchangerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../rabbitmq/rabbitmq01/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../rabbitmq/rabbitmq01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../rabbitmq/rabbitmq01/src/main/java/com/example/s891/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../rabbitmq/rabbitmq01/src/main/java/com/example/s891/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../rabbitmq/rabbitmq01/src/main/java/com/example/s892/Task01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../rabbitmq/rabbitmq01/src/main/java/com/example/s892/Work01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../rabbitmq/rabbitmq01/src/main/java/com/example/s892/Work02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../rabbitmq/rabbitmq01/src/main/java/com/example/utils/RabbitMQUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AtomicIntegerFieldUpdaterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AtomicIntegerFieldUpdaterDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CyclicBarrierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CyclicBarrierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ExecutorServicePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ExecutorServicePool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MultiThreadShareData2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MultiThreadShareData2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../笔记/JAVA基础/15多线程/23-08-07-线程.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../笔记/JAVA基础/15多线程/23-08-07-线程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../笔记/MQ/RabbitMQ/23-07-31-rabbitmq.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../笔记/MQ/RabbitMQ/23-07-31-rabbitmq.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,9 +69,9 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TwoTest">
-    <configuration name="CacheDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.CacheDemo" />
+  <component name="RunManager" selected="Application.BlockQueueTest (1)">
+    <configuration name="BlockQueueTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.BlockQueueTest" />
       <module name="Thread1" />
       <extension name="coverage">
         <pattern>
@@ -130,8 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CallableTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.CallableTest1" />
+    <configuration name="BlockQueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.BlockQueueTest" />
       <module name="Thread1" />
       <extension name="coverage">
         <pattern>
@@ -143,8 +96,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.LockTest" />
+    <configuration name="MultiThreadShareData2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.MultiThreadShareData2" />
       <module name="Thread1" />
       <extension name="coverage">
         <pattern>
@@ -156,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadWriteLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.ReadWriteLockTest" />
+    <configuration name="ScheduledExecutorServiceTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ScheduledExecutorServiceTest" />
       <module name="Thread1" />
       <extension name="coverage">
         <pattern>
@@ -169,8 +122,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.TwoTest" />
+    <configuration name="ScheduledExecutorServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ScheduledExecutorServiceTest" />
       <module name="Thread1" />
       <extension name="coverage">
         <pattern>
@@ -184,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TwoTest" />
-        <item itemvalue="Application.CacheDemo" />
-        <item itemvalue="Application.ReadWriteLockTest" />
-        <item itemvalue="Application.LockTest" />
-        <item itemvalue="Application.CallableTest1" />
+        <item itemvalue="Application.BlockQueueTest (1)" />
+        <item itemvalue="Application.MultiThreadShareData2" />
+        <item itemvalue="Application.ScheduledExecutorServiceTest (1)" />
+        <item itemvalue="Application.ScheduledExecutorServiceTest" />
+        <item itemvalue="Application.BlockQueueTest" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +154,9 @@
       <option name="presentableId" value="Default" />
       <updated>1691456673238</updated>
       <workItem from="1691456674391" duration="11860000" />
-      <workItem from="1691476426954" duration="10861000" />
+      <workItem from="1691476426954" duration="12870000" />
+      <workItem from="1691549703051" duration="413000" />
+      <workItem from="1691563655551" duration="3928000" />
     </task>
     <servers />
   </component>

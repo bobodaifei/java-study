@@ -15,6 +15,8 @@ public class AtomicIntegerFieldUpdaterDemo {
 
   public static AtomicInteger realScore = new AtomicInteger(0);
 
+
+
   public static void main(String[] args) throws InterruptedException {
     final Candidate candidate = new Candidate();
     Thread[] t = new Thread[10000];
@@ -37,6 +39,7 @@ public class AtomicIntegerFieldUpdaterDemo {
     System.out.println("AtomicIntegerFieldUpdater Score=" + candidate.score);
     System.out.println("AtomicInteger Score=" + candidate.score2.get());
     System.out.println("realScore=" + realScore.get());
+
 
   }
 }

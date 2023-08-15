@@ -10,160 +10,112 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d638d76e-145c-4bb6-9c33-e214b8d0f03a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/src/main/java/com/example/cloud/CloudConsumerOrder80Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/src/main/java/com/example/cloud/component/base/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/src/main/java/com/example/cloud/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/PaymentMain8001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/component/base/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/MyBtaisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/mapper/PaymentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-api-commons/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-api-commons/src/main/java/com/example/cloud/component/base/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-api-commons/src/main/java/com/example/cloud/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-api-commons/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-center-3344/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-center-3344/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-center-3344/src/main/java/com/example/cloud/ConfigCenterMain3344.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-center-3344/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-client-3355/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-client-3355/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-client-3355/src/main/java/com/example/cloud/ConfigClientMain3355.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-client-3355/src/main/java/com/example/cloud/controller/ConfigClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-client-3355/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-client-3366/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-client-3366/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-client-3366/src/main/java/com/example/cloud/ConfigClientMain3366.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-client-3366/src/main/java/com/example/cloud/controller/ConfigClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-config-client-3366/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-fegin-order80/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-fegin-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-fegin-order80/src/main/java/com/example/cloud/OrderFeignMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-fegin-order80/src/main/java/com/example/cloud/component/config/FeignConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-fegin-order80/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-fegin-order80/src/main/java/com/example/cloud/controller/OrderFeignController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-fegin-order80/src/main/java/com/example/cloud/service/PaymentFeignService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-fegin-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-feign-hystrix-order80/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-feign-hystrix-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/OrderHystrixMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/component/config/MyLB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/controller/OrderHystrixController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/service/PaymentFallbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-feign-hystrix-order80/src/main/java/com/example/cloud/service/PaymentHystrixService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-feign-hystrix-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-hystrix-dashboard9001/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-hystrix-dashboard9001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-hystrix-dashboard9001/src/main/java/com/example/cloud/HystrixDashboardMain9001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-hystrix-dashboard9001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/src/main/java/com/example/cloud/OrderMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/src/main/java/com/example/cloud/component/config/MyLB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/src/main/java/com/example/cloud/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/src/main/java/com/example/lb/LoadBalancer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/src/main/java/com/example/ribbon/MySelfRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerconsul-order82/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerconsul-order82/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerconsul-order82/src/main/java/com/example/cloud/OrderConsulMain82.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerconsul-order82/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerconsul-order82/src/main/java/com/example/cloud/controller/OrderConsulController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerconsul-order82/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerzk-order81/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerzk-order81/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerzk-order81/src/main/java/com/example/cloud/OrderZKMain81.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerzk-order81/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerzk-order81/src/main/java/com/example/cloud/controller/OrderZKController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumerzk-order81/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-eureka-server7001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-eureka-server7001/src/main/java/com/example/cloud/EurekaMain7001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-eureka-server7001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-eureka-server7002/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-eureka-server7002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-eureka-server7002/src/main/java/com/example/cloud/EurekaMain7002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-eureka-server7002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-eureka-simple-server7001/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-eureka-simple-server7001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-eureka-simple-server7001/src/main/java/com/example/cloud/EurekaSimpleMain7001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-eureka-simple-server7001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-gateway-gateway9527/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-gateway-gateway9527/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-gateway-gateway9527/src/main/java/com/example/cloud/GateWayMain9527.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-gateway-gateway9527/src/main/java/com/example/cloud/config/GateWayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-gateway-gateway9527/src/main/java/com/example/cloud/filter/MyLogGateWayFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-gateway-gateway9527/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-hygtrix-payment8001/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-hygtrix-payment8001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-hygtrix-payment8001/src/main/java/com/example/cloud/PaymentHystrixMain8001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-hygtrix-payment8001/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-hygtrix-payment8001/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-hygtrix-payment8001/src/main/java/com/example/cloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-hygtrix-payment8001/src/main/java/com/example/cloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-hygtrix-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/PaymentMain8001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/MyBtaisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/mapper/PaymentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8002/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/PaymentMain8002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/component/config/MyBtaisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/mapper/PaymentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8002/src/main/java/com/example/cloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerconsul-payment8006/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerconsul-payment8006/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerconsul-payment8006/src/main/java/com/example/cloud/PaymentMain8006.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerconsul-payment8006/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerconsul-payment8006/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerconsul-payment8006/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerzk-payment8004/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerzk-payment8004/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerzk-payment8004/src/main/java/com/example/cloud/PaymentMain8004.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerzk-payment8004/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerzk-payment8004/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-providerzk-payment8004/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-consumer8802/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-consumer8802/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-consumer8802/src/main/java/com/example/cloud/StreamMQMain8802.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-consumer8802/src/main/java/com/example/cloud/controller/ReceiveMessageListenerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-consumer8802/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-consumer8803/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-consumer8803/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-consumer8803/src/main/java/com/example/cloud/StreamMQMain8803.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-consumer8803/src/main/java/com/example/cloud/controller/ReceiveMessageListenerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-consumer8803/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-provider8801/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-provider8801/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-provider8801/src/main/java/com/example/cloud/StreamMQMain8801.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-provider8801/src/main/java/com/example/cloud/controller/SendMessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-provider8801/src/main/java/com/example/cloud/service/IMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-provider8801/src/main/java/com/example/cloud/service/impl/MessageProviderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-stream-rabbitmq-provider8801/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/service/impl/RechargeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/service/impl/RechargeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/direct/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/direct/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/23-07-31-rabbitmq.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/23-07-31-rabbitmq.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-interface/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-interface/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-interface/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-interface/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-interface/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-interface/src/main/java/com/example/dubbointerface/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-interface/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-pojo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-pojo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-pojo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-pojo/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-pojo/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-pojo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-pojo/src/main/java/com/example/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-pojo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-service/src/main/java/com/example/dubboservice/DubboServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-service/src/main/java/com/example/dubboservice/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-web/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-web/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-web/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-web/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-web/src/main/java/com/example/dubboweb/DubboWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-web/src/main/java/com/example/dubboweb/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/dubbo-web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/dubbo01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-interface/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-interface/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-interface/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-interface/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-interface/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-interface/src/main/java/com/example/dubbointerface/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-interface/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-interface/src/test/java/com/example/dubbointerface/DubboInterfaceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-service/src/main/java/com/example/dubboservice/DubboServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-service/src/main/java/com/example/dubboservice/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-service/src/test/java/com/example/dubboservice/DubboServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-web/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-web/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-web/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-web/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-web/src/main/java/com/example/dubboweb/DubboWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-web/src/main/java/com/example/dubboweb/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/dubbo-web/src/test/java/com/example/dubboweb/DubboWebApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dubbo/zookeeper01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s08121/aaa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent/demo-entity/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/Filter/A_PostFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/Filter/A_PostFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/BasicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/BasicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/CustomerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/DeptDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/DeptDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/EmpDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/EmpDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/LogDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/LogDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Dept.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Dept.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Emp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Log_.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Log_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/BaseServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/DeptServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/DeptServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/EmpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/EmpServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/AffairsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/AffairsHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/CurrencyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/CurrencyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JdbcUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JdbcUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Jwtutils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Jwtutils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/ProxyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/ProxyFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Proxy_.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Proxy_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/Advice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/Advice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/CurrencyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/CurrencyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/MyAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/MyAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/ProxyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/ProxyFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/TestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/TestHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/HttpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/HttpUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/StreamUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/StreamUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/dubbo/23-08-13-Dubbo 概述.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/dubbo/23-08-13-Dubbo 概述.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -428,6 +380,7 @@
       <workItem from="1691024482697" duration="102000" />
       <workItem from="1691026792956" duration="6000" />
       <workItem from="1691238472667" duration="1545000" />
+      <workItem from="1692002149361" duration="846000" />
     </task>
     <servers />
   </component>

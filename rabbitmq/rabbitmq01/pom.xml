@@ -26,6 +26,12 @@
             <artifactId>commons-io</artifactId>
             <version>2.6</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+            <version>4.2.0</version>
+        </dependency>
     </dependencies>
 
     <!--指定 jdk 编译版本-->

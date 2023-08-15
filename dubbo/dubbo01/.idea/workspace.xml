@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23bb14ec-94a3-4b39-b1be-0de49503ae10" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dubbo-interface/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-interface/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-interface/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-interface/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-interface/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-interface/src/main/java/com/example/dubbointerface/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-interface/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-pojo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-pojo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-pojo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-pojo/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-pojo/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-pojo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-pojo/src/main/java/com/example/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-pojo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-service/src/main/java/com/example/dubboservice/DubboServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-service/src/main/java/com/example/dubboservice/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-service/src/main/java/com/example/dubboservice/service/impl/StudentServiceImpl2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-web/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-web/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-web/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-web/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-web/src/main/java/com/example/dubboweb/DubboWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-web/src/main/java/com/example/dubboweb/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-interface/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-interface/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-interface/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-interface/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-interface/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-interface/src/main/java/com/example/dubbointerface/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-interface/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-interface/src/test/java/com/example/dubbointerface/DubboInterfaceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-service/src/main/java/com/example/dubboservice/DubboServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-service/src/main/java/com/example/dubboservice/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-service/src/test/java/com/example/dubboservice/DubboServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-web/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-web/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-web/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-web/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-web/src/main/java/com/example/dubboweb/DubboWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-web/src/main/java/com/example/dubboweb/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/dubbo-web/src/test/java/com/example/dubboweb/DubboWebApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zookeeper01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s08121/aaa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/demo-parent/demo-entity/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/Filter/A_PostFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/Filter/A_PostFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/common/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/BasicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/BasicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/CustomerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/DeptDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/DeptDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/EmpDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/EmpDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/LogDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/dao/LogDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Dept.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Dept.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Emp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Log_.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/entity/Log_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/DeptServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/service/EmpServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/BaseServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/DeptServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/DeptServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/EmpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/servlet/EmpServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/AffairsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/AffairsHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/CurrencyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/CurrencyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JdbcUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JdbcUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Jwtutils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Jwtutils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/ProxyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/ProxyFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Proxy_.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/Proxy_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/Advice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/Advice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/CurrencyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/CurrencyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/MyAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/MyAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/ProxyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/ProxyFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/TestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/aop/TestHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/HttpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/HttpUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/StreamUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/javaweb03/target/ajaxtest/WEB-INF/classes/com/bobo/utils/http/StreamUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/dubbo/23-08-13-Dubbo 概述.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/dubbo/23-08-13-Dubbo 概述.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2TxSkCQRa62zLc58MeNpawkxMNj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Visual Studio Code/java/java_study/dubbo/dubbo01&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33793104&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;13f2f05ac0091918ff9fdb4d18829160&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Visual Studio Code\java\java_study\dubbo\dubbo01" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.dubboservice.service.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DubboWebApplication">
+    <configuration name="DubboServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="dubbo-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.dubboservice.DubboServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DubboWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="dubbo-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.dubboweb.DubboWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23bb14ec-94a3-4b39-b1be-0de49503ae10" name="Changes" comment="" />
+      <created>1691983388068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691983388068</updated>
+      <workItem from="1691983389122" duration="990000" />
+      <workItem from="1691988688156" duration="4453000" />
+      <workItem from="1692004367852" duration="5812000" />
+      <workItem from="1692062684529" duration="533000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

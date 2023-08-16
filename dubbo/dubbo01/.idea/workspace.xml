@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23bb14ec-94a3-4b39-b1be-0de49503ae10" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/11、jedis.md" beforeDir="false" />
-    </list>
+    <list default="true" id="23bb14ec-94a3-4b39-b1be-0de49503ae10" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +92,7 @@
       <workItem from="1691988688156" duration="4453000" />
       <workItem from="1692004367852" duration="5812000" />
       <workItem from="1692062684529" duration="533000" />
-      <workItem from="1692081086413" duration="596000" />
+      <workItem from="1692081086413" duration="1850000" />
     </task>
     <servers />
   </component>

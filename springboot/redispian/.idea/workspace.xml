@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="141afa4e-7b0c-465f-8f15-f0f61ab65013" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../redis/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/RedisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/controller/RedisController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/utils/reids/CRC32.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/utils/reids/Hashing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/utils/reids/LZHash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/utils/reids/LZHashMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/utils/reids/MD5Hash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/utils/reids/Md5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/utils/reids/MurmurHash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/utils/reids/RedisClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/java/com/example/redis/utils/reids/SafeEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/src/test/java/com/example/redis/RedisApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CRC32.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Hashing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LZHash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LZHashMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MD5Hash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Md5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MurmurHash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SafeEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/10.Redis集群(cluster)/2.集群算法-分片-槽位slot.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/10.Redis集群(cluster)/2.集群算法-分片-槽位slot.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/5.Redis事务/1.redis事务介绍.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/5.Redis事务/1.redis事务介绍.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/6.Redis管道/2.是什么.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/6.Redis管道/2.是什么.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/7.Redis发布订阅/3.案例演示.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/7.Redis发布订阅/3.案例演示.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/8.Redis复制(replica)/2.案例演示-配置文件.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/8.Redis复制(replica)/2.案例演示-配置文件.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2U1KT90IPrNi7MX9X474VFTgHBH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LZHashMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.LZHashMain" />
+      <module name="redispian" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LZHashMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="141afa4e-7b0c-465f-8f15-f0f61ab65013" name="Changes" comment="" />
+      <created>1692101655322</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692101655322</updated>
+      <workItem from="1692101657395" duration="2998000" />
+      <workItem from="1692104753350" duration="21000" />
+      <workItem from="1692149259115" duration="934000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

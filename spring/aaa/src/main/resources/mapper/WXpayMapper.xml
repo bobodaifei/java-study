@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bobo.gateway.mapper.WXpayMapper">
+
+    <insert id="insert">
+        insert into wxpay (out_trade_no, body, total_fee, redirect_url, notify_url, spbill_create_ip)
+        values (#{outTradeNo}, #{body}, #{totalFee}, #{redirectUrl}, #{notifyUrl}, #{spbillCreateIp})
+    </insert>
+    <update id="update">
+        update wxpay
+        set appid               = #{appid},
+            mch_id              = #{mchId},
+            result_code         = #{resultCode},
+            transaction_id=#{transactionId},
+            openid              = #{openid},
+            trade_type          = #{tradeType},
+            settlement_total_fee=#{settlementTotalFee},
+            time_end            = #{timeEnd}
+        where out_trade_no = #{outTradeNo} and result_code is null
+    </update>
+</mapper>

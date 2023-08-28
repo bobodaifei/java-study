@@ -5,76 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1233c4db-a538-482f-af2a-0ff7ad37c92d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/controller/AddressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/controller/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/controller/OrderDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/convert/AddressConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/convert/GoodsConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/convert/OrderConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/convert/OrderDetailConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/convert/UserConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/entity/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/entity/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/entity/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/AddressMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/GoodsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/OrderDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/xml/AddressMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/xml/GoodsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/xml/OrderDetailMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/xml/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/mapper/xml/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/dto/AddressDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/dto/GoodsDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/dto/OrderDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/dto/OrderDetailDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/query/AddressQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/query/GoodsQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/query/OrderDetailQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/query/OrderQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/query/UserQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/vo/AddressVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/vo/GoodsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/vo/OrderDetailVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/vo/OrderVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/pojo/vo/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/AddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/OrderDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/impl/AddressServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/aop/EnableLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/base/BasePageQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/base/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/springboot-test01/src/main/resources/aaa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb/alipay/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/alipay/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb/alipay/src/main/java/com/bobo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/alipay/src/main/java/com/bobo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb/alipay/src/main/java/com/bobo/service/TradePay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/alipay/src/main/java/com/bobo/service/TradePay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb/alipay/src/main/resources/alipay.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/alipay/src/main/resources/alipay.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb/alipay/src/main/webapp/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/alipay/src/main/webapp/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb/alipay/target/classes/alipay.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/alipay/target/classes/alipay.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb/alipay/target/classes/com/bobo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/alipay/target/classes/com/bobo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb/alipay/target/classes/com/bobo/service/TradePay.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb/alipay/target/classes/com/bobo/service/TradePay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis-plus/FastAutoGeneratorTest/src/main/java/com/example/base/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/尚硅谷/核心功能/23-06-08-数据访问.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/SpringBoot/尚硅谷/核心功能/23-06-08-数据访问.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/css/demo/css/jingdong.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/css/demo/css/jingdong.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/css/demo/html/jingdong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/css/demo/html/jingdong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Mysql/23-03-22-mysql基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mysql/23-03-22-mysql基础.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Mysql/23-03-28-mysql进阶.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,11 +33,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "E:/Visual Studio Code/java/java_study/springmvc/javaweb-to-springmvc",
     "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "fabe905ebc56a5d7e9c1e50a38205e74",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -118,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1687174475436</updated>
       <workItem from="1687174476524" duration="9000" />
+      <workItem from="1692608081083" duration="98000" />
     </task>
     <servers />
   </component>

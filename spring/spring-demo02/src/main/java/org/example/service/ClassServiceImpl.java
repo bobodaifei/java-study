@@ -1,18 +1,14 @@
 package org.example.service;
 
-import java.util.List;
+import org.example.mapper.ClassMapper;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-
-import org.example.dao.UserDao;
-import org.example.mapper.ClassMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import java.util.HashMap;
 
 // @Component(value = "classService")
-@Component("classService")
+@Service
 public class ClassServiceImpl implements ClassService {
 
   @Value("${jdbc.url}")
@@ -40,7 +36,9 @@ public class ClassServiceImpl implements ClassService {
 
   @Override
   public void show() {
+    new ClassServiceImpl().equals()
     // System.out.println(userDao03);
+    new HashMap().put()
     System.out.println(classMapper.findAll());
   }
 

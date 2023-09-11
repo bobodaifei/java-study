@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23bb14ec-94a3-4b39-b1be-0de49503ae10" name="Changes" comment="" />
+    <list default="true" id="23bb14ec-94a3-4b39-b1be-0de49503ae10" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/PurviewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/PurviewApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/config/WebConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/config/WebConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Mysql/23-08-07-分布式事务.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mysql/23-08-07-分布式事务.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +97,8 @@
       <workItem from="1692004367852" duration="5812000" />
       <workItem from="1692062684529" duration="533000" />
       <workItem from="1692081086413" duration="1850000" />
+      <workItem from="1693894293447" duration="676000" />
+      <workItem from="1693973186433" duration="162000" />
     </task>
     <servers />
   </component>

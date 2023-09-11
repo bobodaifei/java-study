@@ -5,50 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ec6b4cd-f94b-4e6c-b85b-505025077c47" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/Seata152Application2003.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/base/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/config/MyBatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/controller/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/java/com/example/cloud/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-account-service2003/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/Seata152Application2001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/base/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/config/MyBatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/service/StorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/example/cloud/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/Seata152Application2002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/base/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/config/MyBatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/controller/StorageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/dao/StorageDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/entity/Storage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/service/StorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/java/com/example/cloud/service/impl/StorageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/PurviewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/PurviewApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/config/WebConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/config/WebConfigurer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../笔记/Mysql/23-08-07-分布式事务.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mysql/23-08-07-分布式事务.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Spring/springcloud/23-08-07-Seata 分布式事务.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Spring/springcloud/23-08-07-Seata 分布式事务.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,26 +42,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Visual Studio Code/java/java_study/springcloud/demo3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "spring.configuration.checksum": "18a86598a60a903c2c42a4227c7a7e0b",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Visual Studio Code/java/java_study/springcloud/demo3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;94d4b3730b35c83bc744be0fc324bcb8&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Visual Studio Code\java\java_study\springcloud\demo3" />
@@ -195,6 +154,11 @@
       <workItem from="1691304541284" duration="6416000" />
       <workItem from="1691370312767" duration="19334000" />
       <workItem from="1691456139415" duration="519000" />
+      <workItem from="1693480024896" duration="2941000" />
+      <workItem from="1693643278777" duration="645000" />
+      <workItem from="1693798818175" duration="577000" />
+      <workItem from="1693884995091" duration="1847000" />
+      <workItem from="1693894281395" duration="9000" />
     </task>
     <servers />
   </component>

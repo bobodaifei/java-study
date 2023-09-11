@@ -5,86 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cebff20a-96d3-4091-b473-7d0cbacd39b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/BlockQueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/CountDownLatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/ExchangerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/src/main/java/com/example/buyticket/BuyticketApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/src/main/java/com/example/buyticket/config/MsgTtlQueueConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/src/main/java/com/example/buyticket/config/TtlQueueConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/src/main/java/com/example/buyticket/consumer/DeadLetterQueueC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/src/main/java/com/example/buyticket/controller/SendMsgController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/buyticket/src/test/java/com/example/buyticket/BuyticketApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0809/S893/Task02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0809/S893/Work03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0809/S893/Work04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0809/s891/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0809/s891/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0809/s892/Task01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0809/s892/Work01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0809/s892/Work02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08101/ConfirmMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08101/ConfirmMessage2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08101/ConfirmMessage3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08102/EmitLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08102/ReceiveLogs01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08102/ReceiveLogs02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08103/DirectLogs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08103/ReceiveLogsDirect01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08103/ReceiveLogsDirect02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08104/EmitLogTopic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08104/ReceiveLogsTopic01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08104/ReceiveLogsTopic02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08105/Consumer01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08105/Consumer02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/s0810/s08105/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/utils/RabbitMQUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq01/src/main/java/com/example/utils/SleepUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/src/main/java/com/example/zookeeper01/Zookeeper01Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/src/main/java/com/example/zookeeper01/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/src/main/java/com/example/zookeeper01/register/ServiceRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/src/main/java/com/example/zookeeper01/register/ZKRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/src/main/java/com/example/zookeeper01/test/Client3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/src/main/java/com/example/zookeeper01/test/W1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/src/main/java/com/example/zookeeper01/test/W2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper01/src/test/java/com/example/zookeeper01/Zookeeper01ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/src/main/java/com/example/zookeeper02/Zookeeper02Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/src/main/java/com/example/zookeeper02/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/src/main/java/com/example/zookeeper02/register/ServiceRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/src/main/java/com/example/zookeeper02/register/ZKRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/src/main/java/com/example/zookeeper02/test/Client3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/src/main/java/com/example/zookeeper02/test/W1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/src/main/java/com/example/zookeeper02/test/W2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rabbitmq/zookeeper02/src/test/java/com/example/zookeeper02/Zookeeper02ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/AtomicIntegerFieldUpdaterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/AtomicIntegerFieldUpdaterDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/CyclicBarrierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/CyclicBarrierTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/ExecutorServicePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/ExecutorServicePool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/MultiThreadShareData2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../myCode/Chapter08/Thread1/src/main/java/org/example/MultiThreadShareData2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/rabbitmq01/src/main/java/com/example/rabbitmq01/rabbitmq/topic/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/JAVA基础/15多线程/23-08-07-线程.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/JAVA基础/15多线程/23-08-07-线程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/23-07-31-rabbitmq.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/MQ/RabbitMQ/23-07-31-rabbitmq.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/PurviewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/PurviewApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/config/WebConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/component/config/WebConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Mysql/23-08-07-分布式事务.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mysql/23-08-07-分布式事务.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +65,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ef75f70770c75f26c4112e37815bea64&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;bbb78ca5279e23d71f11730771e760ce&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -423,6 +346,8 @@
       <workItem from="1691724949825" duration="23000" />
       <workItem from="1691730269850" duration="194000" />
       <workItem from="1691731437261" duration="17000" />
+      <workItem from="1693363359037" duration="652000" />
+      <workItem from="1693891669469" duration="428000" />
     </task>
     <servers />
   </component>

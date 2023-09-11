@@ -5,43 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aef08083-7043-48a8-98f8-81ac0522be82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/src/main/java/com/example/cloud/CloudConsumerOrder80Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/src/main/java/com/example/cloud/component/base/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/src/main/java/com/example/cloud/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/PaymentMain8001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/component/base/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/MyBtaisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/mapper/PaymentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/java/com/example/cloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-api-commons/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-api-commons/src/main/java/com/example/cloud/component/base/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-api-commons/src/main/java/com/example/cloud/pojo/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-api-commons/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/src/main/java/com/example/cloud/OrderMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/src/main/java/com/example/cloud/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/PaymentMain8001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/MyBtaisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/component/config/WebConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/mapper/PaymentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/java/com/example/cloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springcloud/demo2/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/PurviewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/PurviewApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/purview/component/config/WebConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/purview/component/config/WebConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Mysql/23-08-07-分布式事务.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Mysql/23-08-07-分布式事务.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +161,11 @@
       <workItem from="1691027840692" duration="56000" />
       <workItem from="1691030329499" duration="16000" />
       <workItem from="1691035758395" duration="193000" />
+      <workItem from="1693214290172" duration="1447000" />
+      <workItem from="1693274116124" duration="1322000" />
+      <workItem from="1693363299427" duration="636000" />
+      <workItem from="1693479851029" duration="132000" />
+      <workItem from="1693973364916" duration="619000" />
     </task>
     <servers />
   </component>

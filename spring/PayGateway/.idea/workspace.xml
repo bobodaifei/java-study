@@ -10,43 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2dc66283-a049-4b0c-bdae-83c24b6325ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/RedisApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/controller/RedisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/utils/reids/CRC32.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/utils/reids/Hashing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/utils/reids/LZHash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/utils/reids/LZHashMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/utils/reids/MD5Hash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/utils/reids/Md5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/utils/reids/MurmurHash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/utils/reids/RedisClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/java/com/example/redis/utils/reids/SafeEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redis/src/test/java/com/example/redis/RedisApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redispian/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redispian/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redispian/src/main/java/org/example/CRC32.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redispian/src/main/java/org/example/Hashing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redispian/src/main/java/org/example/LZHash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redispian/src/main/java/org/example/LZHashMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redispian/src/main/java/org/example/MD5Hash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redispian/src/main/java/org/example/Md5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redispian/src/main/java/org/example/MurmurHash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/redispian/src/main/java/org/example/SafeEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/10.Redis集群(cluster)/2.集群算法-分片-槽位slot.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/10.Redis集群(cluster)/2.集群算法-分片-槽位slot.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/10.Redis集群(cluster)/4.3主3从Redis集群配置.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/10.Redis集群(cluster)/4.3主3从Redis集群配置.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/10.Redis集群(cluster)/5.3主3从redis集群读写.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/10.Redis集群(cluster)/5.3主3从redis集群读写.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/5.Redis事务/1.redis事务介绍.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/5.Redis事务/1.redis事务介绍.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/6.Redis管道/2.是什么.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/6.Redis管道/2.是什么.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/7.Redis发布订阅/3.案例演示.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/7.Redis发布订阅/3.案例演示.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/Redis/8.Redis复制(replica)/2.案例演示-配置文件.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/Redis/8.Redis复制(replica)/2.案例演示-配置文件.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/ForgettingReminderGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/config/SmsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/config/WebConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/config/WorkerListTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/entity/DutyCalendar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/entity/ShiftHandover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/entity/Sms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/entity/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/mapper/DutyCalendarMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/mapper/ShiftHandoverMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/service/DutyCalendarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/service/ShiftHandoverService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/service/impl/DutyCalendarServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/service/impl/ShiftHandoverServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/tasks/Scheduling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/utils/CurrencyConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/utils/SmsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/gateway/controller/AlipayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/gateway/controller/AlipayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-test1/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-test1/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/book/src/main/java/com/example/book/entity/Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/book/src/main/java/com/example/book/entity/Body.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/PurviewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/PurviewApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,16 +85,16 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/Visual Studio Code/java/java_study/springboot/springboot-test01&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33793104&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;86323038994bb7018b561a0a8e8ee2c8&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -266,6 +258,13 @@
       <workItem from="1691918241417" duration="208000" />
       <workItem from="1692002121184" duration="880000" />
       <workItem from="1692180523880" duration="287000" />
+      <workItem from="1694506662125" duration="609000" />
+      <workItem from="1694590459932" duration="60000" />
+      <workItem from="1694590593296" duration="11000" />
+      <workItem from="1694773779132" duration="1187000" />
+      <workItem from="1694828246978" duration="1709000" />
+      <workItem from="1694830597544" duration="1281000" />
+      <workItem from="1694997101616" duration="71000" />
     </task>
     <servers />
   </component>

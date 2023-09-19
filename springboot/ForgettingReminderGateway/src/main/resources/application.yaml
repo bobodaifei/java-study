@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:mysql://10.110.96.55:30005/icd_web_cloud?useUnicode=true;characterEncoding=utf8;serverTimezone=Asia/Shanghai;useTimezone=true
+    username: root
+    password: Icd@1024
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  #指定配置文件
+  mapper-locations: classpath*:mapper/*.xml
+  #实体类简写
+  type-aliases-package: com.forgetting.reminder.entity
+
+logging:
+  level:
+    root: info
+
+sms:
+  url: http://jhoasms.qd.gov.cn/sms/webservice/sms.asmx
+  sendKey: 6
+  orgCode: 12348
+  checkCode: 9999
+  sendName: xxxx

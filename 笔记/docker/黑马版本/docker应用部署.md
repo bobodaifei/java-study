@@ -30,7 +30,8 @@ docker run -id \
 -v $PWD/logs:/logs \
 -v $PWD/data:/var/lib/mysql \
 -e MYSQL_ROOT_PASSWORD=123456 \
-mysql:5.6
+--network bobo_network \
+mysql:8.0.30
 ```
 
 - 参数说明：
@@ -169,28 +170,136 @@ nginx
 
 ![1573652396669](.\imgs\1573652396669.png)
 
-### 四、部署Redis
+### 四、部署Redis6.0
 
 1. 搜索redis镜像
 
-```shell
+```
 docker search redis
 ```
 
 2. 拉取redis镜像
 
-```shell
-docker pull redis:5.0
+```
+docker pull redis:6.0
 ```
 
 3. 创建容器，设置端口映射
 
-```shell
-docker run -id --name=c_redis -p 6379:6379 redis:5.0
+```
+bind 0.0.0.0
+protected-mode no
+appendonly yes
+requirepass 123456
+```
+
+```
+
+docker run -id -p 6379:6379 --name redis -v $PWD/redis.conf:/etc/redis/redis.conf -v $PWD/data:/data redis:6.0 redis-server /etc/redis/redis.conf
+
+```
+
+```
+docker run -d -p 6379:6379 --name redis-container -v $PWD/redis.conf:/usr/local/etc/redis/redis.conf -v $PWD/redis-data:/data redis:5.0 redis-server /usr/local/etc/redis/redis.conf
 ```
 
 4. 使用外部机器连接redis
 
-```shell
+```
 ./redis-cli.exe -h 192.168.149.135 -p 6379
+```
+
+```
+conf
+# Redis 服务器配置
+bind 127.0.0.1  # 绑定的 IP 地址
+port 6379  # 监听的端口号
+
+# 通用配置
+daemonize yes  # 是否以守护进程方式运行
+pidfile /var/run/redis/redis-server.pid  # PID 文件路径
+logfile /var/log/redis/redis-server.log  # 日志文件路径
+
+# 数据库配置
+databases 16  # 数据库数量，默认为 16
+
+# 安全性配置
+requirepass yourpassword  # 设置连接密码
+
+# 内存优化配置
+maxmemory 2GB  # 最大内存限制
+maxmemory-policy allkeys-lru  # 内存达到限制时的淘汰策略
+
+# 持久化配置
+save 900 1  # 在 900 秒内至少有 1 个 key 被更改时进行快照保存
+save 300 10  # 在 300 秒内至少有 10 个 key 被更改时进行快照保存
+save 60 10000  # 在 60 秒内至少有 10000 个 key 被更改时进行快照保存
+appendonly yes  # 开启 AOF 持久化模式
+appendfilename "appendonly.aof"  # AOF 文件名
+appendfsync everysec  # 每秒钟同步一次 AOF 文件
+```
+
+### 五、nacos
+
+```
+docker run -d -it \
+-e MODE=standalone  \
+-p 8848:8848 -p 9848:9848  \
+-m 2048m \
+--memory-swap=2312m \
+-v /root/inspur/docker/nacosDocker/application.properties:/home/nacos/conf/application.properties \
+-v /root/inspur/docker/nacosDocker/logs:/home/nacos/logs \
+--restart=always \
+--name nacos-2.0.3 \
+--network bobo_network \
+nacos/nacos-server:2.0.3
+```
+
+```properties
+# spring
+server.servlet.contextPath=${SERVER_SERVLET_CONTEXTPATH:/nacos}
+server.contextPath=/nacos
+server.port=${NACOS_APPLICATION_PORT:8848}
+spring.datasource.platform=mysql
+nacos.cmdb.dumpTaskInterval=3600
+nacos.cmdb.eventTaskInterval=10
+nacos.cmdb.labelTaskInterval=300
+nacos.cmdb.loadDataAtStart=false
+db.num=1
+db.url.0=jdbc:mysql://192.168.182.130:3306/nacos_config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+#db.url.1=jdbc:mysql://${MYSQL_SERVICE_HOST}:${MYSQL_SERVICE_PORT:3306}/${MYSQL_SERVICE_DB_NAME}?${MYSQL_SERVICE_DB_PARAM:characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true}
+db.user=root
+db.password=123456
+### The auth system to use, currently only 'nacos' is supported:
+nacos.core.auth.system.type=${NACOS_AUTH_SYSTEM_TYPE:nacos}
+
+
+### The token expiration in seconds:
+nacos.core.auth.default.token.expire.seconds=${NACOS_AUTH_TOKEN_EXPIRE_SECONDS:18000}
+
+### The default token:
+nacos.core.auth.default.token.secret.key=${NACOS_AUTH_TOKEN:SecretKey012345678901234567890123456789012345678901234567890123456789}
+
+### Turn on/off caching of auth information. By turning on this switch, the update of auth information would have a 15 seconds delay.
+nacos.core.auth.caching.enabled=${NACOS_AUTH_CACHE_ENABLE:false}
+nacos.core.auth.enable.userAgentAuthWhite=${NACOS_AUTH_USER_AGENT_AUTH_WHITE_ENABLE:false}
+nacos.core.auth.server.identity.key=${NACOS_AUTH_IDENTITY_KEY:serverIdentity}
+nacos.core.auth.server.identity.value=${NACOS_AUTH_IDENTITY_VALUE:security}
+server.tomcat.accesslog.enabled=${TOMCAT_ACCESSLOG_ENABLED:false}
+server.tomcat.accesslog.pattern=%h %l %u %t "%r" %s %b %D
+# default current work dir
+server.tomcat.basedir=
+## spring security config
+### turn off security
+nacos.security.ignore.urls=${NACOS_SECURITY_IGNORE_URLS:/,/error,/**/*.css,/**/*.js,/**/*.html,/**/*.map,/**/*.svg,/**/*.png,/**/*.ico,/console-fe/public/**,/v1/auth/**,/v1/console/health/**,/actuator/**,/v1/console/server/**}
+# metrics for elastic search
+management.metrics.export.elastic.enabled=false
+management.metrics.export.influx.enabled=false
+
+nacos.naming.distro.taskDispatchThreadCount=10
+nacos.naming.distro.taskDispatchPeriod=200
+nacos.naming.distro.batchSyncKeyCount=1000
+nacos.naming.distro.initDataRatio=0.9
+nacos.naming.distro.syncRetryDelay=5000
+nacos.naming.data.warmup=true
 ```

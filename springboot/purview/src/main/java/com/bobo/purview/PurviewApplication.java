@@ -14,7 +14,7 @@ import java.util.Set;
 import java.util.logging.Handler;
 
 @SpringBootApplication
-@MapperScan("com.bobo.purview.mapper")
+  @MapperScan("com.bobo.purview.mapper")
 public class PurviewApplication {
 
   public static void main(String[] args) {

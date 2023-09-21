@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="29d6c1a4-7173-45a3-a962-4979405b38a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/ForgettingReminderGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/config/SmsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/config/WebConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/config/WorkerListTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/entity/DutyCalendar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/entity/ShiftHandover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/entity/Sms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/entity/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/mapper/DutyCalendarMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/mapper/ShiftHandoverMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/service/DutyCalendarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/service/ShiftHandoverService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/service/impl/DutyCalendarServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/service/impl/ShiftHandoverServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/tasks/Scheduling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/utils/CurrencyConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/forgetting/reminder/utils/SmsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/controller/AlipayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/PayGateway/src/main/java/com/bobo/gateway/controller/AlipayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/ssm-test1/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book/src/main/java/com/example/book/entity/Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/../book/src/main/java/com/example/book/entity/Body.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../purview/src/main/java/com/bobo/purview/PurviewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../purview/src/main/java/com/bobo/purview/PurviewApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/docker/黑马版本/docker应用部署.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/docker/黑马版本/docker应用部署.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Apache/apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="E:\Visual Studio Code\Apache\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2VFHPJVKtsquq3tChljfCeWvuQK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/桌面/inspur/23-09-13/Netdisk/i-cloud-disk-server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8c3c4b9295a3ea5f01405e0bd29c814e&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Visual Studio Code\java\java_study\springboot\ForgettingReminderGateway\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.forgetting.reminder.utils" />
+      <recent name="com.forgetting.reminder.entity" />
+      <recent name="com.forgetting.reminder.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ForgettingReminderGatewayApplication">
+    <configuration name="Scheduling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.forgetting.reminder.tasks.Scheduling" />
+      <module name="reminder" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.forgetting.reminder.tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ForgettingReminderGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="reminder" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.forgetting.reminder.ForgettingReminderGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Scheduling" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29d6c1a4-7173-45a3-a962-4979405b38a1" name="Changes" comment="" />
+      <created>1694424886647</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694424886647</updated>
+      <workItem from="1694424889147" duration="5450000" />
+      <workItem from="1694478653387" duration="22328000" />
+      <workItem from="1694509197238" duration="5256000" />
+      <workItem from="1694565169386" duration="12774000" />
+      <workItem from="1694590596580" duration="3640000" />
+      <workItem from="1694595461350" duration="37000" />
+      <workItem from="1694595612571" duration="625000" />
+      <workItem from="1694760024193" duration="588000" />
+      <workItem from="1695019387587" duration="152000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.forgetting.reminder.entity.DutyCalendar" memberName="workDate" />
+        <PinnedItemInfo parentTag="com.forgetting.reminder.entity.DutyCalendar" memberName="dayShiftInfo" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

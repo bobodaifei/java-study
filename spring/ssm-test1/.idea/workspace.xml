@@ -9,7 +9,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d638d76e-145c-4bb6-9c33-e214b8d0f03a" name="Changes" comment="" />
+    <list default="true" id="d638d76e-145c-4bb6-9c33-e214b8d0f03a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/ForgettingReminderGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/config/SmsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/config/WebConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/entity/DutyCalendar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/entity/ShiftHandover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/entity/Sms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/entity/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/mapper/DutyCalendarMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/mapper/ShiftHandoverMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/service/DutyCalendarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/service/ShiftHandoverService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/service/impl/DutyCalendarServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/service/impl/ShiftHandoverServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/tasks/Scheduling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/java/com/forgetting/reminder/utils/SmsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/ForgettingReminderGateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bobo/service/impl/AliPayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/PurviewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot/purview/src/main/java/com/bobo/purview/PurviewApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +85,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/Visual Studio Code/java/java_study/spring/rsa-md5&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -280,6 +306,9 @@
       <workItem from="1693036459659" duration="11000" />
       <workItem from="1693190909121" duration="2189000" />
       <workItem from="1693214246829" duration="36000" />
+      <workItem from="1694426323281" duration="124000" />
+      <workItem from="1694487286975" duration="754000" />
+      <workItem from="1694506564474" duration="96000" />
     </task>
     <servers />
   </component>

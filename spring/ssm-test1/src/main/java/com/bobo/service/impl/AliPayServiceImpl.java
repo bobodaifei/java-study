@@ -4,8 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.AlipayConfig;
-import com.alipay.api.request.AlipayTradePagePayRequest;
-import com.alipay.api.response.AlipayTradePagePayResponse;
 import com.bobo.component.convert.AliPayConvert;
 import com.bobo.entity.AliPay;
 import com.bobo.pojo.dto.AliPayDTO;
@@ -41,26 +39,26 @@ public class AliPayServiceImpl implements AliPayService {
   @Autowired
   JedisUtil jedisUtil;
 
-  @Override
-  public String pay(AliPayDTO dto) throws AlipayApiException {
-    AliPay aliPay = INSTANCE.toEntity(dto);
-    aliPay.setProduct_code("FAST_INSTANT_TRADE_PAY");
-    String bizContent = JSON.toJSONString(aliPay);
-
-    AlipayTradePagePayRequest request = new AlipayTradePagePayRequest();
-    request.setNotifyUrl(notifyUrl);
-    request.setReturnUrl(returnUrl);
-    request.setBizContent(bizContent);
-
-    AlipayTradePagePayResponse response = alipayClient.pageExecute(request);
-    if (response.isSuccess()) {
-      System.out.println(response.getBody());
-      System.out.println("调用成功");
-    } else {
-      System.out.println("调用失败");
-    }
-    return response.getBody();
-  }
+//  @Override
+//  public String pay(AliPayDTO dto) throws AlipayApiException {
+//    AliPay aliPay = INSTANCE.toEntity(dto);
+//    aliPay.setProduct_code("FAST_INSTANT_TRADE_PAY");
+//    String bizContent = JSON.toJSONString(aliPay);
+//
+//    AlipayTradePagePayRequest request = new AlipayTradePagePayRequest();
+//    request.setNotifyUrl(notifyUrl);
+//    request.setReturnUrl(returnUrl);
+//    request.setBizContent(bizContent);
+//
+//    AlipayTradePagePayResponse response = alipayClient.pageExecute(request);
+//    if (response.isSuccess()) {
+//      System.out.println(response.getBody());
+//      System.out.println("调用成功");
+//    } else {
+//      System.out.println("调用失败");
+//    }
+//    return response.getBody();
+//  }
 
   @Override
   public String pay(AliPayDTO dto) throws AlipayApiException {
